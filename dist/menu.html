@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link href="./css/index.css" rel="stylesheet">
+	<body>
+		<header class="header">
+			<div class="header-menu" data-open="nav">
+				<div class="header-menu__inner">
+					<i></i>
+				</div>
+			</div>
+			<a href="/" class="header__logo">
+				<svg width="154" height="56">
+					<use xlink:href="./img/sprite.svg#logo"></use>
+				</svg>
+			</a>
+		</header>
+		<div class="wrapper">
+			<div class="nav">
+				<div class="nav__group">
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Сообщения</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(32)</span>
+						</div>
+					</a>
+				</div>
+				<div class="nav__group">
+					<a href="./orders-accept.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Принять заказы</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(7)</span>
+						</div>
+					</a>
+					<a href="./orders-today.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Доставить сегодня</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(3)</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Доставить завтра</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(5)</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Доставить еще позже</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(5)</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Доставленные заказы</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">12</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Просроченные заказы</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_red">1</span>
+						</div>
+					</a>
+				</div>
+				<div class="nav__group">
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Управление букетами</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Управление подарками</span>
+						</div>
+					</a>
+				</div>
+				<div class="nav__group">
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Поддержка</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Настройки</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="fade-bg"></div>
+		<div class="modal" data-target="nav">
+			<div class="modal__core modal__core_top">
+				<div class="modal-nav">
+					<div class="modal-nav__close" data-modal-close>
+						<svg>
+							<use xlink:href="./img/sprite.svg#cross"></use>
+						</svg>
+					</div>
+					<div class="nav">
+						<div class="nav__group">
+							<a href="#" class="nav-item">
+								<div class="nav-item__lc">
+									<span class="nav-item__text nav-item__title">Сообщения</span>
+								</div>
+								<div class="nav-item__rc">
+									<span class="nav-item__text nav-item__count nav-item__count_green">(32)</span>
+								</div>
+							</a>
+						</div>
+						<div class="nav__group">
+							<a href="./orders-accept.html" class="nav-item">
+								<div class="nav-item__lc">
+									<span class="nav-item__text nav-item__title">Принять заказы</span>
+								</div>
+								<div class="nav-item__rc">
+									<span class="nav-item__text nav-item__count nav-item__count_green">(7)</span>
+								</div>
+							</a>
+							<a href="#" class="nav-item">
+								<div class="nav-item__lc">
+									<span class="nav-item__text nav-item__title">Доставить сегодня</span>
+								</div>
+								<div class="nav-item__rc">
+									<span class="nav-item__text nav-item__count nav-item__count_green">(3)</span>
+								</div>
+							</a>
+							<a href="#" class="nav-item">
+								<div class="nav-item__lc">
+									<span class="nav-item__text nav-item__title">Доставить завтра</span>
+								</div>
+								<div class="nav-item__rc">
+									<span class="nav-item__text nav-item__count nav-item__count_green">(5)</span>
+								</div>
+							</a>
+							<a href="#" class="nav-item">
+								<div class="nav-item__lc">
+									<span class="nav-item__text nav-item__title">Доставить еще позже</span>
+								</div>
+								<div class="nav-item__rc">
+									<span class="nav-item__text nav-item__count nav-item__count_green">(5)</span>
+								</div>
+							</a>
+							<a href="#" class="nav-item">
+								<div class="nav-item__lc">
+									<span class="nav-item__text nav-item__title">Доставленные заказы</span>
+								</div>
+								<div class="nav-item__rc">
+									<span class="nav-item__text nav-item__count nav-item__count_green">12</span>
+								</div>
+							</a>
+							<a href="#" class="nav-item">
+								<div class="nav-item__lc">
+									<span class="nav-item__text nav-item__title">Просроченные заказы</span>
+								</div>
+								<div class="nav-item__rc">
+									<span class="nav-item__text nav-item__count nav-item__count_red">1</span>
+								</div>
+							</a>
+						</div>
+						<div class="nav__group">
+							<a href="#" class="nav-item">
+								<div class="nav-item__lc">
+									<span class="nav-item__text nav-item__title">Управление букетами</span>
+								</div>
+							</a>
+							<a href="#" class="nav-item">
+								<div class="nav-item__lc">
+									<span class="nav-item__text nav-item__title">Управление подарками</span>
+								</div>
+							</a>
+						</div>
+						<div class="nav__group">
+							<a href="#" class="nav-item">
+								<div class="nav-item__lc">
+									<span class="nav-item__text nav-item__title">Поддержка</span>
+								</div>
+							</a>
+							<a href="#" class="nav-item">
+								<div class="nav-item__lc">
+									<span class="nav-item__text nav-item__title">Настройки</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-target="orders-accepted">
+			<div class="modal__core modal-fixed">
+				<div class="modal-title">
+					<div class="modal-title__close" data-modal-close>
+						<svg>
+							<use xlink:href="./img/sprite.svg#arrow-left"></use>
+						</svg>
+					</div>
+					<span class="modal-title__text">Принять заказы</span>
+				</div>
+				<div class="modal-fixed__content">
+					<a href="./orders-item.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text">ID 12345678</span>
+							<span class="nav-item__text nav-item__date">20.09.2020</span>
+						</div>
+						<div class="nav-item__rc">
+							<svg class="nav-item__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="./orders-item.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text">ID 12345678</span>
+							<span class="nav-item__text nav-item__date">20.09.2020</span>
+						</div>
+						<div class="nav-item__rc">
+							<svg class="nav-item__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="./orders-item.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text">ID 12345678</span>
+							<span class="nav-item__text nav-item__date">20.09.2020</span>
+						</div>
+						<div class="nav-item__rc">
+							<svg class="nav-item__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="./orders-item.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text">ID 12345678</span>
+							<span class="nav-item__text nav-item__date">20.09.2020</span>
+						</div>
+						<div class="nav-item__rc">
+							<svg class="nav-item__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="./orders-item.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text">ID 12345678</span>
+							<span class="nav-item__text nav-item__date">20.09.2020</span>
+						</div>
+						<div class="nav-item__rc">
+							<svg class="nav-item__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="./orders-item.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text">ID 12345678</span>
+							<span class="nav-item__text nav-item__date">20.09.2020</span>
+						</div>
+						<div class="nav-item__rc">
+							<svg class="nav-item__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="./orders-item.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text">ID 12345678</span>
+							<span class="nav-item__text nav-item__date">20.09.2020</span>
+						</div>
+						<div class="nav-item__rc">
+							<svg class="nav-item__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="./orders-item.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text">ID 12345678</span>
+							<span class="nav-item__text nav-item__date">20.09.2020</span>
+						</div>
+						<div class="nav-item__rc">
+							<svg class="nav-item__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="./orders-item.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text">ID 12345678</span>
+							<span class="nav-item__text nav-item__date">20.09.2020</span>
+						</div>
+						<div class="nav-item__rc">
+							<svg class="nav-item__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="./orders-item.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text">ID 12345678</span>
+							<span class="nav-item__text nav-item__date">20.09.2020</span>
+						</div>
+						<div class="nav-item__rc">
+							<svg class="nav-item__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="./orders-item.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text">ID 12345678</span>
+							<span class="nav-item__text nav-item__date">20.09.2020</span>
+						</div>
+						<div class="nav-item__rc">
+							<svg class="nav-item__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</a>
+					<a href="./orders-item.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text">ID 12345678</span>
+							<span class="nav-item__text nav-item__date">20.09.2020</span>
+						</div>
+						<div class="nav-item__rc">
+							<svg class="nav-item__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-right"></use>
+							</svg>
+						</div>
+					</a>
+				</div>
+				<div class="modal-fixed__footer">
+					<button class="btn btn_green">Принять все</button>
+					<button class="btn btn_white">Отклонить все</button>
+				</div>
+			</div>
+		</div>
+		<script src="./js/libs.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>

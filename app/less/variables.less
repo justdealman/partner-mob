@@ -1,0 +1,37 @@
+@colorBase: #333333;
+@colorLink: #5B8D31;
+@colorLinkHover: #444444;
+@colorYellow: #FFD96F;
+@colorOrange: #FB6649;
+@colorWhite: #FFFFFF;
+@colorRed: #FB6649;
+@colorGrey: #B3B3B3;
+
+@imgUrl: '../img';
+@picsUrl: '../pic';
+
+@notebook: ~'(max-width: 1299px)';
+@notebook-sm: ~'(max-width: 1199px)';
+@tablet: ~'(max-width: 991px)';
+@mobile: ~'(max-width: 767px)';
+@small: ~'(max-width: 575px)';
+
+@trebuchet: 'Trebuchet MS', sans-serif;
+
+.placeholder(@color) {
+	::-webkit-input-placeholder {
+		color: @color;
+	}
+
+	:-moz-placeholder {
+		color: @color;
+	}
+
+	::-moz-placeholder {
+		color: @color;
+	}
+
+	:-ms-input-placeholder {
+		color: @color;
+	}
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link href="./css/index.css" rel="stylesheet">
+	<body>
+		<header class="header">
+			<div class="header-menu">
+				<div class="header-menu__inner">
+					<i></i>
+				</div>
+			</div>
+			<a href="/" class="header__logo">
+				<svg width="154" height="56">
+					<use xlink:href="./img/sprite.svg#logo"></use>
+				</svg>
+			</a>
+		</header>
+		<div class="wrapper">
+			<div class="nav">
+				<div class="nav__group">
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Принять заказы</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(32)</span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="orders">
+				<div class="orders-filter">
+					<div class="orders-filter__col orders-filter__col_wide">
+						<input type="text" class="orders-filter__search" placeholder="Поиск по ID">
+					</div>
+					<div class="orders-filter__col">
+						<span class="orders-filter__date">
+							<svg width="24" height="24">
+								<use xlink:href="./img/sprite.svg#calendar"></use>
+							</svg>
+						</span>
+					</div>
+				</div>
+				<div class="orders-list">
+					<a href="./orders-item.html" class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 12345678</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">06.10</span>
+						</div>
+					</a>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 12345678</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">06.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">05.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">04.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">03.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">03.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">03.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">03.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">03.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">03.10</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="action">
+				<span class="action__btn btn btn_green">Принять все</span>
+				<span class="action__btn btn btn_white">Отклонить все</span>
+			</div>
+		</div>
+		<div class="fade-bg"></div>
+		<div class="modal" data-target="photo">
+			<div class="modal__core modal__core_outside modal__core_photo">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+					<span class="modal-close__text">Закрыть</span>
+				</div>
+				<div class="modal-photo">
+					<div class="modal-photo__img" style="background-image: url('./pic/orders-item-b.jpg')"></div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-target="composition">
+			<div class="modal__core modal__core_outside">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+					<span class="modal-close__text">Закрыть</span>
+				</div>
+				<div class="compose">
+					<div class="compose-main">
+						<span class="compose__title">Осень на Холсте</span>
+						<div class="compose-list">
+							<div class="compose-list__item">
+								<div class="compose-list__lc">
+									<span class="compose-list__text compose-list__title">Ежевика</span>
+								</div>
+								<div class="compose-list__num">
+									<span class="compose-list__text">8 шт</span>
+								</div>
+							</div>
+							<div class="compose-list__item">
+								<div class="compose-list__lc">
+									<span class="compose-list__text compose-list__title">Роза персиковая</span>
+								</div>
+								<div class="compose-list__num">
+									<span class="compose-list__text">7 шт</span>
+								</div>
+							</div>
+							<div class="compose-list__item">
+								<div class="compose-list__lc">
+									<span class="compose-list__text compose-list__title">Агапантус синий</span>
+								</div>
+								<div class="compose-list__num">
+									<span class="compose-list__text">5 шт</span>
+								</div>
+							</div>
+							<div class="compose-list__item">
+								<div class="compose-list__lc">
+									<span class="compose-list__text compose-list__title">Роза Французская</span>
+								</div>
+								<div class="compose-list__num">
+									<span class="compose-list__text">5 шт</span>
+								</div>
+							</div>
+							<div class="compose-list__item">
+								<div class="compose-list__lc">
+									<span class="compose-list__text compose-list__title">Хризантема одноголовая</span>
+								</div>
+								<div class="compose-list__num">
+									<span class="compose-list__text">5 шт</span>
+								</div>
+							</div>
+							<div class="compose-list__item">
+								<div class="compose-list__lc">
+									<span class="compose-list__text compose-list__title">Эрингиум</span>
+								</div>
+								<div class="compose-list__num">
+									<span class="compose-list__text">4 шт</span>
+								</div>
+							</div>
+							<div class="compose-list__item">
+								<div class="compose-list__lc">
+									<span class="compose-list__text compose-list__title">Физалис</span>
+								</div>
+								<div class="compose-list__num">
+									<span class="compose-list__text">3 шт</span>
+								</div>
+							</div>
+							<div class="compose-list__item">
+								<div class="compose-list__lc">
+									<span class="compose-list__text compose-list__title">Каменная роза</span>
+								</div>
+								<div class="compose-list__num">
+									<span class="compose-list__text">2 шт</span>
+								</div>
+							</div>
+						</div>
+						<span class="compose__more">Листья дуба, Эвкалипт Лента, Бумага жатая</span>
+					</div>
+					<div class="compose-sub">
+						<span class="compose__subtitle">Дополнительно</span>
+						<ul class="compose__additional">
+							<li>Корзина фруктов</li>
+							<li>Рафаэлло</li>
+							<li>Шары</li>
+							<li>Бесплатное фото доставки</li>
+							<li>Открытка</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-target="cancel">
+			<div class="modal__core modal__core_outside">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+					<span class="modal-close__text">Закрыть</span>
+				</div>
+				<div class="popup">
+					<span class="popup__title">Укажите причину отказа</span>
+					<div class="popup-action">
+						<span class="btn btn_yellow popup-action__btn" data-open="cancel-reason-1">Нет состава</span>
+						<span class="btn btn_yellow popup-action__btn" data-open="cancel-reason-2">Попросить изменить цену</span>
+						<span class="btn btn_yellow popup-action__btn" data-open="cancel-reason-3">Адрес не в нашем городе</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-target="cancel-reason-3">
+			<div class="modal__core modal__core_outside">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+					<span class="modal-close__text">Закрыть</span>
+				</div>
+				<div class="popup">
+					<span class="popup__title">Предложить стоимость доставки</span>
+					<div class="popup-price js-price">
+						<span class="popup-price__dummy js-price-dummy"></span>
+						<input type="text" class="popup-price__input js-price-input" value="700" maxlength="12">
+						<span class="popup-price__sign js-price-sign">₽</span>
+					</div>
+					<input type="text" class="popup__address" placeholder="Укажите правильный адрес">
+					<div class="popup-action">
+						<span class="btn btn_yellow popup-action__btn">Отправить</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-target="cancel-reason-2">
+			<div class="modal__core modal__core_outside">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+					<span class="modal-close__text">Закрыть</span>
+				</div>
+				<div class="popup">
+					<div class="popup__tip">
+						<div class="alert alert_red">
+							<svg class="alert__icon">
+								<use xlink:href="./img/sprite.svg#info"></use>
+							</svg>
+							<span class="alert__text">В случае увеличения цены заказ может уйти другому исполнителю!</span>
+						</div>
+					</div>
+					<div class="popup-price js-price">
+						<span class="popup-price__dummy js-price-dummy"></span>
+						<input type="text" class="popup-price__input js-price-input" value="3700" maxlength="12">
+						<span class="popup-price__sign js-price-sign">₽</span>
+					</div>
+					<div class="cancel-action">
+						<span class="btn btn_red popup-action__btn">Предложить цену</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-target="cancel-reason-1">
+			<div class="modal__core modal__core_outside">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+					<span class="modal-close__text">Закрыть</span>
+				</div>
+				<div class="popup">
+					<span class="popup__title">Нет состава</span>
+					<textarea rows="4" class="popup__area">Лизиантус на тритикум</textarea>
+					<div class="popup-action">
+						<span class="btn btn_yellow popup-action__btn">Предложить замену</span>
+						<span class="btn btn_red popup-action__btn">Заменить не на что</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/libs.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>

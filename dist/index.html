@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link href="./css/index.css" rel="stylesheet">
+	<body>
+		<header class="header">
+			<a href="/" class="header__logo">
+				<svg width="154" height="56">
+					<use xlink:href="./img/sprite.svg#logo"></use>
+				</svg>
+			</a>
+		</header>
+		<div class="wrapper">
+			<div class="welcome">
+				<h1 class="welcome__title">Вход</h1>
+				<div class="login" data-tab-container>
+					<div class="login-nav">
+						<span class="login-nav__item is-active" data-tab-open="1">по e-mail</span>
+						<span class="login-nav__item" data-tab-open="2">по СМС</span>
+					</div>
+					<div class="js-login-content">
+						<div class="login-content is-opened" data-tab="1">
+							<div class="form">
+								<div class="form-group">
+									<div class="form-group__item">
+										<input type="text" class="form__input" placeholder="Ваш логин">
+									</div>
+									<div class="form-group__item">
+										<input type="text" class="form__input" placeholder="Пароль">
+									</div>
+								</div>
+								<div class="form-details">
+									<div class="form-details__col">
+										<div class="form-checkbox">
+											<input type="checkbox" id="remember" class="form-checkbox__input" checked>
+											<label for="remember" class="form-checkbox__label">
+												<span class="form-checkbox__icon">
+													<svg>
+														<use xlink:href="./img/sprite.svg#tick"></use>
+													</svg>
+												</span>
+												<span class="form-checkbox__text">Запомнить</span>
+											</label>
+										</div>
+									</div>
+									<div class="form-details__col">
+										<span class="form-details__link">Забыли пароль?</span>
+									</div>
+								</div>
+								<a href="./start.html" class="btn">Войти</a>
+							</div>
+						</div>
+						<div class="login-content" data-tab="2">
+							<div class="form">
+								<div class="form-group">
+									<div class="form-group__item">
+										<input type="text" class="form__input" placeholder="+ 7">
+									</div>
+								</div>
+								<span class="form__tip">Введите номер телефона</span>
+								<button class="btn">Продолжить</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./js/libs.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>

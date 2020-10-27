@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<link href="./css/index.css" rel="stylesheet">
+<body>
+<header class="header">
+	<div class="header-menu">
+		<div class="header-menu__inner">
+			<i></i>
+		</div>
+	</div>
+	<a href="/" class="header__logo">
+		<svg width="154" height="56">
+			<use xlink:href="./img/sprite.svg#logo"></use>
+		</svg>
+	</a>
+	<div class="header__tip">
+		<div class="alert alert_green">
+			<svg class="alert__icon">
+				<use xlink:href="./img/sprite.svg#info"></use>
+			</svg>
+			<span class="alert__text">Не забудьте сфотографировать и&nbsp;приложить фото при вручении</span>
+		</div>
+	</div>
+</header>
+<div class="wrapper">
+	<div class="nav">
+		<div class="nav__group">
+			<a href="#" class="nav-item">
+				<div class="nav-item__lc">
+					<span class="nav-item__text nav-item__title">Доставить сегодня</span>
+				</div>
+				<div class="nav-item__rc">
+					<span class="nav-item__text nav-item__count nav-item__count_green">(5)</span>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="orders orders_single">
+		<div class="orders-list">
+			<a href="./orders-item.html" class="orders-preview">
+				<div class="orders-preview__text orders-preview__lc">
+					<span class="orders-preview__title">ID 12345678</span>
+				</div>
+				<div class="orders-preview__text orders-preview__rc">
+					<div class="orders-preview__letter has-new" data-open="message">
+						<svg>
+							<use xlink:href="./img/sprite.svg#letter"></use>
+						</svg>
+					</div>
+				</div>
+			</a>
+			<div class="orders-item">
+				<div class="orders-item__row">
+					<div class="orders-item__col orders-item__lc">
+						<div class="orders-item-photo" data-open="photo">
+							<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+							<span class="orders-item-photo__zoom">
+								<svg width="16" height="16">
+									<use xlink:href="./img/sprite.svg#lens"></use>
+								</svg>
+							</span>
+						</div>
+						<span class="orders-item__price">4 900 руб.</span>
+					</div>
+					<div class="orders-item__col orders-item__rc">
+						<svg width="24" height="24" class="orders-item__expand">
+							<use xlink:href="./img/sprite.svg#expand"></use>
+						</svg>
+						<span class="orders-item__title">Осень на Холсте</span>
+						<div class="orders-item-links">
+							<div class="orders-item-links__col">
+								<span class="orders-item-links__item" data-open="composition">Состав</span>
+							</div>
+							<div class="orders-item-links__col">
+								<span class="orders-item-links__item">Открытка</span>
+							</div>
+						</div>
+						<ul class="orders-item__list">
+							<li>Корзина фрутов</li>
+							<li>Рафаэлло</li>
+							<li>Шары</li>
+							<li>Бесплатное фото</li>
+						</ul>
+						<label for="upload-photo" class="orders-camera">
+							<svg class="orders-camera__icon">
+								<use xlink:href="./img/sprite.svg#camera"></use>
+							</svg>
+							<span class="orders-camera__text">Сделать фото букета</span>
+						</label>
+						<input type="file" class="is-hidden" id="upload-photo" accept="image/*;capture=camera">
+					</div>
+				</div>
+				<span class="orders-item__text orders-item__text_inline"><span>Дата</span> 20.09.2020</span>
+				<span class="orders-item__text orders-item__text_inline"><span>Время</span> 11:00 - 13:00</span>
+				<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+				<div class="orders-nav">
+					<svg class="orders-nav__arrow">
+						<use xlink:href="./img/sprite.svg#arrow-left"></use>
+					</svg>
+					<a href="#" class="orders-nav__link">
+						<svg class="orders-nav__icon">
+							<use xlink:href="./img/sprite.svg#share"></use>
+						</svg>
+						<span class="orders-nav__text">Открыть бланк заказа</span>
+					</a>
+					<svg class="orders-nav__arrow">
+						<use xlink:href="./img/sprite.svg#arrow-right"></use>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div class="orders__uploaded uploaded">
+			<div class="uploaded__col">
+				<div class="uploaded__item">
+					<div class="uploaded__pic bg-cover" style="background-image: url('./pic/uploaded.jpg')"></div>
+					<span class="uploaded__remove">
+						<svg>
+							<use xlink:href="./img/sprite.svg#cross"></use>
+						</svg>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="orders-mark">
+			<span class="orders-mark__btn btn btn_green" data-open="add-file">Доставлено</span>
+		</div>
+	</div>
+</div>
+
+<div class="fade-bg"></div>
+
+<div class="modal" data-target="photo">
+	<div class="modal__core modal__core_outside modal__core_photo">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="modal-photo">
+			<div class="modal-photo__img" style="background-image: url('./pic/orders-item-b.jpg')"></div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="composition">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="compose">
+			<div class="compose-main">
+				<span class="compose__title">Осень на Холсте</span>
+				<div class="compose-list">
+					<div class="compose-list__item">
+						<div class="compose-list__lc">
+							<span class="compose-list__text compose-list__title">Ежевика</span>
+						</div>
+						<div class="compose-list__num">
+							<span class="compose-list__text">8 шт</span>
+						</div>
+					</div>
+					<div class="compose-list__item">
+						<div class="compose-list__lc">
+							<span class="compose-list__text compose-list__title">Роза персиковая</span>
+						</div>
+						<div class="compose-list__num">
+							<span class="compose-list__text">7 шт</span>
+						</div>
+					</div>
+					<div class="compose-list__item">
+						<div class="compose-list__lc">
+							<span class="compose-list__text compose-list__title">Агапантус синий</span>
+						</div>
+						<div class="compose-list__num">
+							<span class="compose-list__text">5 шт</span>
+						</div>
+					</div>
+					<div class="compose-list__item">
+						<div class="compose-list__lc">
+							<span class="compose-list__text compose-list__title">Роза Французская</span>
+						</div>
+						<div class="compose-list__num">
+							<span class="compose-list__text">5 шт</span>
+						</div>
+					</div>
+					<div class="compose-list__item">
+						<div class="compose-list__lc">
+							<span class="compose-list__text compose-list__title">Хризантема одноголовая</span>
+						</div>
+						<div class="compose-list__num">
+							<span class="compose-list__text">5 шт</span>
+						</div>
+					</div>
+					<div class="compose-list__item">
+						<div class="compose-list__lc">
+							<span class="compose-list__text compose-list__title">Эрингиум</span>
+						</div>
+						<div class="compose-list__num">
+							<span class="compose-list__text">4 шт</span>
+						</div>
+					</div>
+					<div class="compose-list__item">
+						<div class="compose-list__lc">
+							<span class="compose-list__text compose-list__title">Физалис</span>
+						</div>
+						<div class="compose-list__num">
+							<span class="compose-list__text">3 шт</span>
+						</div>
+					</div>
+					<div class="compose-list__item">
+						<div class="compose-list__lc">
+							<span class="compose-list__text compose-list__title">Каменная роза</span>
+						</div>
+						<div class="compose-list__num">
+							<span class="compose-list__text">2 шт</span>
+						</div>
+					</div>
+				</div>
+				<span class="compose__more">Листья дуба, Эвкалипт Лента, Бумага жатая</span>
+			</div>
+			<div class="compose-sub">
+				<span class="compose__subtitle">Дополнительно</span>
+				<ul class="compose__additional">
+					<li>Корзина фруктов</li>
+					<li>Рафаэлло</li>
+					<li>Шары</li>
+					<li>Бесплатное фото доставки</li>
+					<li>Открытка</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="message">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<span class="popup__title">ID 12359783</span>
+			<textarea rows="4" class="popup__area">Хьюстон, у нас проблемы</textarea>
+			<div class="popup-action">
+				<span class="btn btn_green popup-action__btn">Отправить</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="add-file">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<div class="popup-file">
+				<svg class="popup-file__icon">
+					<use xlink:href="./img/sprite.svg#image"></use>
+				</svg>
+				<span class="popup-file__text">Прикрепить фото доставленного букета</span>
+			</div>
+			<div class="popup-action">
+				<span class="btn btn_green popup-action__btn" data-open="upload-result">Прикрепить файл</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="upload-result">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<div class="popup__uploaded">
+				<div class="uploaded">
+					<div class="uploaded__col">
+						<div class="uploaded__item">
+							<div class="uploaded__pic bg-cover" style="background-image: url('./pic/uploaded.jpg')"></div>
+							<span class="uploaded__remove">
+								<svg>
+									<use xlink:href="./img/sprite.svg#cross"></use>
+								</svg>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-action">
+				<span class="btn btn_green popup-action__btn" data-open="finish">Отправить</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="finish">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<div class="popup-finish">
+				<svg class="popup-finish__icon">
+					<use xlink:href="./img/sprite.svg#external"></use>
+				</svg>
+				<span class="popup-finish__text">Сайт рыбатекст поможет дизайнеру,
+верстальщику, вебмастеру сгенерировать
+несколько абзацев более менее
+осмысленного текста рыбы на русском
+языке, а начинающему оратору отточить
+навык публичных выступлений в домашних
+условиях. При создании генератора мы
+использовали небезизвестный
+универсальный код речей. Текст
+генерируется абзацами случайным образом
+от двух до десяти предложений в абзаце,
+что позволяет сделать текст более
+привлекательным и живым для
+визуально-слухового восприятия.</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="./js/libs.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>
