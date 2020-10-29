@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<link href="./css/index.css" rel="stylesheet">
+<body>
+<header class="header">
+	<div class="header-menu">
+		<div class="header-menu__inner">
+			<i></i>
+		</div>
+	</div>
+	<a href="/" class="header__logo">
+		<svg width="154" height="56">
+			<use xlink:href="./img/sprite.svg#logo"></use>
+		</svg>
+	</a>
+</header>
+<div class="wrapper">
+	<div class="bq">
+		<div class="bq__group">
+			<input type="text" class="input-search" placeholder="Поиск по подаркам">
+		</div>
+
+		<div class="bq__group is-opened js-bq-group">
+			<div class="bq-title js-bq-header">
+				<span class="bq-title__text">Активные подарки</span>
+				<svg class="bq-title__icon">
+					<use xlink:href="./img/sprite.svg#drop"></use>
+				</svg>
+			</div>
+
+			<div class="bq-item" data-item>
+				<div class="bq-item__row">
+					<div class="bq-item__col bq-item__col_lc">
+						<div class="bq-item__pic" data-pic>
+							<img src="./pic/gift-1.jpg" alt="" class="bq-item__img">
+						</div>
+					</div>
+					<div class="bq-item__col bq-item__col_rc">
+						<div class="bq-item__head">
+							<span class="bq-item__title">Плюшевый мишка</span>
+							<div class="switcher bq-item__switch">
+								<input type="checkbox" id="switch-1" class="switcher__input" checked data-activity>
+								<label for="switch-1" class="switcher__label"></label>
+							</div>
+						</div>
+						<span class="bq-item__code">1343423</span>
+						<div class="bq-list">
+							<div class="bq-list__row">
+								<div class="bq-list__lc">
+									<span class="bq-list__text bq-list__title">Уменьшенный</span>
+								</div>
+								<div class="bq-list__num">
+									<span class="bq-list__text">1000</span>
+								</div>
+							</div>
+							<div class="bq-list__row">
+								<div class="bq-list__lc">
+									<span class="bq-list__text bq-list__title">Стандартный</span>
+								</div>
+								<div class="bq-list__num">
+									<span class="bq-list__text">2000</span>
+								</div>
+							</div>
+							<div class="bq-list__row">
+								<div class="bq-list__lc">
+									<span class="bq-list__text bq-list__title">Делюкс</span>
+								</div>
+								<div class="bq-list__num">
+									<span class="bq-list__text">3000</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bq-action">
+					<span class="bq-action__btn btn btn_yellow btn_mini" data-open="change-prices">Изменить цены</span>
+				</div>
+			</div>
+
+			<div class="bq-item" data-item>
+				<div class="bq-item__row">
+					<div class="bq-item__col bq-item__col_lc">
+						<div class="bq-item__pic" data-pic>
+							<img src="./pic/gift-2.jpg" alt="" class="bq-item__img">
+						</div>
+					</div>
+					<div class="bq-item__col bq-item__col_rc">
+						<div class="bq-item__head">
+							<span class="bq-item__title">Коробка конфет</span>
+							<div class="switcher bq-item__switch">
+								<input type="checkbox" id="switch-2" class="switcher__input" checked data-activity>
+								<label for="switch-2" class="switcher__label"></label>
+							</div>
+						</div>
+						<span class="bq-item__code">1343423</span>
+						<div class="bq-list">
+							<div class="bq-list__row">
+								<div class="bq-list__lc">
+									<span class="bq-list__text bq-list__title">Уменьшенный</span>
+								</div>
+								<div class="bq-list__num">
+									<span class="bq-list__text">1000</span>
+								</div>
+							</div>
+							<div class="bq-list__row">
+								<div class="bq-list__lc">
+									<span class="bq-list__text bq-list__title">Стандартный</span>
+								</div>
+								<div class="bq-list__num">
+									<span class="bq-list__text">2000</span>
+								</div>
+							</div>
+							<div class="bq-list__row">
+								<div class="bq-list__lc">
+									<span class="bq-list__text bq-list__title">Делюкс</span>
+								</div>
+								<div class="bq-list__num">
+									<span class="bq-list__text">3000</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bq-action">
+					<span class="bq-action__btn btn btn_yellow btn_mini" data-open="change-prices">Изменить цены</span>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="bq__group is-opened js-bq-group">
+			<div class="bq-title js-bq-header">
+				<span class="bq-title__text">Неактивные букеты</span>
+				<svg class="bq-title__icon">
+					<use xlink:href="./img/sprite.svg#drop"></use>
+				</svg>
+			</div>
+
+			<div class="bq-item" data-item>
+				<div class="bq-item__row">
+					<div class="bq-item__col bq-item__col_lc">
+						<div class="bq-item__pic is-disabled" data-pic>
+							<img src="./pic/gift-3.jpg" alt="" class="bq-item__img">
+						</div>
+					</div>
+					<div class="bq-item__col bq-item__col_rc">
+						<div class="bq-item__head">
+							<span class="bq-item__title">Плюшевый мишка</span>
+							<div class="switcher bq-item__switch">
+								<input type="checkbox" id="switch-3" class="switcher__input" data-activity>
+								<label for="switch-3" class="switcher__label"></label>
+							</div>
+						</div>
+						<span class="bq-item__code">1343423</span>
+						<div class="bq-list">
+							<div class="bq-list__row">
+								<div class="bq-list__lc">
+									<span class="bq-list__text bq-list__title">Уменьшенный</span>
+								</div>
+								<div class="bq-list__num">
+									<span class="bq-list__text">1000</span>
+								</div>
+							</div>
+							<div class="bq-list__row">
+								<div class="bq-list__lc">
+									<span class="bq-list__text bq-list__title">Стандартный</span>
+								</div>
+								<div class="bq-list__num">
+									<span class="bq-list__text">2000</span>
+								</div>
+							</div>
+							<div class="bq-list__row">
+								<div class="bq-list__lc">
+									<span class="bq-list__text bq-list__title">Делюкс</span>
+								</div>
+								<div class="bq-list__num">
+									<span class="bq-list__text">3000</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bq-action">
+					<span class="bq-action__btn btn btn_yellow btn_mini" data-open="change-prices">Изменить цены</span>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="bq__group">
+			<span class="btn btn_green" data-open="create">Добавить свой подарок</span>
+		</div>
+
+		<div class="bq__group is-opened">
+
+			<div class="bq-item" data-item>
+				<div class="bq-item__row">
+					<div class="bq-item__col bq-item__col_lc">
+						<div class="bq-item__pic" data-pic>
+						</div>
+					</div>
+					<div class="bq-item__col bq-item__col_rc">
+						<div class="bq-item__head">
+							<span class="bq-item__title">Коробка конфет</span>
+							<div class="switcher bq-item__switch">
+								<input type="checkbox" id="switch-4" class="switcher__input" checked data-activity>
+								<label for="switch-4" class="switcher__label"></label>
+							</div>
+						</div>
+						<span class="bq-item__code">1343423</span>
+						<div class="bq-list">
+							<div class="bq-list__row">
+								<div class="bq-list__lc">
+									<span class="bq-list__text bq-list__title">Стандартный</span>
+								</div>
+								<div class="bq-list__num">
+									<span class="bq-list__text">1000</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bq-action">
+					<span class="bq-action__btn btn btn_yellow btn_mini" data-open="change-prices">Изменить цены</span>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="bq__group">
+			<span class="btn btn_green">Сохранить</span>
+		</div>
+
+	</div>
+</div>
+
+<div class="fade-bg"></div>
+
+<div class="modal" data-target="photo">
+	<div class="modal__core modal__core_outside modal__core_photo">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="modal-photo">
+			<div class="modal-photo__img" style="background-image: url('./pic/orders-item-b.jpg')"></div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="change-prices">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<div class="alert alert_top alert_green">
+				<svg class="alert__icon">
+					<use xlink:href="./img/sprite.svg#info"></use>
+				</svg>
+				<span class="alert__text">Вы можете изменить стоимость подарка. Помните, что&nbsp;заказы уходят к&nbsp;магазинам, предложившим самую низкую цену!</span>
+			</div>
+			<div class="edit">
+				<div class="edit__group">
+					<div class="edit__elem">
+						<div class="edit-prices">
+							<div class="edit-prices__col edit-prices__col_lc">
+								<span class="edit-prices__title">Уменьшенный</span>
+							</div>
+							<div class="edit-prices__col edit-prices__col_input">
+								<input type="text" class="edit__input" value="1000">
+							</div>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="edit-prices">
+							<div class="edit-prices__col edit-prices__col_lc">
+								<span class="edit-prices__title">Стандартный</span>
+							</div>
+							<div class="edit-prices__col edit-prices__col_input">
+								<input type="text" class="edit__input" value="2000">
+							</div>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="edit-prices">
+							<div class="edit-prices__col edit-prices__col_lc">
+								<span class="edit-prices__title">Делюкс</span>
+							</div>
+							<div class="edit-prices__col edit-prices__col_input">
+								<input type="text" class="edit__input" value="3000">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-action">
+				<span class="btn btn_yellow popup-action__btn">Изменить</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="create">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<div class="alert alert_top alert_green">
+				<svg class="alert__icon">
+					<use xlink:href="./img/sprite.svg#info"></use>
+				</svg>
+				<span class="alert__text">Пожалуйста, введите данные во&nbsp;все&nbsp;поля. От&nbsp;этого будет зависеть коммерческая эффективность вашего букета.</span>
+			</div>
+			<div class="edit">
+				<div class="edit__group">
+					<div class="edit__elem">
+						<input type="text" class="edit__input" placeholder="Название букета">
+					</div>
+					<div class="edit__elem">
+						<input type="text" class="edit__input" placeholder="Цена подарка">
+					</div>
+					<div class="edit__elem">
+						<textarea type="text" rows="3" class="edit__input" placeholder="Описание"></textarea>
+					</div>
+				</div>
+
+				<div class="edit__group">
+					<span class="edit__title">Состав</span>
+					<div class="edit-custom">
+						<div class="edit-custom__col edit-custom__col_title">
+							<input type="text" class="edit__input" placeholder="Название элемента букета">
+						</div>
+						<div class="edit-custom__col edit-custom__col_quantity">
+							<input type="text" class="edit__input edit__input_center" placeholder="Шт">
+						</div>
+					</div>
+					<div class="edit-add" data-add="compose-elem">
+						<svg class="edit-add__icon">
+							<use xlink:href="./img/sprite.svg#plus"></use>
+						</svg>
+						<span class="edit-add__text">Элемент</span>
+					</div>
+				</div>
+
+				<div class="edit__upload">
+					<div class="edit-files">
+						<div class="edit-files__col">
+							<input type="file" id="input-camera" class="is-hidden" accept="image/*;capture=camera">
+							<label for="input-camera" class="edit-files__item">
+								<svg class="edit-files__icon">
+									<use xlink:href="./img/sprite.svg#camera"></use>
+								</svg>
+								<span class="edit-files__text">Сделать фото</span>
+							</label>
+						</div>
+						<div class="edit-files__col">
+							<input type="file" id="input-file" class="is-hidden">
+							<label for="input-file" class="edit-files__item">
+								<svg class="edit-files__icon">
+									<use xlink:href="./img/sprite.svg#photo"></use>
+								</svg>
+								<span class="edit-files__text">Приложить фото</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="uploaded">
+						<div class="uploaded__col">
+							<div class="uploaded__item">
+								<div class="uploaded__pic bg-cover" style="background-image: url('./pic/gift-3.jpg')"></div>
+								<span class="uploaded__remove">
+									<svg>
+										<use xlink:href="./img/sprite.svg#cross"></use>
+									</svg>
+								</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+			<div class="popup-action">
+				<span class="btn btn_green popup-action__btn">Создать</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="is-hidden" data-add-content="compose-base">
+	<div class="edit__elem">
+		<select class="edit__select">
+			<option selected disabled>Основа состава букета</option>
+			<option>Гвоздики</option>
+			<option>Герберы</option>
+			<option>Ирисы</option>
+			<option>Игрушка</option>
+			<option>Коробка</option>
+			<option>Корзина</option>
+			<option>Лилии</option>
+			<option>Орхидеи</option>
+			<option>Пионы</option>
+			<option>Розы</option>
+			<option>Хризантемы</option>
+		</select>
+	</div>
+</div>
+
+<div class="is-hidden" data-add-content="compose-elem">
+	<div class="edit-custom">
+		<div class="edit-custom__col edit-custom__col_title">
+			<input type="text" class="edit__input" placeholder="Название элемента букета">
+		</div>
+		<div class="edit-custom__col edit-custom__col_quantity">
+			<input type="text" class="edit__input edit__input_center" placeholder="Шт">
+		</div>
+	</div>
+</div>
+
+<script src="./js/libs.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>

@@ -52,7 +52,7 @@
 							</div>
 						</div>
 					</a>
-					<div class="orders-item">
+					<div class="orders-item is-opened" data-order>
 						<div class="orders-item__row">
 							<div class="orders-item__col orders-item__lc">
 								<div class="orders-item-photo" data-open="photo">
@@ -66,7 +66,7 @@
 								<span class="orders-item__price">4 900 руб.</span>
 							</div>
 							<div class="orders-item__col orders-item__rc">
-								<svg width="24" height="24" class="orders-item__expand">
+								<svg width="24" height="24" class="orders-item__expand js-order-rollup">
 									<use xlink:href="./img/sprite.svg#expand"></use>
 								</svg>
 								<span class="orders-item__title">Осень на Холсте</span>
@@ -75,7 +75,7 @@
 										<span class="orders-item-links__item" data-open="composition">Состав</span>
 									</div>
 									<div class="orders-item-links__col">
-										<span class="orders-item-links__item">Открытка</span>
+										<span class="orders-item-links__item" data-open="postcard">Открытка</span>
 									</div>
 								</div>
 								<ul class="orders-item__list">
@@ -297,12 +297,12 @@
 						</div>
 					</div>
 					<div class="popup-action">
-						<span class="btn btn_green popup-action__btn" data-open="finish">Отправить</span>
+						<span class="btn btn_green popup-action__btn">Отправить</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal" data-target="finish">
+		<div class="modal" data-target="postcard">
 			<div class="modal__core modal__core_outside">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">

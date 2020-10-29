@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<link href="./css/index.css" rel="stylesheet">
+<body>
+<header class="header">
+	<div class="header-menu">
+		<div class="header-menu__inner">
+			<i></i>
+		</div>
+	</div>
+	<a href="/" class="header__logo">
+		<svg width="154" height="56">
+			<use xlink:href="./img/sprite.svg#logo"></use>
+		</svg>
+	</a>
+</header>
+<div class="wrapper">
+	<div class="msg msg_full">
+		<div class="msg-chat">
+			<div class="msg-chat__inner">
+				<div class="msg__search">
+					<input type="text" class="input-search" placeholder="Поиск">
+				</div>
+				<a href="./messages.html" class="msg-back">
+					<svg class="msg-back__icon">
+						<use xlink:href="./img/sprite.svg#back"></use>
+					</svg>
+					<span class="msg-back__text">ID12345678</span>
+				</a>
+
+				<div class="msg-chat__item msg-chat__item_lc">
+					<div class="msg-item">
+						<div class="msg-item__head">
+							<div class="msg-item__user">
+								<svg class="msg-item__logo">
+									<use xlink:href="./img/sprite.svg#chat-group"></use>
+								</svg>
+								<a href="#" class="msg-item__name">Флорист.ру</a>
+							</div>
+							<span class="msg-item__date">16:12</span>
+						</div>
+						<span class="msg-item__text">Добрый день! В чат добавлен клиент. Объясните, пожалуйста, что происходит с заказом</span>
+					</div>
+				</div>
+				<div class="msg-chat__item msg-chat__item_rc">
+					<div class="msg-item">
+						<div class="msg-item__head">
+							<div class="msg-item__user">
+								<svg class="msg-item__logo">
+									<use xlink:href="./img/sprite.svg#chat-group"></use>
+								</svg>
+								<a href="#" class="msg-item__name">ООО «Цветочный мир»</a>
+							</div>
+							<span class="msg-item__date">16:14</span>
+						</div>
+						<span class="msg-item__text">Добрый день! У нас все плохо. Мы не успеваем его собрать</span>
+					</div>
+				</div>
+				<div class="msg-chat__item msg-chat__item_rc">
+					<div class="msg-item">
+						<div class="msg-item__head">
+							<div class="msg-item__user">
+								<svg class="msg-item__logo">
+									<use xlink:href="./img/sprite.svg#chat-group"></use>
+								</svg>
+								<a href="#" class="msg-item__name">Клиент</a>
+							</div>
+							<span class="msg-item__date">16:16</span>
+						</div>
+						<span class="msg-item__text">Когда крайнее время доставки? Дело в том, что мы ждем букет в гостях.</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="msg-action">
+			<div class="msg-action__file">
+				<svg>
+					<use xlink:href="./img/sprite.svg#file"></use>
+				</svg>
+			</div>
+			<textarea rows="1" class="msg-action__type" placeholder="Напишите сообщение"></textarea>
+			<svg class="msg-action__send">
+				<use xlink:href="./img/sprite.svg#send"></use>
+			</svg>
+		</div>
+	</div>
+
+</div>
+
+<div class="fade-bg"></div>
+
+<script src="./js/libs.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>

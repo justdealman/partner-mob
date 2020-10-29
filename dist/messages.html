@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link href="./css/index.css" rel="stylesheet">
+	<body>
+		<header class="header">
+			<div class="header-menu">
+				<div class="header-menu__inner">
+					<i></i>
+				</div>
+			</div>
+			<a href="/" class="header__logo">
+				<svg width="154" height="56">
+					<use xlink:href="./img/sprite.svg#logo"></use>
+				</svg>
+			</a>
+		</header>
+		<div class="wrapper">
+			<div class="msg">
+				<div class="msg__search">
+					<input type="text" class="input-search" placeholder="Поиск">
+				</div>
+				<div class="msg-list">
+					<a href="./messages-single.html" class="msg-list__item">
+						<div class="msg-list__pic">
+							<svg class="msg-list__icon">
+								<use xlink:href="./img/sprite.svg#chat-single"></use>
+							</svg>
+						</div>
+						<div class="msg-list__head">
+							<span class="msg-list__id">ID12345678</span>
+							<span class="msg-list__date">18:32</span>
+						</div>
+						<div class="msg-list__content">
+							<span class="msg-list__text"><strong>Флорист.ру:</strong> Посмотрите букет, он собран плохо, у клиента жалоба</span>
+							<span class="msg-list__new">2</span>
+						</div>
+					</a>
+					<a href="./messages-single.html" class="msg-list__item">
+						<div class="msg-list__pic">
+							<svg class="msg-list__icon">
+								<use xlink:href="./img/sprite.svg#chat-single"></use>
+							</svg>
+						</div>
+						<div class="msg-list__head">
+							<span class="msg-list__id">ID12345678</span>
+							<span class="msg-list__date">16:12</span>
+						</div>
+						<div class="msg-list__content">
+							<span class="msg-list__text"><strong>Вы:</strong> Хорошо, Гузель, мы исправимся, больше так не будем, честно</span>
+						</div>
+					</a>
+					<a href="./messages-group.html" class="msg-list__item">
+						<div class="msg-list__pic">
+							<svg class="msg-list__icon">
+								<use xlink:href="./img/sprite.svg#chat-group"></use>
+							</svg>
+						</div>
+						<div class="msg-list__head">
+							<span class="msg-list__id">ID23432423</span>
+							<span class="msg-list__date">пн</span>
+						</div>
+						<div class="msg-list__content">
+							<span class="msg-list__text"><strong>Вы:</strong> Курьер опоздал из-за пробок, готовы возместить частично за букет</span>
+						</div>
+					</a>
+					<a href="./messages-group.html" class="msg-list__item">
+						<div class="msg-list__pic">
+							<svg class="msg-list__icon">
+								<use xlink:href="./img/sprite.svg#chat-group"></use>
+							</svg>
+						</div>
+						<div class="msg-list__head">
+							<span class="msg-list__id">ID12345678</span>
+							<span class="msg-list__date">01.01</span>
+						</div>
+						<div class="msg-list__content">
+							<span class="msg-list__text"><strong>Клиент:</strong> Хотел сделать сюрприз супруге, он не получился. Учтите</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="fade-bg"></div>
+		<script src="./js/libs.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>

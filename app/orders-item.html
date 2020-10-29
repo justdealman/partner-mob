@@ -33,7 +33,7 @@
 	<div class="orders orders_single">
 		<div class="orders-filter">
 			<div class="orders-filter__col orders-filter__col_wide">
-				<input type="text" class="orders-filter__search" placeholder="Поиск по ID">
+				<input type="text" class="input-search" placeholder="Поиск по ID">
 			</div>
 			<div class="orders-filter__col">
 				<span class="orders-filter__date">
@@ -52,7 +52,7 @@
 					<span class="orders-preview__date">06.10</span>
 				</div>
 			</a>
-			<div class="orders-item">
+			<div class="orders-item is-opened" data-order>
 				<div class="orders-item__row">
 					<div class="orders-item__col orders-item__lc">
 						<div class="orders-item-photo" data-open="photo">
@@ -68,7 +68,7 @@
 						<span class="orders-item__text"><span>Время</span> 11:00 - 13:00</span>
 					</div>
 					<div class="orders-item__col orders-item__rc">
-						<svg width="24" height="24" class="orders-item__expand">
+						<svg width="24" height="24" class="orders-item__expand js-order-rollup">
 							<use xlink:href="./img/sprite.svg#expand"></use>
 						</svg>
 						<span class="orders-item__title">Осень на Холсте</span>
@@ -77,7 +77,7 @@
 								<span class="orders-item-links__item" data-open="composition">Состав</span>
 							</div>
 							<div class="orders-item-links__col">
-								<span class="orders-item-links__item">Открытка</span>
+								<span class="orders-item-links__item" data-open="postcard">Открытка</span>
 							</div>
 						</div>
 						<ul class="orders-item__list">
@@ -372,6 +372,39 @@
 		</div>
 	</div>
 </div>
+
+<div class="modal" data-target="postcard">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<div class="popup-finish">
+				<svg class="popup-finish__icon">
+					<use xlink:href="./img/sprite.svg#external"></use>
+				</svg>
+				<span class="popup-finish__text">Сайт рыбатекст поможет дизайнеру,
+верстальщику, вебмастеру сгенерировать
+несколько абзацев более менее
+осмысленного текста рыбы на русском
+языке, а начинающему оратору отточить
+навык публичных выступлений в домашних
+условиях. При создании генератора мы
+использовали небезизвестный
+универсальный код речей. Текст
+генерируется абзацами случайным образом
+от двух до десяти предложений в абзаце,
+что позволяет сделать текст более
+привлекательным и живым для
+визуально-слухового восприятия.</span>
+			</div>
+		</div>
+	</div>
+</div>
+
 <script src="./js/libs.js"></script>
 <script src="./js/scripts.js"></script>
 </body>
