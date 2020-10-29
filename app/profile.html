@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ru">
+<title></title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<link href="./css/index.css" rel="stylesheet">
+<body>
+<header class="header">
+	<div class="header-menu">
+		<div class="header-menu__inner">
+			<i></i>
+		</div>
+	</div>
+	<a href="/" class="header__logo">
+		<svg width="154" height="56">
+			<use xlink:href="./img/sprite.svg#logo"></use>
+		</svg>
+	</a>
+</header>
+<div class="wrapper">
+	<div class="lk">
+		<div class="lk__col">
+			<div class="lk-status" data-status>
+				<span class="lk-status__title">Статус</span>
+				<svg class="lk-status__icon" data-status-icon>
+					<use xlink:href="./img/sprite.svg#check"></use>
+				</svg>
+				<span class="lk-status__text" data-enabled="Включен" data-disabled="Выключен" data-status-text>Включен</span>
+				<div class="switcher lk-status__switcher">
+					<input type="checkbox" id="switch-1" class="switcher__input" checked data-status-switcher>
+					<label for="switch-1" class="switcher__label"></label>
+				</div>
+			</div>
+			<div class="lk-list">
+
+				<div class="lk-card">
+					<div class="lk-card__pic"></div>
+					<!--<div class="lk-card__pic" style="background-image: url('./pic/company-logo.jpg')"></div>-->
+					<div class="lk-card__content">
+						<span class="lk-card__title">Салон “Le Fleur”</span>
+						<span class="lk-card__name">ООО “Цветочный мир”</span>
+					</div>
+					<svg class="icon-edit lk-card__edit">
+						<use xlink:href="./img/sprite.svg#edit"></use>
+					</svg>
+				</div>
+
+				<div class="lk-item" data-item>
+					<div class="lk-head">
+						<svg class="lk-head__drop" data-toggle>
+							<use xlink:href="./img/sprite.svg#drop"></use>
+						</svg>
+						<span class="lk-head__title">Описание</span>
+						<svg class="icon-edit lk-head__edit" data-open="edit-about">
+							<use xlink:href="./img/sprite.svg#edit"></use>
+						</svg>
+					</div>
+					<div class="lk-item__drop">
+						<div class="lk-item__inner">
+							<div class="lk-about">
+							<span class="lk-about__text">Салон цветов “Le Fleur” занимается доставкой свежих цветов самого лучшего качества тем людям, которые важны для вас. Мы следим за новинками во флористике и создаем букеты, которые передадут ваши мысли и чувства.<br><br>
+								Все, что вы найдете в нашем каталоге, подобрано с любовью и понравится даже самым капризным особам. Мы обращаем внимание не только на сами цветы, но и на приятный сервис, которым вы останетесь довольны. Нам важно, чтобы адресаты подарков стали чуть счастливее, а наши клиенты остались довольны тем, что подарили им капельку радости.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-item" data-item>
+					<div class="lk-head">
+						<svg class="lk-head__drop" data-toggle>
+							<use xlink:href="./img/sprite.svg#drop"></use>
+						</svg>
+						<span class="lk-head__title">Контакты</span>
+						<svg class="icon-edit lk-head__edit">
+							<use xlink:href="./img/sprite.svg#edit"></use>
+						</svg>
+					</div>
+					<div class="lk-item__drop">
+						<div class="lk-item__inner">
+							<div class="lk-contacts">
+								<div class="lk-contacts__item">
+									<span class="lk-contacts__title">Адрес магазина</span>
+									<span class="lk-contacts__text">630028, г. Новосибирск, ул. Советская, 17-1 630028,</span>
+								</div>
+								<div class="lk-contacts__item">
+									<span class="lk-contacts__title">Почтовый адрес</span>
+									<span class="lk-contacts__text">г. Новосибирск, ул. Советская, 17-1</span>
+								</div>
+								<div class="lk-contacts__item">
+									<span class="lk-contacts__title">Телефон</span>
+									<span class="lk-contacts__text">8 911 111-11-11</span>
+								</div>
+								<div class="lk-contacts__item">
+									<span class="lk-contacts__title">E-mail</span>
+									<span class="lk-contacts__text">info@magazin-tsvetov.ru</span>
+								</div>
+								<div class="lk-contacts__item">
+									<span class="lk-contacts__title">Сайт</span>
+									<span class="lk-contacts__text">www.magazin-tsvetov.ru</span>
+								</div>
+								<div class="lk-contacts__item">
+									<span class="lk-contacts__title">Instagram</span>
+									<span class="lk-contacts__text">/magazintsvetov</span>
+								</div>
+								<div class="lk-contacts__item">
+									<span class="lk-contacts__title">Facebook</span>
+									<span class="lk-contacts__text">/magazin_tsvetov</span>
+								</div>
+								<div class="lk-contacts__item">
+									<span class="lk-contacts__title">Vkontakte</span>
+									<span class="lk-contacts__text">/magazin-tsvetov</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-item" data-item>
+					<div class="lk-head">
+						<svg class="lk-head__drop" data-toggle>
+							<use xlink:href="./img/sprite.svg#drop"></use>
+						</svg>
+						<span class="lk-head__title">Режим работы</span>
+						<svg class="icon-edit lk-head__edit">
+							<use xlink:href="./img/sprite.svg#edit"></use>
+						</svg>
+					</div>
+					<div class="lk-item__drop">
+						<div class="lk-item__inner">
+							<div class="lk-schedule">
+								<div class="lk-schedule__item">
+									<span class="lk-schedule__title">Понедельник</span>
+									<span class="lk-schedule__text">9:00 - 20:00</span>
+								</div>
+								<div class="lk-schedule__item">
+									<span class="lk-schedule__title">Вторник</span>
+									<span class="lk-schedule__text">9:00 - 20:00</span>
+								</div>
+								<div class="lk-schedule__item">
+									<span class="lk-schedule__title">Среда</span>
+									<span class="lk-schedule__text">9:00 - 20:00</span>
+								</div>
+								<div class="lk-schedule__item">
+									<span class="lk-schedule__title">Четверг</span>
+									<span class="lk-schedule__text">9:00 - 20:00</span>
+								</div>
+								<div class="lk-schedule__item">
+									<span class="lk-schedule__title">Пятница</span>
+									<span class="lk-schedule__text">9:00 - 20:00</span>
+								</div>
+								<div class="lk-schedule__item">
+									<span class="lk-schedule__title">Суббота</span>
+									<span class="lk-schedule__text">9:00 - 20:00</span>
+								</div>
+								<div class="lk-schedule__item">
+									<span class="lk-schedule__title">Воскресенье</span>
+									<span class="lk-schedule__text">9:00 - 20:00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-item" data-item>
+					<div class="lk-head">
+						<svg class="lk-head__drop" data-toggle>
+							<use xlink:href="./img/sprite.svg#drop"></use>
+						</svg>
+						<span class="lk-head__title">Руководитель и&nbsp;персонал</span>
+						<svg class="icon-edit lk-head__edit">
+							<use xlink:href="./img/sprite.svg#edit"></use>
+						</svg>
+					</div>
+					<div class="lk-item__drop">
+						<div class="lk-item__inner">
+							<table class="lk-table">
+								<tbody>
+									<tr>
+										<th>Директор</th>
+										<td>
+											<span class="lk-table__title">Яровинская Екатерина Васильевна</span>
+											<span class="lk-table__phone">8 911 111-11-11</span>
+										</td>
+									</tr>
+									<tr>
+										<th>Менеджер</th>
+										<td>
+											<span class="lk-table__title">Тихоновецкая Елена Дмитриевна</span>
+											<span class="lk-table__phone">8 911 111-11-11</span>
+										</td>
+									</tr>
+									<tr>
+										<th>Флорист</th>
+										<td>
+											<span class="lk-table__title">Ильина Диана Витальевна</span>
+											<span class="lk-table__phone">8 911 111-11-11</span>
+										</td>
+									</tr>
+									<tr>
+										<th>Курьер</th>
+										<td>
+											<span class="lk-table__title">Романченко Анатолий Викторович</span>
+											<span class="lk-table__phone">8 911 111-11-11</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-item" data-item>
+					<div class="lk-head">
+						<svg class="lk-head__drop" data-toggle>
+							<use xlink:href="./img/sprite.svg#drop"></use>
+						</svg>
+						<span class="lk-head__title">Банковские реквизиты</span>
+						<svg class="icon-edit lk-head__edit">
+							<use xlink:href="./img/sprite.svg#edit"></use>
+						</svg>
+					</div>
+					<div class="lk-item__drop">
+						<div class="lk-item__inner">
+							<table class="lk-table lk-table_bank">
+								<tbody>
+									<tr>
+										<th>ИНН</th>
+										<td>1234567890</td>
+									</tr>
+									<tr>
+										<th>Расчетный<br> счет</th>
+										<td>12345678902342342342</td>
+									</tr>
+									<tr>
+										<th>Корр. счет</th>
+										<td>12345678902342342342</td>
+									</tr>
+									<tr>
+										<th>КПП</th>
+										<td>1234567890</td>
+									</tr>
+									<tr>
+										<th>ОГРН</th>
+										<td>1234567890</td>
+									</tr>
+									<tr>
+										<th>Банк</th>
+										<td>Филиал АО «Альфа-банк»</td>
+									</tr>
+									<tr>
+										<th>БИК Банка</th>
+										<td>1234567890</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-item" data-item>
+					<div class="lk-head">
+						<svg class="lk-head__drop" data-toggle>
+							<use xlink:href="./img/sprite.svg#drop"></use>
+						</svg>
+						<span class="lk-head__title">Населенные пункты</span>
+						<svg class="icon-edit lk-head__edit">
+							<use xlink:href="./img/sprite.svg#edit"></use>
+						</svg>
+					</div>
+					<div class="lk-item__drop">
+						<div class="lk-item__inner">
+							<table class="lk-table lk-table_delivery">
+								<thead>
+									<tr>
+										<th>Пункт</th>
+										<td>Стоимость доставки, руб</td>
+										<td>Время доставки, ч</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>Ижевск</th>
+										<td>Бесплатно</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<th>Воткинск</th>
+										<td>200</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<th>Можга</th>
+										<td>300</td>
+										<td>1</td>
+									</tr>
+									<tr>
+										<th>Сарапул</th>
+										<td>400</td>
+										<td>3</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-item" data-item>
+					<div class="lk-head">
+						<svg class="lk-head__drop" data-toggle>
+							<use xlink:href="./img/sprite.svg#drop"></use>
+						</svg>
+						<span class="lk-head__title">Условия доставки</span>
+						<svg class="icon-edit lk-head__edit">
+							<use xlink:href="./img/sprite.svg#edit"></use>
+						</svg>
+					</div>
+					<div class="lk-item__drop">
+						<div class="lk-item__inner">
+							<table class="lk-table lk-table_rules">
+								<tbody>
+									<tr>
+										<th>Стоимость доставки по городу фиксированная, руб</th>
+										<td></td>
+										<td>
+											<span class="lk-table__price">100</span>
+										</td>
+									</tr>
+									<tr>
+										<th>Стоимость доставки по городу за км, руб </th>
+										<td>
+											<svg class="icon-tip" data-tip-open="rules">
+												<use xlink:href="./img/sprite.svg#tip"></use>
+											</svg>
+										</td>
+										<td>
+											<span class="lk-table__price is-disabled">19</span>
+										</td>
+									</tr>
+									<tr>
+										<th>Минимальная стоимость доставки, руб</th>
+										<td>
+											<svg class="icon-tip" data-tip-open="rules">
+												<use xlink:href="./img/sprite.svg#tip"></use>
+											</svg>
+										</td>
+										<td>
+											<span class="lk-table__price is-disabled">21</span>
+										</td>
+									</tr>
+									<tr>
+										<th>Стоимость доставки за город за км, руб </th>
+										<td>
+											<svg class="icon-tip" data-tip-open="rules">
+												<use xlink:href="./img/sprite.svg#tip"></use>
+											</svg>
+										</td>
+										<td>
+											<span class="lk-table__price is-disabled">8</span>
+										</td>
+									</tr>
+									<tr>
+										<th>Ограничения по доставке от города, км</th>
+										<td>
+											<svg class="icon-tip" data-tip-open="rules">
+												<use xlink:href="./img/sprite.svg#tip"></use>
+											</svg>
+										</td>
+										<td>
+											<span class="lk-table__price is-disabled">9</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="edit-tip lk__tip" data-tip-target="rules">
+								<div class="edit-tip__close" data-tip-close>
+									<svg>
+										<use xlink:href="./img/sprite.svg#close-sm"></use>
+									</svg>
+								</div>
+								<span class="edit-tip__text">Категории будут влиять на&nbsp;выдачу букетов в&nbsp;соответствующих фильтрах на&nbsp;сайте.</span>
+								<span class="edit-tip__text">Чем&nbsp;больше Вы&nbsp;укажете, тем&nbsp;больше вероятность продажи букета.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="lk__col">
+
+			<div class="lk-stats">
+				<span class="lk-stats__title">Статистика за все время</span>
+
+				<div class="lk-stats__item">
+					<div class="lk-stats__row">
+						<div class="lk-stats__col lk-stats__col_lc">
+							<span class="lk-stats__text lk-stats__text_status lk-stats__text_yellow">Принятые заказы</span>
+						</div>
+						<div class="lk-stats__col lk-stats__col_rc">
+							<span class="lk-stats__text">1462</span>
+						</div>
+					</div>
+					<div class="lk-stats__row">
+						<div class="lk-stats__col lk-stats__col_lc">
+							<span class="lk-stats__subtext">Сумма принятых заказов, руб</span>
+						</div>
+						<div class="lk-stats__col lk-stats__col_rc">
+							<span class="lk-stats__text">123 231 231</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-stats__item">
+					<div class="lk-stats__row">
+						<div class="lk-stats__col lk-stats__col_lc">
+							<span class="lk-stats__text lk-stats__text_status lk-stats__text_green">Исполненные</span>
+						</div>
+						<div class="lk-stats__col lk-stats__col_rc">
+							<span class="lk-stats__text">1459</span>
+						</div>
+					</div>
+					<div class="lk-stats__row">
+						<div class="lk-stats__col lk-stats__col_lc">
+							<span class="lk-stats__subtext">Сумма исп. заказов, руб</span>
+						</div>
+						<div class="lk-stats__col lk-stats__col_rc">
+							<span class="lk-stats__text">123 231 231</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="lk-stats__item">
+					<div class="lk-stats__row">
+						<div class="lk-stats__col lk-stats__col_lc">
+							<span class="lk-stats__text lk-stats__text_status lk-stats__text_orange">Непринятые</span>
+						</div>
+						<div class="lk-stats__col lk-stats__col_rc">
+							<span class="lk-stats__text">3</span>
+						</div>
+					</div>
+					<div class="lk-stats__row">
+						<div class="lk-stats__col lk-stats__col_lc">
+							<span class="lk-stats__subtext">Сумма непринятых заказов, руб</span>
+						</div>
+						<div class="lk-stats__col lk-stats__col_rc">
+							<span class="lk-stats__text">123 231 231</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="fade-bg"></div>
+
+<div class="modal" data-target="edit-about">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<div class="popup-edit">
+				<span class="popup-edit__title">Описание</span>
+				<textarea class="popup-edit__area">Салон цветов “Le Fleur” занимается доставкой свежих цветов самого лучшего качества тем людям, которые важны для вас. Мы следим за новинками во флористике и создаем букеты, которые передадут ваши мысли и чувства. Все, что вы найдете в нашем каталоге, подобрано с любовью и понравится даже самым капризным особам. Мы обращаем внимание не только на сами цветы, но и на приятный сервис, которым вы останетесь довольны. Нам важно, чтобы адресаты подарков стали чуть счастливее, а наши клиенты остались довольны тем, </textarea>
+			</div>
+			<div class="popup-action">
+				<span class="btn btn_yellow popup-action__btn">Изменить</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="./js/libs.js"></script>
+<script src="./js/scripts.js"></script>
+</body>
+</html>

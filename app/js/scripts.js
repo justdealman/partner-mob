@@ -161,4 +161,28 @@
             pic.addClass('is-disabled');
         }
     });
+
+    $(document).on('change', '[data-status-switcher]', function() {
+        var t = $(this);
+        var item = t.parents('[data-status]');
+        var icon = item.find('[data-status-icon]');
+        var text = item.find('[data-status-text]');
+        if ( t.prop('checked') ) {
+            icon.removeClass('is-disabled');
+            text.removeClass('is-disabled').text(text.attr('data-enabled'));
+        } else {
+            icon.addClass('is-disabled');
+            text.addClass('is-disabled').text(text.attr('data-disabled'));
+        }
+    });
+
+    $(document).on('click', '[data-toggle]', function() {
+        var t = $(this);
+        var item = t.parents('[data-item]');
+        if ( !item.hasClass('is-opened') ) {
+            item.addClass('is-opened');
+        } else {
+            item.removeClass('is-opened');
+        }
+    });
 });
