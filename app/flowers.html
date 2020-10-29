@@ -6,7 +6,7 @@
 <link href="./css/index.css" rel="stylesheet">
 <body>
 <header class="header">
-	<div class="header-menu">
+	<div class="header-menu" data-open="nav">
 		<div class="header-menu__inner">
 			<i></i>
 		</div>
@@ -260,6 +260,104 @@
 
 <div class="fade-bg"></div>
 
+<div class="modal" data-target="nav">
+	<div class="modal__core modal__core_top">
+		<div class="modal-nav">
+			<div class="modal-nav__close" data-modal-close>
+				<svg>
+					<use xlink:href="./img/sprite.svg#cross"></use>
+				</svg>
+			</div>
+			<div class="nav">
+				<div class="nav__group">
+					<a href="./messages.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Сообщения</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(32)</span>
+						</div>
+					</a>
+				</div>
+				<div class="nav__group">
+					<a href="./orders-accept.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Принять заказы</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(7)</span>
+						</div>
+					</a>
+					<a href="./orders-today.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Доставить сегодня</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(3)</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Доставить завтра</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(5)</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Доставить еще позже</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(5)</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Доставленные заказы</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">12</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Просроченные заказы</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_red">1</span>
+						</div>
+					</a>
+				</div>
+				<div class="nav__group">
+					<a href="./flowers.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Управление букетами</span>
+						</div>
+					</a>
+					<a href="./gifts.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Управление подарками</span>
+						</div>
+					</a>
+				</div>
+				<div class="nav__group">
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Поддержка</span>
+						</div>
+					</a>
+					<a href="./profile.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Настройки</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="modal" data-target="photo">
 	<div class="modal__core modal__core_outside modal__core_photo">
 		<div class="modal-close" data-modal-close>
@@ -390,7 +488,9 @@
 								<span class="edit-prices__title">Уменьшенный</span>
 							</div>
 							<div class="edit-prices__col edit-prices__col_input">
-								<input type="text" class="edit__input" value="1000">
+								<div class="form__item">
+									<input type="text" class="form__input" value="1000">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -400,7 +500,9 @@
 								<span class="edit-prices__title">Стандартный</span>
 							</div>
 							<div class="edit-prices__col edit-prices__col_input">
-								<input type="text" class="edit__input" value="2000">
+								<div class="form__item">
+									<input type="text" class="form__input" value="2000">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -410,7 +512,9 @@
 								<span class="edit-prices__title">Делюкс</span>
 							</div>
 							<div class="edit-prices__col edit-prices__col_input">
-								<input type="text" class="edit__input" value="3000">
+								<div class="form__item">
+									<input type="text" class="form__input" value="3000">
+								</div>
 							</div>
 						</div>
 					</div>
@@ -441,13 +545,22 @@
 			<div class="edit">
 				<div class="edit__group">
 					<div class="edit__elem">
-						<input type="text" class="edit__input" placeholder="Название букета">
+						<div class="form__item">
+							<input type="text" class="form__input js-input">
+							<label class="form__label js-label">Название букета</label>
+						</div>
 					</div>
 					<div class="edit__elem">
-						<input type="text" class="edit__input" placeholder="Цена букета">
+						<div class="form__item">
+							<input type="text" class="form__input js-input">
+							<label class="form__label js-label">Цена букета</label>
+						</div>
 					</div>
 					<div class="edit__elem">
-						<textarea type="text" rows="3" class="edit__input" placeholder="Описание"></textarea>
+						<div class="form__item">
+							<textarea type="text" rows="3" class="form__textarea js-input js-autoresize"></textarea>
+							<label class="form__label js-label">Описание</label>
+						</div>
 					</div>
 				</div>
 
@@ -468,87 +581,105 @@
 						<span class="edit-tip__text">Чем&nbsp;больше Вы&nbsp;укажете, тем&nbsp;больше вероятность продажи букета.</span>
 					</div>
 					<div class="edit__elem">
-						<select class="edit__select">
-							<option selected disabled>Кому букет</option>
-							<option>Женщине</option>
-							<option>Мужчине</option>
-							<option>Ребенку</option>
-							<option>Семье</option>
-							<option>Коллективу</option>
-						</select>
+						<div class="form__item">
+							<select class="form__select js-input">
+								<option selected disabled></option>
+								<option>Женщине</option>
+								<option>Мужчине</option>
+								<option>Ребенку</option>
+								<option>Семье</option>
+								<option>Коллективу</option>
+							</select>
+							<label class="form__label js-label">Кому букет</label>
+						</div>
 					</div>
 					<div class="edit__elem">
-						<select class="edit__select">
-							<option selected disabled>По какому поводу</option>
-							<option>С днем рождения</option>
-							<option>Люблю</option>
-							<option>Прости</option>
-							<option>Спасибо</option>
-							<option>Успехов</option>
-							<option>Выздоравливай</option>
-						</select>
+						<div class="form__item">
+							<select class="form__select js-input">
+								<option selected disabled></option>
+								<option>С днем рождения</option>
+								<option>Люблю</option>
+								<option>Прости</option>
+								<option>Спасибо</option>
+								<option>Успехов</option>
+								<option>Выздоравливай</option>
+							</select>
+							<label class="form__label js-label">По какому поводу</label>
+						</div>
 					</div>
 					<div class="edit__elem">
-						<select class="edit__select">
-							<option selected disabled>Гамма букета</option>
-							<option>Нежная</option>
-							<option>Яркая</option>
-							<option>Красная</option>
-							<option>Розовая</option>
-							<option>Желтая</option>
-							<option>Оранжевая</option>
-							<option>Бордовая</option>
-							<option>Синяя</option>
-							<option>Белая</option>
-						</select>
+						<div class="form__item">
+							<select class="form__select js-input">
+								<option selected disabled></option>
+								<option>Нежная</option>
+								<option>Яркая</option>
+								<option>Красная</option>
+								<option>Розовая</option>
+								<option>Желтая</option>
+								<option>Оранжевая</option>
+								<option>Бордовая</option>
+								<option>Синяя</option>
+								<option>Белая</option>
+							</select>
+							<label class="form__label js-label">Гамма букета</label>
+						</div>
 					</div>
 					<div class="edit__elem">
-						<select class="edit__select">
-							<option selected disabled>Основа состава букета</option>
-							<option>Гвоздики</option>
-							<option>Герберы</option>
-							<option>Ирисы</option>
-							<option>Игрушка</option>
-							<option>Коробка</option>
-							<option>Корзина</option>
-							<option>Лилии</option>
-							<option>Орхидеи</option>
-							<option>Пионы</option>
-							<option>Розы</option>
-							<option>Хризантемы</option>
-						</select>
+						<div class="form__item">
+							<select class="form__select js-input">
+								<option selected disabled></option>
+								<option>Гвоздики</option>
+								<option>Герберы</option>
+								<option>Ирисы</option>
+								<option>Игрушка</option>
+								<option>Коробка</option>
+								<option>Корзина</option>
+								<option>Лилии</option>
+								<option>Орхидеи</option>
+								<option>Пионы</option>
+								<option>Розы</option>
+								<option>Хризантемы</option>
+							</select>
+							<label class="form__label js-label">Основа состава букета</label>
+						</div>
 					</div>
 					<div class="edit__elem">
-						<select class="edit__select">
-							<option selected disabled>Основа состава букета</option>
-							<option>Гвоздики</option>
-							<option>Герберы</option>
-							<option>Ирисы</option>
-							<option>Игрушка</option>
-							<option>Коробка</option>
-							<option>Корзина</option>
-							<option>Лилии</option>
-							<option>Орхидеи</option>
-							<option>Пионы</option>
-							<option>Розы</option>
-							<option>Хризантемы</option>
-						</select>
+						<div class="form__item">
+							<select class="form__select js-input">
+								<option selected disabled></option>
+								<option>Гвоздики</option>
+								<option>Герберы</option>
+								<option>Ирисы</option>
+								<option>Игрушка</option>
+								<option>Коробка</option>
+								<option>Корзина</option>
+								<option>Лилии</option>
+								<option>Орхидеи</option>
+								<option>Пионы</option>
+								<option>Розы</option>
+								<option>Хризантемы</option>
+							</select>
+							<label class="form__label js-label">Основа состава букета</label>
+						</div>
 					</div>
 					<div class="edit__elem">
-						<select class="edit__select">
-							<option selected disabled>Основа состава букета</option>
-							<option>Гвоздики</option>
-							<option>Герберы</option>
-							<option>Ирисы</option>
-							<option>Игрушка</option>
-							<option>Коробка</option>
-							<option>Корзина</option>
-							<option>Лилии</option>
-							<option>Орхидеи</option>
-							<option>Пионы</option>
-							<option>Розы</option>
-							<option>Хризантемы</option>
-						</select>
+						<div class="form__item">
+							<select class="form__select js-input">
+								<option selected disabled></option>
+								<option>Гвоздики</option>
+								<option>Герберы</option>
+								<option>Ирисы</option>
+								<option>Игрушка</option>
+								<option>Коробка</option>
+								<option>Корзина</option>
+								<option>Лилии</option>
+								<option>Орхидеи</option>
+								<option>Пионы</option>
+								<option>Розы</option>
+								<option>Хризантемы</option>
+							</select>
+							<label class="form__label js-label">Основа состава букета</label>
+						</div>
 					</div>
 					<div class="edit-add" data-add="compose-base">
 						<svg class="edit-add__icon">
@@ -562,15 +693,24 @@
 					<span class="edit__title">Сборка букета</span>
 					<div class="edit-custom">
 						<div class="edit-custom__col edit-custom__col_time">
-							<input type="text" class="edit__input" placeholder="Время сборки, мин">
+							<div class="form__item">
+								<input type="text" class="form__input js-input">
+								<label class="form__label js-label">Время сборки, мин</label>
+							</div>
 						</div>
 					</div>
 					<div class="edit-custom">
 						<div class="edit-custom__col edit-custom__col_width">
-							<input type="text" class="edit__input" placeholder="Высота, см">
+							<div class="form__item">
+								<input type="text" class="form__input js-input">
+								<label class="form__label js-label">Высота, см</label>
+							</div>
 						</div>
 						<div class="edit-custom__col edit-custom__col_height">
-							<input type="text" class="edit__input" placeholder="Ширина, см">
+							<div class="form__item">
+								<input type="text" class="form__input js-input">
+								<label class="form__label js-label">Ширина, см</label>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -579,18 +719,28 @@
 					<span class="edit__title">Состав</span>
 					<div class="edit-custom">
 						<div class="edit-custom__col edit-custom__col_title">
-							<input type="text" class="edit__input" placeholder="Название элемента букета">
+							<div class="form__item">
+								<input type="text" class="form__input js-input">
+								<label class="form__label js-label">Название элемента букета</label>
+							</div>
 						</div>
 						<div class="edit-custom__col edit-custom__col_quantity">
-							<input type="text" class="edit__input edit__input_center" placeholder="Шт">
+							<div class="form__item">
+								<input type="text" class="form__input form__input_center" placeholder="Шт">
+							</div>
 						</div>
 					</div>
 					<div class="edit-custom">
 						<div class="edit-custom__col edit-custom__col_title">
-							<input type="text" class="edit__input" placeholder="Название элемента букета">
+							<div class="form__item">
+								<input type="text" class="form__input js-input">
+								<label class="form__label js-label">Название элемента букета</label>
+							</div>
 						</div>
 						<div class="edit-custom__col edit-custom__col_quantity">
-							<input type="text" class="edit__input edit__input_center" placeholder="Шт">
+							<div class="form__item">
+								<input type="text" class="form__input form__input_center" placeholder="Шт">
+							</div>
 						</div>
 					</div>
 					<div class="edit-add" data-add="compose-elem">
@@ -670,30 +820,38 @@
 
 <div class="is-hidden" data-add-content="compose-base">
 	<div class="edit__elem">
-		<select class="edit__select">
-			<option selected disabled>Основа состава букета</option>
-			<option>Гвоздики</option>
-			<option>Герберы</option>
-			<option>Ирисы</option>
-			<option>Игрушка</option>
-			<option>Коробка</option>
-			<option>Корзина</option>
-			<option>Лилии</option>
-			<option>Орхидеи</option>
-			<option>Пионы</option>
-			<option>Розы</option>
-			<option>Хризантемы</option>
-		</select>
+		<div class="form__item">
+			<select class="form__select js-input">
+				<option selected disabled></option>
+				<option>Гвоздики</option>
+				<option>Герберы</option>
+				<option>Ирисы</option>
+				<option>Игрушка</option>
+				<option>Коробка</option>
+				<option>Корзина</option>
+				<option>Лилии</option>
+				<option>Орхидеи</option>
+				<option>Пионы</option>
+				<option>Розы</option>
+				<option>Хризантемы</option>
+			</select>
+			<label class="form__label js-label">Основа состава букета</label>
+		</div>
 	</div>
 </div>
 
 <div class="is-hidden" data-add-content="compose-elem">
 	<div class="edit-custom">
 		<div class="edit-custom__col edit-custom__col_title">
-			<input type="text" class="edit__input" placeholder="Название элемента букета">
+			<div class="form__item">
+				<input type="text" class="form__input js-input">
+				<label class="form__label js-label">Название элемента букета</label>
+			</div>
 		</div>
 		<div class="edit-custom__col edit-custom__col_quantity">
-			<input type="text" class="edit__input edit__input_center" placeholder="Шт">
+			<div class="form__item">
+				<input type="text" class="form__input form__input_center" placeholder="Шт">
+			</div>
 		</div>
 	</div>
 </div>

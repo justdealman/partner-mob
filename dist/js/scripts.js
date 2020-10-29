@@ -185,4 +185,55 @@ $(function() {
             item.removeClass('is-opened');
         }
     });
+
+    function initLabel(input) {
+        var label = input.next('.js-label');
+        label.addClass('is-loaded');
+        if ( input.val() !== '' && input.val() !== null  ) {
+            label.addClass('is-active');
+        }
+    }
+
+    $('.js-input').each(function() {
+        initLabel($(this));
+    });
+
+    $(document).on('focus', '.js-input', function() {
+        var t = $(this);
+        var label = t.next('.js-label');
+        label.addClass('is-active');
+    });
+
+    $(document).on('blur', '.js-input', function() {
+        var t = $(this);
+        var label = t.next('.js-label');
+        if ( t.val() === '' || t.val() === null ) {
+            label.removeClass('is-active');
+        }
+    });
+
+    function areaResize(textarea) {
+        textarea.height(0);
+        var h = textarea[0].scrollHeight - (parseInt(textarea.css('padding-top')) + parseInt(textarea.css('padding-bottom')));
+        textarea.height(h);
+    }
+
+    $('.js-autoresize').each(function() {
+        areaResize($(this));
+    });
+
+    $(document).on('input change keyup', '.js-autoresize', function() {
+        areaResize($(this));
+    });
+
+    $(document).on('input change keyup', '[data-usertext]', function() {
+        var t = $(this);
+        var form = t.parents('[data-input]');
+        var btn = form.find('[data-send]');
+        if ( t.val() !== '' ) {
+            btn.removeClass('is-disabled');
+        } else {
+            btn.addClass('is-disabled');
+        }
+    });
 });

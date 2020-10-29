@@ -791,11 +791,11 @@ button {
 	&__title {
 		display: block;
 		font-size: 18px;
-		line-height: 25px;
+		line-height: 23px;
 		font-weight: bold;
 		letter-spacing: .02em;
 		text-align: center;
-		padding: 16px 16px 14px;
+		padding: 17px 16px 15px;
 		border-bottom: 2px solid #f5f5f5;
 	}
 
@@ -930,42 +930,97 @@ button {
 			margin-bottom: 16px;
 		}
 	}
+}
 
-	&-edit {
-		padding: 15px 16px 8px;
-		border-bottom: 2px solid #f5f5f5;
+.form {
+	&__item {
+		position: relative;
+	}
 
-		&__title {
-			display: block;
-			font-size: 16px;
-			line-height: 22px;
-			font-weight: bold;
-			letter-spacing: .02em;
-			margin-bottom: 10px;
+	&__input,
+	&__textarea,
+	&__select {
+		position: relative;
+		width: 100%;
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: .02em;
+		border: 1px solid #DADADA;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+
+		&_center {
+			text-align: center;
 		}
 
-		&__input,
-		&__area {
-			overflow-y: auto;
-			width: 100%;
-			font-size: 15px;
-			line-height: 21px;
-			letter-spacing: .02em;
-			padding: 10px 15px;
-			margin-bottom: 8px;
-			border: 1px solid #DADADA;
-			-webkit-border-radius: 5px;
-			border-radius: 5px;
+		&:focus {
+			border-color: @colorBase;
 
-			&:focus {
-				border-color: @colorBase;
+			.form__label {
+				color: @colorBase;
 			}
 		}
 
-		&__area {
-			min-height: 387px;
-			max-height: 387px;
-			resize: vertical;
+		&:disabled {
+			opacity: .5;
+		}
+	}
+
+	&__input,
+	&__textarea {
+		padding: 10px 15px 9px;
+
+		&_center {
+			padding-left: 9px;
+			padding-right: 9px;
+		}
+	}
+
+	&__select {
+		padding: 9px 11px 8px;
+
+		option:disabled {
+			display: none;
+		}
+	}
+
+	&__textarea {
+		min-height: 78px;
+		max-height: 382px;
+		resize: vertical;
+	}
+
+	&__label {
+		position: absolute;
+		left: 8px;
+		top: 11px;
+		z-index: 5;
+		color: #BFBFBF;
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: .02em;
+		padding: 0 8px;
+		-webkit-transform-origin: 0 0;
+		transform-origin: 0 0;
+		pointer-events: none;
+		visibility: hidden;
+		-webkit-border-radius: 8px;
+		border-radius: 8px;
+
+		&.is-loaded {
+			/*-webkit-transition: all .2s linear;
+			transition: all .2s linear;*/
+			visibility: visible;
+		}
+
+		&.is-active {
+			position: absolute;
+			left: 10px;
+			top: -6px;
+			color: fade(@colorBase, 50%);
+			-webkit-transform: scale(.75);
+			transform: scale(.75);
+			background-color: #ffffff;
 		}
 	}
 }

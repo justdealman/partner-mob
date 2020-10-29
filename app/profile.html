@@ -6,7 +6,7 @@
 <link href="./css/index.css" rel="stylesheet">
 <body>
 <header class="header">
-	<div class="header-menu">
+	<div class="header-menu" data-open="nav">
 		<div class="header-menu__inner">
 			<i></i>
 		</div>
@@ -40,17 +40,19 @@
 						<span class="lk-card__title">Салон “Le Fleur”</span>
 						<span class="lk-card__name">ООО “Цветочный мир”</span>
 					</div>
-					<svg class="icon-edit lk-card__edit">
+					<svg class="icon-edit lk-card__edit" data-open="edit-main">
 						<use xlink:href="./img/sprite.svg#edit"></use>
 					</svg>
 				</div>
 
 				<div class="lk-item" data-item>
 					<div class="lk-head">
-						<svg class="lk-head__drop" data-toggle>
-							<use xlink:href="./img/sprite.svg#drop"></use>
-						</svg>
-						<span class="lk-head__title">Описание</span>
+						<div class="lk-head__col" data-toggle>
+							<svg class="lk-head__drop">
+								<use xlink:href="./img/sprite.svg#drop"></use>
+							</svg>
+							<span class="lk-head__title">Описание</span>
+						</div>
 						<svg class="icon-edit lk-head__edit" data-open="edit-about">
 							<use xlink:href="./img/sprite.svg#edit"></use>
 						</svg>
@@ -67,11 +69,13 @@
 
 				<div class="lk-item" data-item>
 					<div class="lk-head">
-						<svg class="lk-head__drop" data-toggle>
-							<use xlink:href="./img/sprite.svg#drop"></use>
-						</svg>
-						<span class="lk-head__title">Контакты</span>
-						<svg class="icon-edit lk-head__edit">
+						<div class="lk-head__col" data-toggle>
+							<svg class="lk-head__drop">
+								<use xlink:href="./img/sprite.svg#drop"></use>
+							</svg>
+							<span class="lk-head__title">Контакты</span>
+						</div>
+						<svg class="icon-edit lk-head__edit" data-open="edit-contacts">
 							<use xlink:href="./img/sprite.svg#edit"></use>
 						</svg>
 					</div>
@@ -117,11 +121,13 @@
 
 				<div class="lk-item" data-item>
 					<div class="lk-head">
-						<svg class="lk-head__drop" data-toggle>
-							<use xlink:href="./img/sprite.svg#drop"></use>
-						</svg>
-						<span class="lk-head__title">Режим работы</span>
-						<svg class="icon-edit lk-head__edit">
+						<div class="lk-head__col" data-toggle>
+							<svg class="lk-head__drop">
+								<use xlink:href="./img/sprite.svg#drop"></use>
+							</svg>
+							<span class="lk-head__title">Режим работы</span>
+						</div>
+						<svg class="icon-edit lk-head__edit" data-open="edit-schedule">
 							<use xlink:href="./img/sprite.svg#edit"></use>
 						</svg>
 					</div>
@@ -163,11 +169,13 @@
 
 				<div class="lk-item" data-item>
 					<div class="lk-head">
-						<svg class="lk-head__drop" data-toggle>
-							<use xlink:href="./img/sprite.svg#drop"></use>
-						</svg>
-						<span class="lk-head__title">Руководитель и&nbsp;персонал</span>
-						<svg class="icon-edit lk-head__edit">
+						<div class="lk-head__col" data-toggle>
+							<svg class="lk-head__drop">
+								<use xlink:href="./img/sprite.svg#drop"></use>
+							</svg>
+							<span class="lk-head__title">Руководитель и&nbsp;персонал</span>
+						</div>
+						<svg class="icon-edit lk-head__edit" data-open="edit-team">
 							<use xlink:href="./img/sprite.svg#edit"></use>
 						</svg>
 					</div>
@@ -211,11 +219,13 @@
 
 				<div class="lk-item" data-item>
 					<div class="lk-head">
-						<svg class="lk-head__drop" data-toggle>
-							<use xlink:href="./img/sprite.svg#drop"></use>
-						</svg>
-						<span class="lk-head__title">Банковские реквизиты</span>
-						<svg class="icon-edit lk-head__edit">
+						<div class="lk-head__col" data-toggle>
+							<svg class="lk-head__drop">
+								<use xlink:href="./img/sprite.svg#drop"></use>
+							</svg>
+							<span class="lk-head__title">Банковские реквизиты</span>
+						</div>
+						<svg class="icon-edit lk-head__edit" data-open="edit-bank">
 							<use xlink:href="./img/sprite.svg#edit"></use>
 						</svg>
 					</div>
@@ -259,11 +269,13 @@
 
 				<div class="lk-item" data-item>
 					<div class="lk-head">
-						<svg class="lk-head__drop" data-toggle>
-							<use xlink:href="./img/sprite.svg#drop"></use>
-						</svg>
-						<span class="lk-head__title">Населенные пункты</span>
-						<svg class="icon-edit lk-head__edit">
+						<div class="lk-head__col" data-toggle>
+							<svg class="lk-head__drop">
+								<use xlink:href="./img/sprite.svg#drop"></use>
+							</svg>
+							<span class="lk-head__title">Населенные пункты</span>
+						</div>
+						<svg class="icon-edit lk-head__edit" data-open="edit-delivery">
 							<use xlink:href="./img/sprite.svg#edit"></use>
 						</svg>
 					</div>
@@ -306,11 +318,13 @@
 
 				<div class="lk-item" data-item>
 					<div class="lk-head">
-						<svg class="lk-head__drop" data-toggle>
-							<use xlink:href="./img/sprite.svg#drop"></use>
-						</svg>
-						<span class="lk-head__title">Условия доставки</span>
-						<svg class="icon-edit lk-head__edit">
+						<div class="lk-head__col" data-toggle>
+							<svg class="lk-head__drop">
+								<use xlink:href="./img/sprite.svg#drop"></use>
+							</svg>
+							<span class="lk-head__title">Условия доставки</span>
+						</div>
+						<svg class="icon-edit lk-head__edit" data-open="edit-rules">
 							<use xlink:href="./img/sprite.svg#edit"></use>
 						</svg>
 					</div>
@@ -456,6 +470,166 @@
 
 <div class="fade-bg"></div>
 
+<div class="modal" data-target="nav">
+	<div class="modal__core modal__core_top">
+		<div class="modal-nav">
+			<div class="modal-nav__close" data-modal-close>
+				<svg>
+					<use xlink:href="./img/sprite.svg#cross"></use>
+				</svg>
+			</div>
+			<div class="nav">
+				<div class="nav__group">
+					<a href="./messages.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Сообщения</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(32)</span>
+						</div>
+					</a>
+				</div>
+				<div class="nav__group">
+					<a href="./orders-accept.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Принять заказы</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(7)</span>
+						</div>
+					</a>
+					<a href="./orders-today.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Доставить сегодня</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(3)</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Доставить завтра</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(5)</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Доставить еще позже</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">(5)</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Доставленные заказы</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_green">12</span>
+						</div>
+					</a>
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Просроченные заказы</span>
+						</div>
+						<div class="nav-item__rc">
+							<span class="nav-item__text nav-item__count nav-item__count_red">1</span>
+						</div>
+					</a>
+				</div>
+				<div class="nav__group">
+					<a href="./flowers.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Управление букетами</span>
+						</div>
+					</a>
+					<a href="./gifts.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Управление подарками</span>
+						</div>
+					</a>
+				</div>
+				<div class="nav__group">
+					<a href="#" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Поддержка</span>
+						</div>
+					</a>
+					<a href="./profile.html" class="nav-item">
+						<div class="nav-item__lc">
+							<span class="nav-item__text nav-item__title">Настройки</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="edit-main">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<span class="popup__title">Редактирование салона</span>
+			<div class="edit">
+				<div class="edit__group">
+					<div class="edit__elem">
+						<div class="form__item">
+							<input type="text" class="form__input js-input" value="Салон “Le Fleur”">
+							<label class="form__label js-label">Название салона</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input type="text" class="form__input js-input" value="ООО “Цветочный мир”">
+							<label class="form__label js-label">Юридическое наименование</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="edit__upload edit__upload_standart">
+					<span class="edit__title">Логотип</span>
+
+					<div class="edit-files">
+						<div class="edit-files__col">
+							<input type="file" id="input-file" class="is-hidden">
+							<label for="input-file" class="edit-files__item">
+								<svg class="edit-files__icon">
+									<use xlink:href="./img/sprite.svg#photo"></use>
+								</svg>
+								<span class="edit-files__text">Приложить логотип</span>
+							</label>
+						</div>
+					</div>
+
+					<div class="uploaded uploaded_center">
+						<div class="uploaded__col">
+							<div class="uploaded__item">
+								<div class="uploaded__pic bg-cover" style="background-image: url('./pic/gift-3.jpg')"></div>
+								<span class="uploaded__remove">
+									<svg>
+										<use xlink:href="./img/sprite.svg#cross"></use>
+									</svg>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-action">
+				<span class="btn btn_green popup-action__btn">Изменить</span>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="modal" data-target="edit-about">
 	<div class="modal__core modal__core_outside">
 		<div class="modal-close" data-modal-close>
@@ -465,12 +639,1132 @@
 			<span class="modal-close__text">Закрыть</span>
 		</div>
 		<div class="popup">
-			<div class="popup-edit">
-				<span class="popup-edit__title">Описание</span>
-				<textarea class="popup-edit__area">Салон цветов “Le Fleur” занимается доставкой свежих цветов самого лучшего качества тем людям, которые важны для вас. Мы следим за новинками во флористике и создаем букеты, которые передадут ваши мысли и чувства. Все, что вы найдете в нашем каталоге, подобрано с любовью и понравится даже самым капризным особам. Мы обращаем внимание не только на сами цветы, но и на приятный сервис, которым вы останетесь довольны. Нам важно, чтобы адресаты подарков стали чуть счастливее, а наши клиенты остались довольны тем, </textarea>
+			<span class="popup__title">Редактирование описания</span>
+			<div class="edit">
+				<div class="edit__group">
+					<div class="edit__elem">
+						<div class="form__item">
+							<textarea class="form__textarea js-input js-autoresize">Салон цветов “Le Fleur” занимается доставкой свежих цветов самого лучшего качества тем людям, которые важны для вас. Мы следим за новинками во флористике и создаем букеты, которые передадут ваши мысли и чувства. Все, что вы найдете в нашем каталоге, подобрано с любовью и понравится даже самым капризным особам. Мы обращаем внимание не только на сами цветы, но и на приятный сервис, которым вы останетесь довольны. Нам важно, чтобы адресаты подарков стали чуть счастливее, а наши клиенты остались довольны тем, что подарили им капельку радости. Салон цветов “Le Fleur” занимается доставкой свежих цветов самого лучшего качества тем людям, которые важны для вас. Мы следим за новинками во флористике и создаем букеты, которые передадут ваши мысли и чувства. Все, что вы найдете в нашем каталоге, подобрано с любовью и понравится даже самым капризным особам. Мы обращаем внимание не только на сами цветы, но и на приятный сервис, которым вы останетесь довольны. Нам важно, чтобы адресаты подарков стали чуть счастливее, а наши клиенты остались довольны тем, что подарили им капельку радости.</textarea>
+							<label class="form__label js-label">Описание</label>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="popup-action">
-				<span class="btn btn_yellow popup-action__btn">Изменить</span>
+				<span class="btn btn_green popup-action__btn">Изменить</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="edit-contacts">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<span class="popup__title">Редактирование контактов</span>
+			<div class="edit">
+				<div class="edit__group">
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="630028, г. Новосибирск, ул. Советская, 17-1 630028, ">
+							<label class="form__label js-label">Адрес магазина</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="г. Новосибирск, ул. Советская, 17-1">
+							<label class="form__label js-label">Почтовый адрес</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="8 911 111-11-11">
+							<label class="form__label js-label">Телефон</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="info@magazin-tsvetov.ru">
+							<label class="form__label js-label">E-mail</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="www.magazin-tsvetov.ru">
+							<label class="form__label js-label">Сайт</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="/magazintsvetov">
+							<label class="form__label js-label">Instagram</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="/magazin_tsvetov">
+							<label class="form__label js-label">Facebook</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="/magazin-tsvetov">
+							<label class="form__label js-label">Vkontakte</label>
+						</div>
+					</div>
+					<div class="edit-add" data-add="add-social">
+						<svg class="edit-add__icon">
+							<use xlink:href="./img/sprite.svg#plus"></use>
+						</svg>
+						<span class="edit-add__text">Добавить соцсеть</span>
+					</div>
+				</div>
+			</div>
+			<div class="popup-action">
+				<span class="btn btn_green popup-action__btn">Изменить</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="edit-schedule">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<span class="popup__title">Редактирование режима работы</span>
+			<div class="edit">
+				<div class="edit__group">
+
+					<span class="edit__title edit__title_sub">Понедельник</span>
+					<div class="edit-time">
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option selected>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">от</label>
+							</div>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+						<div class="edit-time__col">
+							<span class="edit-time__split">—</span>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option selected>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">до</label>
+							</div>
+						</div>
+						<div class="edit-time__col  edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<span class="edit__title edit__title_sub">Вторник</span>
+					<div class="edit-time">
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option selected>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">от</label>
+							</div>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+						<div class="edit-time__col">
+							<span class="edit-time__split">—</span>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option selected>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">до</label>
+							</div>
+						</div>
+						<div class="edit-time__col  edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<span class="edit__title edit__title_sub">Среда</span>
+					<div class="edit-time">
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option selected>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">от</label>
+							</div>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+						<div class="edit-time__col">
+							<span class="edit-time__split">—</span>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option selected>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">до</label>
+							</div>
+						</div>
+						<div class="edit-time__col  edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<span class="edit__title edit__title_sub">Четверг</span>
+					<div class="edit-time">
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option selected>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">от</label>
+							</div>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+						<div class="edit-time__col">
+							<span class="edit-time__split">—</span>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option selected>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">до</label>
+							</div>
+						</div>
+						<div class="edit-time__col  edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<span class="edit__title edit__title_sub">Пятница</span>
+					<div class="edit-time">
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option selected>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">от</label>
+							</div>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+						<div class="edit-time__col">
+							<span class="edit-time__split">—</span>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option selected>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">до</label>
+							</div>
+						</div>
+						<div class="edit-time__col  edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<span class="edit__title edit__title_sub">Суббота</span>
+					<div class="edit-time">
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option selected>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">от</label>
+							</div>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+						<div class="edit-time__col">
+							<span class="edit-time__split">—</span>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option selected>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">до</label>
+							</div>
+						</div>
+						<div class="edit-time__col  edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<span class="edit__title edit__title_sub">Воскресенье</span>
+					<div class="edit-time">
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option selected>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">от</label>
+							</div>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+						<div class="edit-time__col">
+							<span class="edit-time__split">—</span>
+						</div>
+						<div class="edit-time__col edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select js-input">
+									<option>00</option>
+									<option>01</option>
+									<option>02</option>
+									<option>03</option>
+									<option>04</option>
+									<option>05</option>
+									<option>06</option>
+									<option>07</option>
+									<option>08</option>
+									<option>09</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option selected>21</option>
+									<option>22</option>
+									<option>23</option>
+								</select>
+								<label class="form__label js-label">до</label>
+							</div>
+						</div>
+						<div class="edit-time__col  edit-time__col_wide">
+							<div class="form__item">
+								<select class="form__select">
+									<option selected>00</option>
+									<option>15</option>
+									<option>30</option>
+									<option>45</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-action">
+				<span class="btn btn_green popup-action__btn">Изменить</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="edit-team">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<span class="popup__title">Редактирование списка сотрудников</span>
+			<div class="edit">
+				<div class="edit__group">
+
+					<div class="edit__subgroup">
+						<span class="edit__title">Директор</span>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="Яровинская Екатерина Васильевна">
+								<label class="form__label js-label">ФИО</label>
+							</div>
+						</div>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="8 911 111-11-11">
+								<label class="form__label js-label">Телефон</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="edit__subgroup">
+						<span class="edit__title">Менеджер</span>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="Тихоновецкая Елена Дмитриевна">
+								<label class="form__label js-label">ФИО</label>
+							</div>
+						</div>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="8 911 111-11-11">
+								<label class="form__label js-label">Телефон</label>
+							</div>
+						</div>
+						<div class="edit-add" data-add="add-person">
+							<svg class="edit-add__icon">
+								<use xlink:href="./img/sprite.svg#plus"></use>
+							</svg>
+							<span class="edit-add__text">Добавить менеджера</span>
+						</div>
+					</div>
+
+					<div class="edit__subgroup">
+						<span class="edit__title">Флорист</span>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="Ильина Диана Витальевна">
+								<label class="form__label js-label">ФИО</label>
+							</div>
+						</div>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="8 911 111-11-11">
+								<label class="form__label js-label">Телефон</label>
+							</div>
+						</div>
+						<div class="edit-add" data-add="add-person">
+							<svg class="edit-add__icon">
+								<use xlink:href="./img/sprite.svg#plus"></use>
+							</svg>
+							<span class="edit-add__text">Добавить флориста</span>
+						</div>
+					</div>
+
+					<div class="edit__subgroup">
+						<span class="edit__title">Курьер</span>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="Романченко Анатолий Викторович">
+								<label class="form__label js-label">ФИО</label>
+							</div>
+						</div>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="8 911 111-11-11">
+								<label class="form__label js-label">Телефон</label>
+							</div>
+						</div>
+						<div class="edit-add" data-add="add-person">
+							<svg class="edit-add__icon">
+								<use xlink:href="./img/sprite.svg#plus"></use>
+							</svg>
+							<span class="edit-add__text">Добавить курьера</span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="popup-action">
+				<span class="btn btn_green popup-action__btn">Изменить</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="edit-bank">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<span class="popup__title">Редактирование банковских реквизитов</span>
+			<div class="edit">
+				<div class="edit__group">
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="1234567890">
+							<label class="form__label js-label">ИНН</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="12345678902342342342">
+							<label class="form__label js-label">Расчетный счет</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="12345678902342342342">
+							<label class="form__label js-label">Корр. счет</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="1234567890">
+							<label class="form__label js-label">КПП</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="1234567890">
+							<label class="form__label js-label">ОГРН</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="Филиал АО «Альфа-банк» ">
+							<label class="form__label js-label">Банк</label>
+						</div>
+					</div>
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="1234567890">
+							<label class="form__label js-label">БИК Банка</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-action">
+				<span class="btn btn_green popup-action__btn">Изменить</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="edit-delivery">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<span class="popup__title">Редактирование доставки в&nbsp;населенные пункты</span>
+			<div class="edit">
+				<div class="edit__group">
+
+					<div class="edit__subgroup">
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="Ижевск">
+								<label class="form__label js-label">Город</label>
+							</div>
+						</div>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="0">
+								<label class="form__label js-label">Стоимость доставки, руб</label>
+							</div>
+						</div>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="1">
+								<label class="form__label js-label">Время доставки, ч</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="edit__subgroup">
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="Воткинск">
+								<label class="form__label js-label">Город</label>
+							</div>
+						</div>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="200">
+								<label class="form__label js-label">Стоимость доставки, руб</label>
+							</div>
+						</div>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="2">
+								<label class="form__label js-label">Время доставки, ч</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="edit__subgroup">
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="Можга">
+								<label class="form__label js-label">Город</label>
+							</div>
+						</div>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="300">
+								<label class="form__label js-label">Стоимость доставки, руб</label>
+							</div>
+						</div>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="1">
+								<label class="form__label js-label">Время доставки, ч</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="edit__subgroup">
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="Сарапул">
+								<label class="form__label js-label">Город</label>
+							</div>
+						</div>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="400">
+								<label class="form__label js-label">Стоимость доставки, руб</label>
+							</div>
+						</div>
+						<div class="edit__elem">
+							<div class="form__item">
+								<input class="form__input js-input" value="3">
+								<label class="form__label js-label">Время доставки, ч</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="edit-add" data-add="add-city">
+						<svg class="edit-add__icon">
+							<use xlink:href="./img/sprite.svg#plus"></use>
+						</svg>
+						<span class="edit-add__text">Добавить город</span>
+					</div>
+				</div>
+			</div>
+			<div class="popup-action">
+				<span class="btn btn_green popup-action__btn">Изменить</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal" data-target="edit-rules">
+	<div class="modal__core modal__core_outside">
+		<div class="modal-close" data-modal-close>
+			<svg class="modal-close__icon">
+				<use xlink:href="./img/sprite.svg#close"></use>
+			</svg>
+			<span class="modal-close__text">Закрыть</span>
+		</div>
+		<div class="popup">
+			<span class="popup__title">Редактирование условий доставки</span>
+			<div class="edit">
+				<div class="edit__group">
+
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="100">
+							<label class="form__label js-label">По городу фикс., руб</label>
+						</div>
+					</div>
+
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="19" disabled>
+							<label class="form__label js-label">По городу за км, руб</label>
+						</div>
+					</div>
+
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="21" disabled>
+							<label class="form__label js-label">Мин. стоимость, руб</label>
+						</div>
+					</div>
+
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="9" disabled>
+							<label class="form__label js-label">За город за км, руб </label>
+						</div>
+					</div>
+
+					<div class="edit__elem">
+						<div class="form__item">
+							<input class="form__input js-input" value="9" disabled>
+							<label class="form__label js-label">Максимум от города, км</label>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="popup-action">
+				<span class="btn btn_green popup-action__btn">Изменить</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="is-hidden" data-add-content="add-social">
+	<div class="edit__subgroup">
+		<span class="edit__title edit__title_sub">Кастомная соцсеть</span>
+		<div class="edit__elem">
+			<div class="form__item">
+				<input class="form__input js-input">
+				<label class="form__label js-label">Названиц соц сети</label>
+			</div>
+		</div>
+		<div class="edit__elem">
+			<div class="form__item">
+				<input class="form__input js-input">
+				<label class="form__label js-label">Адрес аккаунта</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="is-hidden" data-add-content="add-person">
+	<div class="edit__subgroup">
+		<div class="edit__elem">
+			<div class="form__item">
+				<input class="form__input js-input">
+				<label class="form__label js-label">ФИО</label>
+			</div>
+		</div>
+		<div class="edit__elem">
+			<div class="form__item">
+				<input class="form__input js-input">
+				<label class="form__label js-label">Телефон</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="is-hidden" data-add-content="add-city">
+	<div class="edit__subgroup">
+		<div class="edit__elem">
+			<div class="form__item">
+				<input class="form__input js-input">
+				<label class="form__label js-label">Город</label>
+			</div>
+		</div>
+		<div class="edit__elem">
+			<div class="form__item">
+				<input class="form__input js-input">
+				<label class="form__label js-label">Стоимость доставки, руб</label>
+			</div>
+		</div>
+		<div class="edit__elem">
+			<div class="form__item">
+				<input class="form__input js-input">
+				<label class="form__label js-label">Время доставки, ч</label>
 			</div>
 		</div>
 	</div>
