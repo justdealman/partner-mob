@@ -200,6 +200,20 @@ button {
 				}
 			}
 		}
+
+		&__input {
+			position: relative;
+			width: 100%;
+			font-size: 16px;
+			letter-spacing: .02em;
+			padding: 15px 14px 14px;
+			border: 1px solid #DADADA;
+
+			&:focus {
+				z-index: 5;
+				border-color: @colorBase;
+			}
+		}
 	}
 
 	&-checkbox {
@@ -262,20 +276,6 @@ button {
 			font-size: 15px;
 			line-height: 22px;
 			letter-spacing: .01em;
-		}
-	}
-
-	&__input {
-		position: relative;
-		width: 100%;
-		font-size: 16px;
-		letter-spacing: .02em;
-		padding: 15px 14px 14px;
-		border: 1px solid #DADADA;
-
-		&:focus {
-			z-index: 5;
-			border-color: @colorBase;
 		}
 	}
 
