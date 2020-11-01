@@ -112,8 +112,27 @@
             }
         });
     });
+
+    var isDesktop = false;
+    var justSwitched = false;
+    function detectDevice() {
+        var temp = isDesktop;
+        isDesktop = !!Modernizr.mq('(min-width:992px)');
+        justSwitched = temp !== isDesktop;
+    }
 	
     function startApp() {
+        detectDevice();
+        if ( justSwitched ) {
+            var $nav = $('.js-nav');
+            if (  $nav.length ) {
+                if (isDesktop) {
+                    $nav.clone().appendTo('.js-nav-desktop');
+                } else {
+                    $('.js-nav-desktop').empty();
+                }
+            }
+        }
     }
 
     startApp();

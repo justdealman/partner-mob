@@ -11,443 +11,453 @@
 					<i></i>
 				</div>
 			</div>
-			<a href="/" class="header__logo">
+			<a href="/" class="header__logo header__logo_inner">
 				<svg width="154" height="56">
 					<use xlink:href="./img/sprite.svg#logo"></use>
 				</svg>
 			</a>
+			<span class="header__title">Профиль компании</span>
 		</header>
 		<div class="wrapper">
-			<div class="lk">
-				<div class="lk__col">
-					<div class="lk-status" data-status>
-						<span class="lk-status__title">Статус</span>
-						<svg class="lk-status__icon" data-status-icon>
-							<use xlink:href="./img/sprite.svg#check"></use>
-						</svg>
-						<span class="lk-status__text" data-enabled="Включен" data-disabled="Выключен" data-status-text>Включен</span>
-						<div class="switcher lk-status__switcher">
-							<input type="checkbox" id="switch-1" class="switcher__input" checked data-status-switcher>
-							<label for="switch-1" class="switcher__label"></label>
-						</div>
-					</div>
-					<div class="lk-list">
-						<div class="lk-card">
-							<div class="lk-card__pic"></div>
-							<!--<div class="lk-card__pic" style="background-image: url('./pic/company-logo.jpg')"></div>-->
-							<div class="lk-card__content">
-								<span class="lk-card__title">Салон “Le Fleur”</span>
-								<span class="lk-card__name">ООО “Цветочный мир”</span>
-							</div>
-							<svg class="icon-edit lk-card__edit" data-open="edit-main">
-								<use xlink:href="./img/sprite.svg#edit"></use>
-							</svg>
-						</div>
-						<div class="lk-item" data-item>
-							<div class="lk-head">
-								<div class="lk-head__col" data-toggle>
-									<svg class="lk-head__drop">
-										<use xlink:href="./img/sprite.svg#drop"></use>
-									</svg>
-									<span class="lk-head__title">Описание</span>
-								</div>
-								<svg class="icon-edit lk-head__edit" data-open="edit-about">
-									<use xlink:href="./img/sprite.svg#edit"></use>
+			<div class="grid">
+				<div class="grid__nav js-nav-desktop">
+				</div>
+				<div class="grid__content">
+					<div class="lk">
+						<div class="lk__col">
+							<div class="lk-status" data-status>
+								<span class="lk-status__title">Статус</span>
+								<svg class="lk-status__icon" data-status-icon>
+									<use xlink:href="./img/sprite.svg#check"></use>
 								</svg>
+								<span class="lk-status__text" data-enabled="Включен" data-disabled="Выключен" data-status-text>Включен</span>
+								<div class="switcher lk-status__switcher">
+									<input type="checkbox" id="switch-1" class="switcher__input" checked data-status-switcher>
+									<label for="switch-1" class="switcher__label"></label>
+								</div>
 							</div>
-							<div class="lk-item__drop">
-								<div class="lk-item__inner">
-									<div class="lk-about">
-										<span class="lk-about__text">Салон цветов “Le Fleur” занимается доставкой свежих цветов самого лучшего качества тем людям, которые важны для вас. Мы следим за новинками во флористике и создаем букеты, которые передадут ваши мысли и чувства.<br><br> Все, что вы найдете в нашем каталоге, подобрано с любовью и понравится даже самым капризным особам. Мы обращаем внимание не только на сами цветы, но и на приятный сервис, которым вы останетесь довольны. Нам важно, чтобы адресаты подарков стали чуть счастливее, а наши клиенты остались довольны тем, что подарили им капельку радости.</span>
+							<div class="lk-list">
+								<div class="lk-card">
+									<div class="lk-card__pic"></div>
+									<!--<div class="lk-card__pic" style="background-image: url('./pic/company-logo.jpg')"></div>-->
+									<div class="lk-card__content">
+										<span class="lk-card__title">Салон “Le Fleur”</span>
+										<span class="lk-card__name">ООО “Цветочный мир”</span>
 									</div>
-								</div>
-							</div>
-						</div>
-						<div class="lk-item" data-item>
-							<div class="lk-head">
-								<div class="lk-head__col" data-toggle>
-									<svg class="lk-head__drop">
-										<use xlink:href="./img/sprite.svg#drop"></use>
+									<svg class="icon-edit lk-card__edit" data-open="edit-main">
+										<use xlink:href="./img/sprite.svg#edit"></use>
 									</svg>
-									<span class="lk-head__title">Контакты</span>
 								</div>
-								<svg class="icon-edit lk-head__edit" data-open="edit-contacts">
-									<use xlink:href="./img/sprite.svg#edit"></use>
-								</svg>
-							</div>
-							<div class="lk-item__drop">
-								<div class="lk-item__inner">
-									<div class="lk-contacts">
-										<div class="lk-contacts__item">
-											<span class="lk-contacts__title">Адрес магазина</span>
-											<span class="lk-contacts__text">630028, г. Новосибирск, ул. Советская, 17-1 630028,</span>
-										</div>
-										<div class="lk-contacts__item">
-											<span class="lk-contacts__title">Почтовый адрес</span>
-											<span class="lk-contacts__text">г. Новосибирск, ул. Советская, 17-1</span>
-										</div>
-										<div class="lk-contacts__item">
-											<span class="lk-contacts__title">Телефон</span>
-											<span class="lk-contacts__text">8 911 111-11-11</span>
-										</div>
-										<div class="lk-contacts__item">
-											<span class="lk-contacts__title">E-mail</span>
-											<span class="lk-contacts__text">info@magazin-tsvetov.ru</span>
-										</div>
-										<div class="lk-contacts__item">
-											<span class="lk-contacts__title">Сайт</span>
-											<span class="lk-contacts__text">www.magazin-tsvetov.ru</span>
-										</div>
-										<div class="lk-contacts__item">
-											<span class="lk-contacts__title">Instagram</span>
-											<span class="lk-contacts__text">/magazintsvetov</span>
-										</div>
-										<div class="lk-contacts__item">
-											<span class="lk-contacts__title">Facebook</span>
-											<span class="lk-contacts__text">/magazin_tsvetov</span>
-										</div>
-										<div class="lk-contacts__item">
-											<span class="lk-contacts__title">Vkontakte</span>
-											<span class="lk-contacts__text">/magazin-tsvetov</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="lk-item" data-item>
-							<div class="lk-head">
-								<div class="lk-head__col" data-toggle>
-									<svg class="lk-head__drop">
-										<use xlink:href="./img/sprite.svg#drop"></use>
-									</svg>
-									<span class="lk-head__title">Режим работы</span>
-								</div>
-								<svg class="icon-edit lk-head__edit" data-open="edit-schedule">
-									<use xlink:href="./img/sprite.svg#edit"></use>
-								</svg>
-							</div>
-							<div class="lk-item__drop">
-								<div class="lk-item__inner">
-									<div class="lk-schedule">
-										<div class="lk-schedule__item">
-											<span class="lk-schedule__title">Понедельник</span>
-											<span class="lk-schedule__text">9:00 - 20:00</span>
-										</div>
-										<div class="lk-schedule__item">
-											<span class="lk-schedule__title">Вторник</span>
-											<span class="lk-schedule__text">9:00 - 20:00</span>
-										</div>
-										<div class="lk-schedule__item">
-											<span class="lk-schedule__title">Среда</span>
-											<span class="lk-schedule__text">9:00 - 20:00</span>
-										</div>
-										<div class="lk-schedule__item">
-											<span class="lk-schedule__title">Четверг</span>
-											<span class="lk-schedule__text">9:00 - 20:00</span>
-										</div>
-										<div class="lk-schedule__item">
-											<span class="lk-schedule__title">Пятница</span>
-											<span class="lk-schedule__text">9:00 - 20:00</span>
-										</div>
-										<div class="lk-schedule__item">
-											<span class="lk-schedule__title">Суббота</span>
-											<span class="lk-schedule__text">9:00 - 20:00</span>
-										</div>
-										<div class="lk-schedule__item">
-											<span class="lk-schedule__title">Воскресенье</span>
-											<span class="lk-schedule__text">9:00 - 20:00</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="lk-item" data-item>
-							<div class="lk-head">
-								<div class="lk-head__col" data-toggle>
-									<svg class="lk-head__drop">
-										<use xlink:href="./img/sprite.svg#drop"></use>
-									</svg>
-									<span class="lk-head__title">Руководитель и&nbsp;персонал</span>
-								</div>
-								<svg class="icon-edit lk-head__edit" data-open="edit-team">
-									<use xlink:href="./img/sprite.svg#edit"></use>
-								</svg>
-							</div>
-							<div class="lk-item__drop">
-								<div class="lk-item__inner">
-									<table class="lk-table">
-										<tbody>
-											<tr>
-												<th>Директор</th>
-												<td>
-													<span class="lk-table__title">Яровинская Екатерина Васильевна</span>
-													<span class="lk-table__phone">8 911 111-11-11</span>
-												</td>
-											</tr>
-											<tr>
-												<th>Менеджер</th>
-												<td>
-													<span class="lk-table__title">Тихоновецкая Елена Дмитриевна</span>
-													<span class="lk-table__phone">8 911 111-11-11</span>
-												</td>
-											</tr>
-											<tr>
-												<th>Флорист</th>
-												<td>
-													<span class="lk-table__title">Ильина Диана Витальевна</span>
-													<span class="lk-table__phone">8 911 111-11-11</span>
-												</td>
-											</tr>
-											<tr>
-												<th>Курьер</th>
-												<td>
-													<span class="lk-table__title">Романченко Анатолий Викторович</span>
-													<span class="lk-table__phone">8 911 111-11-11</span>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="lk-item" data-item>
-							<div class="lk-head">
-								<div class="lk-head__col" data-toggle>
-									<svg class="lk-head__drop">
-										<use xlink:href="./img/sprite.svg#drop"></use>
-									</svg>
-									<span class="lk-head__title">Банковские реквизиты</span>
-								</div>
-								<svg class="icon-edit lk-head__edit" data-open="edit-bank">
-									<use xlink:href="./img/sprite.svg#edit"></use>
-								</svg>
-							</div>
-							<div class="lk-item__drop">
-								<div class="lk-item__inner">
-									<table class="lk-table lk-table_bank">
-										<tbody>
-											<tr>
-												<th>ИНН</th>
-												<td>1234567890</td>
-											</tr>
-											<tr>
-												<th>Расчетный<br> счет</th>
-												<td>12345678902342342342</td>
-											</tr>
-											<tr>
-												<th>Корр. счет</th>
-												<td>12345678902342342342</td>
-											</tr>
-											<tr>
-												<th>КПП</th>
-												<td>1234567890</td>
-											</tr>
-											<tr>
-												<th>ОГРН</th>
-												<td>1234567890</td>
-											</tr>
-											<tr>
-												<th>Банк</th>
-												<td>Филиал АО «Альфа-банк»</td>
-											</tr>
-											<tr>
-												<th>БИК Банка</th>
-												<td>1234567890</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="lk-item" data-item>
-							<div class="lk-head">
-								<div class="lk-head__col" data-toggle>
-									<svg class="lk-head__drop">
-										<use xlink:href="./img/sprite.svg#drop"></use>
-									</svg>
-									<span class="lk-head__title">Населенные пункты</span>
-								</div>
-								<svg class="icon-edit lk-head__edit" data-open="edit-delivery">
-									<use xlink:href="./img/sprite.svg#edit"></use>
-								</svg>
-							</div>
-							<div class="lk-item__drop">
-								<div class="lk-item__inner">
-									<table class="lk-table lk-table_delivery">
-										<thead>
-											<tr>
-												<th>Пункт</th>
-												<td>Стоимость доставки, руб</td>
-												<td>Время доставки, ч</td>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<th>Ижевск</th>
-												<td>Бесплатно</td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<th>Воткинск</th>
-												<td>200</td>
-												<td>2</td>
-											</tr>
-											<tr>
-												<th>Можга</th>
-												<td>300</td>
-												<td>1</td>
-											</tr>
-											<tr>
-												<th>Сарапул</th>
-												<td>400</td>
-												<td>3</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</div>
-						</div>
-						<div class="lk-item" data-item>
-							<div class="lk-head">
-								<div class="lk-head__col" data-toggle>
-									<svg class="lk-head__drop">
-										<use xlink:href="./img/sprite.svg#drop"></use>
-									</svg>
-									<span class="lk-head__title">Условия доставки</span>
-								</div>
-								<svg class="icon-edit lk-head__edit" data-open="edit-rules">
-									<use xlink:href="./img/sprite.svg#edit"></use>
-								</svg>
-							</div>
-							<div class="lk-item__drop">
-								<div class="lk-item__inner">
-									<table class="lk-table lk-table_rules">
-										<tbody>
-											<tr>
-												<th>Стоимость доставки по городу фиксированная, руб</th>
-												<td></td>
-												<td>
-													<span class="lk-table__price">100</span>
-												</td>
-											</tr>
-											<tr>
-												<th>Стоимость доставки по городу за км, руб </th>
-												<td>
-													<svg class="icon-tip" data-tip-open="rules">
-														<use xlink:href="./img/sprite.svg#tip"></use>
-													</svg>
-												</td>
-												<td>
-													<span class="lk-table__price is-disabled">19</span>
-												</td>
-											</tr>
-											<tr>
-												<th>Минимальная стоимость доставки, руб</th>
-												<td>
-													<svg class="icon-tip" data-tip-open="rules">
-														<use xlink:href="./img/sprite.svg#tip"></use>
-													</svg>
-												</td>
-												<td>
-													<span class="lk-table__price is-disabled">21</span>
-												</td>
-											</tr>
-											<tr>
-												<th>Стоимость доставки за город за км, руб </th>
-												<td>
-													<svg class="icon-tip" data-tip-open="rules">
-														<use xlink:href="./img/sprite.svg#tip"></use>
-													</svg>
-												</td>
-												<td>
-													<span class="lk-table__price is-disabled">8</span>
-												</td>
-											</tr>
-											<tr>
-												<th>Ограничения по доставке от города, км</th>
-												<td>
-													<svg class="icon-tip" data-tip-open="rules">
-														<use xlink:href="./img/sprite.svg#tip"></use>
-													</svg>
-												</td>
-												<td>
-													<span class="lk-table__price is-disabled">9</span>
-												</td>
-											</tr>
-										</tbody>
-									</table>
-									<div class="edit-tip lk__tip" data-tip-target="rules">
-										<div class="edit-tip__close" data-tip-close>
-											<svg>
-												<use xlink:href="./img/sprite.svg#close-sm"></use>
+								<div class="lk-item" data-item>
+									<div class="lk-head">
+										<div class="lk-head__col" data-toggle>
+											<svg class="lk-head__drop">
+												<use xlink:href="./img/sprite.svg#drop"></use>
 											</svg>
+											<span class="lk-head__title">Описание</span>
 										</div>
-										<span class="edit-tip__text">Данный параметр будет использоваться в&nbsp;ближайшее время.</span>
+										<svg class="icon-edit lk-head__edit" data-open="edit-about">
+											<use xlink:href="./img/sprite.svg#edit"></use>
+										</svg>
+									</div>
+									<div class="lk-item__drop">
+										<div class="lk-item__inner">
+											<div class="lk-about">
+												<span class="lk-about__text">Салон цветов “Le Fleur” занимается доставкой свежих цветов самого лучшего качества тем людям, которые важны для вас. Мы следим за новинками во флористике и создаем букеты, которые передадут ваши мысли и чувства.<br><br> Все, что вы найдете в нашем каталоге, подобрано с любовью и понравится даже самым капризным особам. Мы обращаем внимание не только на сами цветы, но и на приятный сервис, которым вы останетесь довольны. Нам важно, чтобы адресаты подарков стали чуть счастливее, а наши клиенты остались довольны тем, что подарили им капельку радости.</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="lk-item" data-item>
+									<div class="lk-head">
+										<div class="lk-head__col" data-toggle>
+											<svg class="lk-head__drop">
+												<use xlink:href="./img/sprite.svg#drop"></use>
+											</svg>
+											<span class="lk-head__title">Контакты</span>
+										</div>
+										<svg class="icon-edit lk-head__edit" data-open="edit-contacts">
+											<use xlink:href="./img/sprite.svg#edit"></use>
+										</svg>
+									</div>
+									<div class="lk-item__drop">
+										<div class="lk-item__inner">
+											<div class="lk-contacts">
+												<div class="lk-contacts__item">
+													<span class="lk-contacts__title">Адрес магазина</span>
+													<span class="lk-contacts__text">630028, г. Новосибирск, ул. Советская, 17-1 630028,</span>
+												</div>
+												<div class="lk-contacts__item">
+													<span class="lk-contacts__title">Почтовый адрес</span>
+													<span class="lk-contacts__text">г. Новосибирск, ул. Советская, 17-1</span>
+												</div>
+												<div class="lk-contacts__item">
+													<span class="lk-contacts__title">Телефон</span>
+													<span class="lk-contacts__text">8 911 111-11-11</span>
+												</div>
+												<div class="lk-contacts__item">
+													<span class="lk-contacts__title">E-mail</span>
+													<span class="lk-contacts__text">info@magazin-tsvetov.ru</span>
+												</div>
+												<div class="lk-contacts__item">
+													<span class="lk-contacts__title">Сайт</span>
+													<span class="lk-contacts__text">www.magazin-tsvetov.ru</span>
+												</div>
+												<div class="lk-contacts__item">
+													<span class="lk-contacts__title">Instagram</span>
+													<span class="lk-contacts__text">/magazintsvetov</span>
+												</div>
+												<div class="lk-contacts__item">
+													<span class="lk-contacts__title">Facebook</span>
+													<span class="lk-contacts__text">/magazin_tsvetov</span>
+												</div>
+												<div class="lk-contacts__item">
+													<span class="lk-contacts__title">Vkontakte</span>
+													<span class="lk-contacts__text">/magazin-tsvetov</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="lk-item" data-item>
+									<div class="lk-head">
+										<div class="lk-head__col" data-toggle>
+											<svg class="lk-head__drop">
+												<use xlink:href="./img/sprite.svg#drop"></use>
+											</svg>
+											<span class="lk-head__title">Режим работы</span>
+										</div>
+										<svg class="icon-edit lk-head__edit" data-open="edit-schedule">
+											<use xlink:href="./img/sprite.svg#edit"></use>
+										</svg>
+									</div>
+									<div class="lk-item__drop">
+										<div class="lk-item__inner">
+											<div class="lk-schedule">
+												<div class="lk-schedule__item">
+													<span class="lk-schedule__title">Понедельник</span>
+													<span class="lk-schedule__text">9:00 - 20:00</span>
+												</div>
+												<div class="lk-schedule__item">
+													<span class="lk-schedule__title">Вторник</span>
+													<span class="lk-schedule__text">9:00 - 20:00</span>
+												</div>
+												<div class="lk-schedule__item">
+													<span class="lk-schedule__title">Среда</span>
+													<span class="lk-schedule__text">9:00 - 20:00</span>
+												</div>
+												<div class="lk-schedule__item">
+													<span class="lk-schedule__title">Четверг</span>
+													<span class="lk-schedule__text">9:00 - 20:00</span>
+												</div>
+												<div class="lk-schedule__item">
+													<span class="lk-schedule__title">Пятница</span>
+													<span class="lk-schedule__text">9:00 - 20:00</span>
+												</div>
+												<div class="lk-schedule__item">
+													<span class="lk-schedule__title">Суббота</span>
+													<span class="lk-schedule__text">9:00 - 20:00</span>
+												</div>
+												<div class="lk-schedule__item">
+													<span class="lk-schedule__title">Воскресенье</span>
+													<span class="lk-schedule__text">9:00 - 20:00</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="lk-item" data-item>
+									<div class="lk-head">
+										<div class="lk-head__col" data-toggle>
+											<svg class="lk-head__drop">
+												<use xlink:href="./img/sprite.svg#drop"></use>
+											</svg>
+											<span class="lk-head__title">Руководитель и&nbsp;персонал</span>
+										</div>
+										<svg class="icon-edit lk-head__edit" data-open="edit-team">
+											<use xlink:href="./img/sprite.svg#edit"></use>
+										</svg>
+									</div>
+									<div class="lk-item__drop">
+										<div class="lk-item__inner">
+											<table class="lk-table">
+												<tbody>
+													<tr>
+														<th>Директор</th>
+														<td>
+															<span class="lk-table__title">Яровинская Екатерина Васильевна</span>
+															<span class="lk-table__phone">8 911 111-11-11</span>
+														</td>
+													</tr>
+													<tr>
+														<th>Менеджер</th>
+														<td>
+															<span class="lk-table__title">Тихоновецкая Елена Дмитриевна</span>
+															<span class="lk-table__phone">8 911 111-11-11</span>
+														</td>
+													</tr>
+													<tr>
+														<th>Флорист</th>
+														<td>
+															<span class="lk-table__title">Ильина Диана Витальевна</span>
+															<span class="lk-table__phone">8 911 111-11-11</span>
+														</td>
+													</tr>
+													<tr>
+														<th>Курьер</th>
+														<td>
+															<span class="lk-table__title">Романченко Анатолий Викторович</span>
+															<span class="lk-table__phone">8 911 111-11-11</span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="lk-item" data-item>
+									<div class="lk-head">
+										<div class="lk-head__col" data-toggle>
+											<svg class="lk-head__drop">
+												<use xlink:href="./img/sprite.svg#drop"></use>
+											</svg>
+											<span class="lk-head__title">Банковские реквизиты</span>
+										</div>
+										<svg class="icon-edit lk-head__edit" data-open="edit-bank">
+											<use xlink:href="./img/sprite.svg#edit"></use>
+										</svg>
+									</div>
+									<div class="lk-item__drop">
+										<div class="lk-item__inner">
+											<table class="lk-table lk-table_bank">
+												<tbody>
+													<tr>
+														<th>ИНН</th>
+														<td>1234567890</td>
+													</tr>
+													<tr>
+														<th>Расчетный<br> счет</th>
+														<td>12345678902342342342</td>
+													</tr>
+													<tr>
+														<th>Корр. счет</th>
+														<td>12345678902342342342</td>
+													</tr>
+													<tr>
+														<th>КПП</th>
+														<td>1234567890</td>
+													</tr>
+													<tr>
+														<th>ОГРН</th>
+														<td>1234567890</td>
+													</tr>
+													<tr>
+														<th>Банк</th>
+														<td>Филиал АО «Альфа-банк»</td>
+													</tr>
+													<tr>
+														<th>БИК Банка</th>
+														<td>1234567890</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="lk-item" data-item>
+									<div class="lk-head">
+										<div class="lk-head__col" data-toggle>
+											<svg class="lk-head__drop">
+												<use xlink:href="./img/sprite.svg#drop"></use>
+											</svg>
+											<span class="lk-head__title">Населенные пункты</span>
+										</div>
+										<svg class="icon-edit lk-head__edit" data-open="edit-delivery">
+											<use xlink:href="./img/sprite.svg#edit"></use>
+										</svg>
+									</div>
+									<div class="lk-item__drop">
+										<div class="lk-item__inner">
+											<table class="lk-table lk-table_delivery">
+												<thead>
+													<tr>
+														<th>Пункт</th>
+														<td>Стоимость доставки, руб</td>
+														<td>Время доставки, ч</td>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<th>Ижевск</th>
+														<td>Бесплатно</td>
+														<td>1</td>
+													</tr>
+													<tr>
+														<th>Воткинск</th>
+														<td>200</td>
+														<td>2</td>
+													</tr>
+													<tr>
+														<th>Можга</th>
+														<td>300</td>
+														<td>1</td>
+													</tr>
+													<tr>
+														<th>Сарапул</th>
+														<td>400</td>
+														<td>3</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="lk-item" data-item>
+									<div class="lk-head">
+										<div class="lk-head__col" data-toggle>
+											<svg class="lk-head__drop">
+												<use xlink:href="./img/sprite.svg#drop"></use>
+											</svg>
+											<span class="lk-head__title">Условия доставки</span>
+										</div>
+										<svg class="icon-edit lk-head__edit" data-open="edit-rules">
+											<use xlink:href="./img/sprite.svg#edit"></use>
+										</svg>
+									</div>
+									<div class="lk-item__drop">
+										<div class="lk-item__inner">
+											<table class="lk-table lk-table_rules">
+												<tbody>
+													<tr>
+														<th>Стоимость доставки по городу фиксированная, руб</th>
+														<td></td>
+														<td>
+															<span class="lk-table__price">100</span>
+														</td>
+													</tr>
+													<tr>
+														<th>Стоимость доставки по городу за км, руб </th>
+														<td>
+															<svg class="icon-tip" data-tip-open="rules">
+																<use xlink:href="./img/sprite.svg#tip"></use>
+															</svg>
+														</td>
+														<td>
+															<span class="lk-table__price is-disabled">19</span>
+														</td>
+													</tr>
+													<tr>
+														<th>Минимальная стоимость доставки, руб</th>
+														<td>
+															<svg class="icon-tip" data-tip-open="rules">
+																<use xlink:href="./img/sprite.svg#tip"></use>
+															</svg>
+														</td>
+														<td>
+															<span class="lk-table__price is-disabled">21</span>
+														</td>
+													</tr>
+													<tr>
+														<th>Стоимость доставки за город за км, руб </th>
+														<td>
+															<svg class="icon-tip" data-tip-open="rules">
+																<use xlink:href="./img/sprite.svg#tip"></use>
+															</svg>
+														</td>
+														<td>
+															<span class="lk-table__price is-disabled">8</span>
+														</td>
+													</tr>
+													<tr>
+														<th>Ограничения по доставке от города, км</th>
+														<td>
+															<svg class="icon-tip" data-tip-open="rules">
+																<use xlink:href="./img/sprite.svg#tip"></use>
+															</svg>
+														</td>
+														<td>
+															<span class="lk-table__price is-disabled">9</span>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<div class="edit-tip lk__tip" data-tip-target="rules">
+												<div class="edit-tip__close" data-tip-close>
+													<svg>
+														<use xlink:href="./img/sprite.svg#close-sm"></use>
+													</svg>
+												</div>
+												<span class="edit-tip__text">Данный параметр будет использоваться в&nbsp;ближайшее время.</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="lk__col">
+							<div class="lk-stats">
+								<span class="lk-stats__title">Статистика за все время</span>
+								<div class="lk-stats__item">
+									<div class="lk-stats__row">
+										<div class="lk-stats__col lk-stats__col_lc">
+											<span class="lk-stats__text lk-stats__text_status lk-stats__text_yellow">Принятые заказы</span>
+										</div>
+										<div class="lk-stats__col lk-stats__col_rc">
+											<span class="lk-stats__text">1462</span>
+										</div>
+									</div>
+									<div class="lk-stats__row">
+										<div class="lk-stats__col lk-stats__col_lc">
+											<span class="lk-stats__subtext">Сумма принятых заказов, руб</span>
+										</div>
+										<div class="lk-stats__col lk-stats__col_rc">
+											<span class="lk-stats__text">123 231 231</span>
+										</div>
+									</div>
+								</div>
+								<div class="lk-stats__item">
+									<div class="lk-stats__row">
+										<div class="lk-stats__col lk-stats__col_lc">
+											<span class="lk-stats__text lk-stats__text_status lk-stats__text_green">Исполненные</span>
+										</div>
+										<div class="lk-stats__col lk-stats__col_rc">
+											<span class="lk-stats__text">1459</span>
+										</div>
+									</div>
+									<div class="lk-stats__row">
+										<div class="lk-stats__col lk-stats__col_lc">
+											<span class="lk-stats__subtext">Сумма исп. заказов, руб</span>
+										</div>
+										<div class="lk-stats__col lk-stats__col_rc">
+											<span class="lk-stats__text">123 231 231</span>
+										</div>
+									</div>
+								</div>
+								<div class="lk-stats__item">
+									<div class="lk-stats__row">
+										<div class="lk-stats__col lk-stats__col_lc">
+											<span class="lk-stats__text lk-stats__text_status lk-stats__text_orange">Непринятые</span>
+										</div>
+										<div class="lk-stats__col lk-stats__col_rc">
+											<span class="lk-stats__text">3</span>
+										</div>
+									</div>
+									<div class="lk-stats__row">
+										<div class="lk-stats__col lk-stats__col_lc">
+											<span class="lk-stats__subtext">Сумма непринятых заказов, руб</span>
+										</div>
+										<div class="lk-stats__col lk-stats__col_rc">
+											<span class="lk-stats__text">123 231 231</span>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="lk__col">
-					<div class="lk-stats">
-						<span class="lk-stats__title">Статистика за все время</span>
-						<div class="lk-stats__item">
-							<div class="lk-stats__row">
-								<div class="lk-stats__col lk-stats__col_lc">
-									<span class="lk-stats__text lk-stats__text_status lk-stats__text_yellow">Принятые заказы</span>
-								</div>
-								<div class="lk-stats__col lk-stats__col_rc">
-									<span class="lk-stats__text">1462</span>
-								</div>
-							</div>
-							<div class="lk-stats__row">
-								<div class="lk-stats__col lk-stats__col_lc">
-									<span class="lk-stats__subtext">Сумма принятых заказов, руб</span>
-								</div>
-								<div class="lk-stats__col lk-stats__col_rc">
-									<span class="lk-stats__text">123 231 231</span>
-								</div>
-							</div>
-						</div>
-						<div class="lk-stats__item">
-							<div class="lk-stats__row">
-								<div class="lk-stats__col lk-stats__col_lc">
-									<span class="lk-stats__text lk-stats__text_status lk-stats__text_green">Исполненные</span>
-								</div>
-								<div class="lk-stats__col lk-stats__col_rc">
-									<span class="lk-stats__text">1459</span>
-								</div>
-							</div>
-							<div class="lk-stats__row">
-								<div class="lk-stats__col lk-stats__col_lc">
-									<span class="lk-stats__subtext">Сумма исп. заказов, руб</span>
-								</div>
-								<div class="lk-stats__col lk-stats__col_rc">
-									<span class="lk-stats__text">123 231 231</span>
-								</div>
-							</div>
-						</div>
-						<div class="lk-stats__item">
-							<div class="lk-stats__row">
-								<div class="lk-stats__col lk-stats__col_lc">
-									<span class="lk-stats__text lk-stats__text_status lk-stats__text_orange">Непринятые</span>
-								</div>
-								<div class="lk-stats__col lk-stats__col_rc">
-									<span class="lk-stats__text">3</span>
-								</div>
-							</div>
-							<div class="lk-stats__row">
-								<div class="lk-stats__col lk-stats__col_lc">
-									<span class="lk-stats__subtext">Сумма непринятых заказов, руб</span>
-								</div>
-								<div class="lk-stats__col lk-stats__col_rc">
-									<span class="lk-stats__text">123 231 231</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			</div>
+			<div class="footer">
+				<span class="footer__text">© 1999—2019 <a href="https://www.florist.ru/" class="footer__link">Флорист.ру</a></span>
 			</div>
 		</div>
 		<div class="fade-bg"></div>
@@ -459,7 +469,7 @@
 							<use xlink:href="./img/sprite.svg#cross"></use>
 						</svg>
 					</div>
-					<div class="nav">
+					<div class="nav js-nav">
 						<div class="nav__group">
 							<a href="./messages.html" class="nav-item">
 								<div class="nav-item__lc">
@@ -533,12 +543,12 @@
 							</a>
 						</div>
 						<div class="nav__group">
-							<a href="#" class="nav-item">
+							<div class="nav-item" data-open="support">
 								<div class="nav-item__lc">
 									<span class="nav-item__text nav-item__title">Поддержка</span>
 								</div>
-							</a>
-							<a href="./profile.html" class="nav-item">
+							</div>
+							<a href="./profile.html" class="nav-item is-active">
 								<div class="nav-item__lc">
 									<span class="nav-item__text nav-item__title">Настройки</span>
 								</div>
@@ -549,7 +559,7 @@
 			</div>
 		</div>
 		<div class="modal" data-target="edit-main">
-			<div class="modal__core modal__core_outside">
+			<div class="modal__core modal__core_outside modal__core_wide">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
 						<use xlink:href="./img/sprite.svg#close"></use>
@@ -607,7 +617,7 @@
 			</div>
 		</div>
 		<div class="modal" data-target="edit-about">
-			<div class="modal__core modal__core_outside">
+			<div class="modal__core modal__core_outside modal__core_wide">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
 						<use xlink:href="./img/sprite.svg#close"></use>
@@ -633,7 +643,7 @@
 			</div>
 		</div>
 		<div class="modal" data-target="edit-contacts">
-			<div class="modal__core modal__core_outside">
+			<div class="modal__core modal__core_outside modal__core_wide">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
 						<use xlink:href="./img/sprite.svg#close"></use>
@@ -707,7 +717,7 @@
 			</div>
 		</div>
 		<div class="modal" data-target="edit-schedule">
-			<div class="modal__core modal__core_outside">
+			<div class="modal__core modal__core_outside modal__core_wide">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
 						<use xlink:href="./img/sprite.svg#close"></use>
@@ -1343,7 +1353,7 @@
 			</div>
 		</div>
 		<div class="modal" data-target="edit-team">
-			<div class="modal__core modal__core_outside">
+			<div class="modal__core modal__core_outside modal__core_wide">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
 						<use xlink:href="./img/sprite.svg#close"></use>
@@ -1441,7 +1451,7 @@
 			</div>
 		</div>
 		<div class="modal" data-target="edit-bank">
-			<div class="modal__core modal__core_outside">
+			<div class="modal__core modal__core_outside modal__core_wide">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
 						<use xlink:href="./img/sprite.svg#close"></use>
@@ -1503,7 +1513,7 @@
 			</div>
 		</div>
 		<div class="modal" data-target="edit-delivery">
-			<div class="modal__core modal__core_outside">
+			<div class="modal__core modal__core_outside modal__core_wide">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
 						<use xlink:href="./img/sprite.svg#close"></use>
@@ -1609,7 +1619,7 @@
 			</div>
 		</div>
 		<div class="modal" data-target="edit-rules">
-			<div class="modal__core modal__core_outside">
+			<div class="modal__core modal__core_outside modal__core_wide">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
 						<use xlink:href="./img/sprite.svg#close"></use>
@@ -1709,6 +1719,23 @@
 					<div class="form__item">
 						<input class="form__input js-input">
 						<label class="form__label js-label">Время доставки, ч</label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-target="support">
+			<div class="modal__core modal__core_outside">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+					<span class="modal-close__text">Закрыть</span>
+				</div>
+				<div class="popup">
+					<span class="popup__title">Поддержка</span>
+					<textarea rows="4" class="popup__area">Хьюстон, у нас проблемы</textarea>
+					<div class="popup-action">
+						<span class="btn btn_green popup-action__btn">Отправить</span>
 					</div>
 				</div>
 			</div>

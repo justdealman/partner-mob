@@ -164,6 +164,7 @@ button {
 }
 
 .wrapper {
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -515,7 +516,14 @@ button {
 	padding: 16px;
 	opacity: 0;
 	visibility: hidden;
+	-webkit-transform: scale(.95);
 	transform: scale(.95);
+
+	@media @notebook {
+		padding: 24px 16px;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
 
 	&.is-loaded {
 		-webkit-transition: transform .2s ease, opacity .2s ease, visibility .2s ease;
@@ -552,7 +560,7 @@ button {
 
 	&__core {
 		position: relative;
-		max-width: 480px;
+		max-width: 343px;
 		width: 100%;
 		background-color: #ffffff;
 		-webkit-border-radius: 5px;
@@ -567,9 +575,18 @@ button {
 			max-width: 629px;
 		}
 
+		&_wide {
+			max-width: 507px;
+		}
+
 		&_outside {
 			margin-top: 38px;
 			margin-bottom: 38px;
+
+			@media @notebook {
+				margin-top: 54px;
+				margin-bottom: 54px;
+			}
 		}
 	}
 
@@ -1046,6 +1063,47 @@ button {
 			-webkit-transform: scale(.75);
 			transform: scale(.75);
 			background-color: #ffffff;
+		}
+	}
+}
+
+.footer {
+	display: none;
+
+	@media @notebook {
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: 10;
+		padding: 24px 16px;
+
+		&__text {
+			display: block;
+			font-size: 15px;
+			line-height: 21px;
+			letter-spacing: .01em;
+		}
+
+		&__link {
+			position: relative;
+			color: @colorLink;
+			margin-left: 6px;
+
+			&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				border-bottom: 1px solid fade(@colorLink, 50%);
+			}
+
+			&:hover {
+				&:after {
+					border-bottom-color: transparent;
+				}
+			}
 		}
 	}
 }
