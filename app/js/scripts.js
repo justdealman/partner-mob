@@ -81,10 +81,16 @@
             $('body').addClass('is-locked');
         }
 
-        function modalsClose() {
-            $('.modal').removeClass('is-opened');
-            $('.fade-bg').removeClass('is-opened');
-            $('body').removeClass('is-locked');
+        function modalsClose(checkRequired) {
+            var activeModal = $('.modal').filter('.is-opened');
+            activeModal.removeClass('is-opened');
+            var requiredId = activeModal.attr('data-required');
+            if ( requiredId !== undefined && requiredId !== '' && checkRequired ) {
+                modalOpen(requiredId);
+            } else {
+                $('.fade-bg').removeClass('is-opened');
+                $('body').removeClass('is-locked');
+            }
         }
 
         $('.modal, .fade-bg').addClass('is-loaded');
@@ -97,12 +103,12 @@
         });
 
         $('[data-modal-close]').on('click', function() {
-            modalsClose();
+            modalsClose(true);
         });
 
         $(document).on('click', function(event) {
             if ( event.target.classList.contains('modal') ) {
-                modalsClose();
+                modalsClose(true);
             }
         });
     });
@@ -148,7 +154,8 @@
 
     $(document).on('click', '.js-order-rollup', function() {
         var order = $(this).parents('[data-order]');
-        order.removeClass('is-opened');
+        var id = order.attr('data-order');
+        $('[data-order="'+id+'"]').removeClass('is-opened');
     });
 
     $(document).on('change', '[data-activity]', function() {

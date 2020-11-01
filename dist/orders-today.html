@@ -16,14 +16,6 @@
 					<use xlink:href="./img/sprite.svg#logo"></use>
 				</svg>
 			</a>
-			<div class="header__tip">
-				<div class="alert alert_green">
-					<svg class="alert__icon">
-						<use xlink:href="./img/sprite.svg#info"></use>
-					</svg>
-					<span class="alert__text">Не забудьте сфотографировать и&nbsp;приложить фото при вручении</span>
-				</div>
-			</div>
 		</header>
 		<div class="wrapper">
 			<div class="nav">
@@ -33,99 +25,105 @@
 							<span class="nav-item__text nav-item__title">Доставить сегодня</span>
 						</div>
 						<div class="nav-item__rc">
-							<span class="nav-item__text nav-item__count nav-item__count_green">(5)</span>
+							<span class="nav-item__text nav-item__count nav-item__count_green">(3)</span>
 						</div>
 					</a>
 				</div>
 			</div>
-			<div class="orders orders_single">
+			<div class="orders">
+				<div class="orders-filter">
+					<div class="orders-filter__col orders-filter__col_wide">
+						<input type="text" class="input-search" placeholder="Поиск по ID">
+					</div>
+					<div class="orders-filter__col">
+						<span class="orders-filter__date">
+							<svg width="24" height="24">
+								<use xlink:href="./img/sprite.svg#calendar"></use>
+							</svg>
+						</span>
+					</div>
+				</div>
 				<div class="orders-list">
-					<a href="./orders-item.html" class="orders-preview">
+					<a href="./orders-today-item.html" class="orders-preview">
 						<div class="orders-preview__text orders-preview__lc">
 							<span class="orders-preview__title">ID 12345678</span>
 						</div>
 						<div class="orders-preview__text orders-preview__rc">
-							<div class="orders-preview__letter has-new" data-open="message">
-								<svg>
-									<use xlink:href="./img/sprite.svg#letter"></use>
-								</svg>
-							</div>
+							<span class="orders-preview__date">06.10</span>
 						</div>
 					</a>
-					<div class="orders-item is-opened" data-order>
-						<div class="orders-item__row">
-							<div class="orders-item__col orders-item__lc">
-								<div class="orders-item-photo" data-open="photo">
-									<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
-									<span class="orders-item-photo__zoom">
-										<svg width="16" height="16">
-											<use xlink:href="./img/sprite.svg#lens"></use>
-										</svg>
-									</span>
-								</div>
-								<span class="orders-item__price">4 900 руб.</span>
-							</div>
-							<div class="orders-item__col orders-item__rc">
-								<svg width="24" height="24" class="orders-item__expand js-order-rollup">
-									<use xlink:href="./img/sprite.svg#expand"></use>
-								</svg>
-								<span class="orders-item__title">Осень на Холсте</span>
-								<div class="orders-item-links">
-									<div class="orders-item-links__col">
-										<span class="orders-item-links__item" data-open="composition">Состав</span>
-									</div>
-									<div class="orders-item-links__col">
-										<span class="orders-item-links__item" data-open="postcard">Открытка</span>
-									</div>
-								</div>
-								<ul class="orders-item__list">
-									<li>Корзина фрутов</li>
-									<li>Рафаэлло</li>
-									<li>Шары</li>
-									<li>Бесплатное фото</li>
-								</ul>
-								<label for="upload-photo" class="orders-camera">
-									<svg class="orders-camera__icon">
-										<use xlink:href="./img/sprite.svg#camera"></use>
-									</svg>
-									<span class="orders-camera__text">Сделать фото букета</span>
-								</label>
-								<input type="file" class="is-hidden" id="upload-photo" accept="image/*;capture=camera">
-							</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 12345678</span>
 						</div>
-						<span class="orders-item__text orders-item__text_inline"><span>Дата</span> 20.09.2020</span>
-						<span class="orders-item__text orders-item__text_inline"><span>Время</span> 11:00 - 13:00</span>
-						<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
-						<div class="orders-nav">
-							<svg class="orders-nav__arrow">
-								<use xlink:href="./img/sprite.svg#arrow-left"></use>
-							</svg>
-							<a href="#" class="orders-nav__link">
-								<svg class="orders-nav__icon">
-									<use xlink:href="./img/sprite.svg#share"></use>
-								</svg>
-								<span class="orders-nav__text">Открыть бланк заказа</span>
-							</a>
-							<svg class="orders-nav__arrow">
-								<use xlink:href="./img/sprite.svg#arrow-right"></use>
-							</svg>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">06.10</span>
 						</div>
 					</div>
-				</div>
-				<div class="orders__uploaded uploaded">
-					<div class="uploaded__col">
-						<div class="uploaded__item">
-							<div class="uploaded__pic bg-cover" style="background-image: url('./pic/uploaded.jpg')"></div>
-							<span class="uploaded__remove">
-								<svg>
-									<use xlink:href="./img/sprite.svg#cross"></use>
-								</svg>
-							</span>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">05.10</span>
 						</div>
 					</div>
-				</div>
-				<div class="orders-mark">
-					<span class="orders-mark__btn btn btn_green" data-open="add-file">Доставлено</span>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">04.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">03.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">03.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">03.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">03.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">03.10</span>
+						</div>
+					</div>
+					<div class="orders-preview">
+						<div class="orders-preview__text orders-preview__lc">
+							<span class="orders-preview__title">ID 87654321</span>
+						</div>
+						<div class="orders-preview__text orders-preview__rc">
+							<span class="orders-preview__date">03.10</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -332,7 +330,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal" data-target="message">
+		<div class="modal" data-target="cancel">
 			<div class="modal__core modal__core_outside">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
@@ -341,15 +339,16 @@
 					<span class="modal-close__text">Закрыть</span>
 				</div>
 				<div class="popup">
-					<span class="popup__title">ID 12359783</span>
-					<textarea rows="4" class="popup__area">Хьюстон, у нас проблемы</textarea>
+					<span class="popup__title">Укажите причину отказа</span>
 					<div class="popup-action">
-						<span class="btn btn_green popup-action__btn">Отправить</span>
+						<span class="btn btn_yellow popup-action__btn" data-open="cancel-reason-1">Нет состава</span>
+						<span class="btn btn_yellow popup-action__btn" data-open="cancel-reason-2">Попросить изменить цену</span>
+						<span class="btn btn_yellow popup-action__btn" data-open="cancel-reason-3">Адрес не в нашем городе</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal" data-target="add-file">
+		<div class="modal" data-target="cancel-reason-3">
 			<div class="modal__core modal__core_outside">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
@@ -358,19 +357,20 @@
 					<span class="modal-close__text">Закрыть</span>
 				</div>
 				<div class="popup">
-					<div class="popup-file">
-						<svg class="popup-file__icon">
-							<use xlink:href="./img/sprite.svg#image"></use>
-						</svg>
-						<span class="popup-file__text">Прикрепить фото доставленного букета</span>
+					<span class="popup__title">Предложить стоимость доставки</span>
+					<div class="popup-price js-price">
+						<span class="popup-price__dummy js-price-dummy"></span>
+						<input type="text" class="popup-price__input js-price-input" value="700" maxlength="12">
+						<span class="popup-price__sign js-price-sign">₽</span>
 					</div>
+					<input type="text" class="popup__address" placeholder="Укажите правильный адрес">
 					<div class="popup-action">
-						<span class="btn btn_green popup-action__btn" data-open="upload-result">Прикрепить файл</span>
+						<span class="btn btn_yellow popup-action__btn">Отправить</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal" data-target="upload-result">
+		<div class="modal" data-target="cancel-reason-2">
 			<div class="modal__core modal__core_outside">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
@@ -379,27 +379,26 @@
 					<span class="modal-close__text">Закрыть</span>
 				</div>
 				<div class="popup">
-					<div class="popup__uploaded">
-						<div class="uploaded">
-							<div class="uploaded__col">
-								<div class="uploaded__item">
-									<div class="uploaded__pic bg-cover" style="background-image: url('./pic/uploaded.jpg')"></div>
-									<span class="uploaded__remove">
-										<svg>
-											<use xlink:href="./img/sprite.svg#cross"></use>
-										</svg>
-									</span>
-								</div>
-							</div>
+					<div class="popup__tip">
+						<div class="alert alert_red">
+							<svg class="alert__icon">
+								<use xlink:href="./img/sprite.svg#info"></use>
+							</svg>
+							<span class="alert__text">В случае увеличения цены заказ может уйти другому исполнителю!</span>
 						</div>
 					</div>
-					<div class="popup-action">
-						<span class="btn btn_green popup-action__btn">Отправить</span>
+					<div class="popup-price js-price">
+						<span class="popup-price__dummy js-price-dummy"></span>
+						<input type="text" class="popup-price__input js-price-input" value="3700" maxlength="12">
+						<span class="popup-price__sign js-price-sign">₽</span>
+					</div>
+					<div class="cancel-action">
+						<span class="btn btn_red popup-action__btn">Предложить цену</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal" data-target="postcard">
+		<div class="modal" data-target="cancel-reason-1">
 			<div class="modal__core modal__core_outside">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
@@ -408,11 +407,11 @@
 					<span class="modal-close__text">Закрыть</span>
 				</div>
 				<div class="popup">
-					<div class="popup-finish">
-						<svg class="popup-finish__icon">
-							<use xlink:href="./img/sprite.svg#external"></use>
-						</svg>
-						<span class="popup-finish__text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</span>
+					<span class="popup__title">Нет состава</span>
+					<textarea rows="4" class="popup__area">Лизиантус на тритикум</textarea>
+					<div class="popup-action">
+						<span class="btn btn_yellow popup-action__btn">Предложить замену</span>
+						<span class="btn btn_red popup-action__btn">Заменить не на что</span>
 					</div>
 				</div>
 			</div>

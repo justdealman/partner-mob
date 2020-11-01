@@ -16,43 +16,43 @@
 					<use xlink:href="./img/sprite.svg#logo"></use>
 				</svg>
 			</a>
+			<div class="header__tip">
+				<div class="alert alert_green">
+					<svg class="alert__icon">
+						<use xlink:href="./img/sprite.svg#info"></use>
+					</svg>
+					<span class="alert__text">Не забудьте сфотографировать и&nbsp;приложить фото при вручении</span>
+				</div>
+			</div>
 		</header>
 		<div class="wrapper">
 			<div class="nav">
 				<div class="nav__group">
-					<a href="./orders-accept.html" class="nav-item">
+					<a href="./orders-today.html" class="nav-item">
 						<div class="nav-item__lc">
-							<span class="nav-item__text nav-item__title">Принять заказы</span>
+							<span class="nav-item__text nav-item__title">Доставить сегодня</span>
 						</div>
 						<div class="nav-item__rc">
-							<span class="nav-item__text nav-item__count nav-item__count_green">(32)</span>
+							<span class="nav-item__text nav-item__count nav-item__count_green">(5)</span>
 						</div>
 					</a>
 				</div>
 			</div>
 			<div class="orders orders_single">
-				<div class="orders-filter">
-					<div class="orders-filter__col orders-filter__col_wide">
-						<input type="text" class="input-search" placeholder="Поиск по ID">
-					</div>
-					<div class="orders-filter__col">
-						<span class="orders-filter__date">
-							<svg width="24" height="24">
-								<use xlink:href="./img/sprite.svg#calendar"></use>
-							</svg>
-						</span>
-					</div>
-				</div>
 				<div class="orders-list">
 					<a href="./orders-item.html" class="orders-preview">
 						<div class="orders-preview__text orders-preview__lc">
 							<span class="orders-preview__title">ID 12345678</span>
 						</div>
 						<div class="orders-preview__text orders-preview__rc">
-							<span class="orders-preview__date">06.10</span>
+							<div class="orders-preview__letter has-new" data-open="message">
+								<svg>
+									<use xlink:href="./img/sprite.svg#letter"></use>
+								</svg>
+							</div>
 						</div>
 					</a>
-					<div class="orders-item is-opened" data-order>
+					<div class="orders-item is-opened" data-order="1">
 						<div class="orders-item__row">
 							<div class="orders-item__col orders-item__lc">
 								<div class="orders-item-photo" data-open="photo">
@@ -64,8 +64,6 @@
 									</span>
 								</div>
 								<span class="orders-item__price">4 900 руб.</span>
-								<span class="orders-item__text"><span>Дата</span> 20.09.2020</span>
-								<span class="orders-item__text"><span>Время</span> 11:00 - 13:00</span>
 							</div>
 							<div class="orders-item__col orders-item__rc">
 								<svg width="24" height="24" class="orders-item__expand js-order-rollup">
@@ -86,90 +84,48 @@
 									<li>Шары</li>
 									<li>Бесплатное фото</li>
 								</ul>
+								<label for="upload-photo" class="orders-camera">
+									<svg class="orders-camera__icon">
+										<use xlink:href="./img/sprite.svg#camera"></use>
+									</svg>
+									<span class="orders-camera__text">Сделать фото букета</span>
+								</label>
+								<input type="file" class="is-hidden" id="upload-photo" accept="image/*;capture=camera">
 							</div>
 						</div>
+						<span class="orders-item__text orders-item__text_inline"><span>Дата</span> 20.09.2020</span>
+						<span class="orders-item__text orders-item__text_inline"><span>Время</span> 11:00 - 13:00</span>
 						<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
-						<div class="orders-item-action">
-							<div class="orders-item-action__col">
-								<a href="#" class="btn btn_green">Принять</a>
-							</div>
-							<div class="orders-item-action__col">
-								<span class="btn btn_red" data-open="cancel">Отклонить</span>
-							</div>
+						<div class="orders-nav">
+							<svg class="orders-nav__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-left"></use>
+							</svg>
+							<a href="#" class="orders-nav__link">
+								<svg class="orders-nav__icon">
+									<use xlink:href="./img/sprite.svg#share"></use>
+								</svg>
+								<span class="orders-nav__text">Открыть бланк заказа</span>
+							</a>
+							<svg class="orders-nav__arrow">
+								<use xlink:href="./img/sprite.svg#arrow-right"></use>
+							</svg>
 						</div>
 					</div>
-					<div class="orders-preview">
-						<div class="orders-preview__text orders-preview__lc">
-							<span class="orders-preview__title">ID 12345678</span>
-						</div>
-						<div class="orders-preview__text orders-preview__rc">
-							<span class="orders-preview__date">06.10</span>
-						</div>
-					</div>
-					<div class="orders-preview">
-						<div class="orders-preview__text orders-preview__lc">
-							<span class="orders-preview__title">ID 87654321</span>
-						</div>
-						<div class="orders-preview__text orders-preview__rc">
-							<span class="orders-preview__date">05.10</span>
+				</div>
+				<div class="orders__uploaded uploaded is-opened" data-order="1">
+					<div class="uploaded__col">
+						<div class="uploaded__item">
+							<div class="uploaded__pic bg-cover" style="background-image: url('./pic/uploaded.jpg')"></div>
+							<span class="uploaded__remove">
+								<svg>
+									<use xlink:href="./img/sprite.svg#cross"></use>
+								</svg>
+							</span>
 						</div>
 					</div>
-					<div class="orders-preview">
-						<div class="orders-preview__text orders-preview__lc">
-							<span class="orders-preview__title">ID 87654321</span>
-						</div>
-						<div class="orders-preview__text orders-preview__rc">
-							<span class="orders-preview__date">04.10</span>
-						</div>
-					</div>
-					<div class="orders-preview">
-						<div class="orders-preview__text orders-preview__lc">
-							<span class="orders-preview__title">ID 87654321</span>
-						</div>
-						<div class="orders-preview__text orders-preview__rc">
-							<span class="orders-preview__date">03.10</span>
-						</div>
-					</div>
-					<div class="orders-preview">
-						<div class="orders-preview__text orders-preview__lc">
-							<span class="orders-preview__title">ID 87654321</span>
-						</div>
-						<div class="orders-preview__text orders-preview__rc">
-							<span class="orders-preview__date">03.10</span>
-						</div>
-					</div>
-					<div class="orders-preview">
-						<div class="orders-preview__text orders-preview__lc">
-							<span class="orders-preview__title">ID 87654321</span>
-						</div>
-						<div class="orders-preview__text orders-preview__rc">
-							<span class="orders-preview__date">03.10</span>
-						</div>
-					</div>
-					<div class="orders-preview">
-						<div class="orders-preview__text orders-preview__lc">
-							<span class="orders-preview__title">ID 87654321</span>
-						</div>
-						<div class="orders-preview__text orders-preview__rc">
-							<span class="orders-preview__date">03.10</span>
-						</div>
-					</div>
-					<div class="orders-preview">
-						<div class="orders-preview__text orders-preview__lc">
-							<span class="orders-preview__title">ID 87654321</span>
-						</div>
-						<div class="orders-preview__text orders-preview__rc">
-							<span class="orders-preview__date">03.10</span>
-						</div>
-					</div>
-					<div class="orders-preview">
-						<div class="orders-preview__text orders-preview__lc">
-							<span class="orders-preview__title">ID 87654321</span>
-						</div>
-						<div class="orders-preview__text orders-preview__rc">
-							<span class="orders-preview__date">03.10</span>
-						</div>
-					</div>
+				</div>
+				<div class="orders-mark">
+					<span class="orders-mark__btn btn btn_green" data-open="add-file">Доставлено</span>
 				</div>
 			</div>
 		</div>
@@ -376,7 +332,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="modal" data-target="cancel">
+		<div class="modal" data-target="message">
 			<div class="modal__core modal__core_outside">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
@@ -385,16 +341,15 @@
 					<span class="modal-close__text">Закрыть</span>
 				</div>
 				<div class="popup">
-					<span class="popup__title">Укажите причину отказа</span>
+					<span class="popup__title">ID 12359783</span>
+					<textarea rows="4" class="popup__area">Хьюстон, у нас проблемы</textarea>
 					<div class="popup-action">
-						<span class="btn btn_yellow popup-action__btn" data-open="cancel-reason-1">Нет состава</span>
-						<span class="btn btn_yellow popup-action__btn" data-open="cancel-reason-2">Попросить изменить цену</span>
-						<span class="btn btn_yellow popup-action__btn" data-open="cancel-reason-3">Адрес не в нашем городе</span>
+						<span class="btn btn_green popup-action__btn">Отправить</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal" data-target="cancel-reason-3">
+		<div class="modal" data-target="add-file" data-required="photo-required">
 			<div class="modal__core modal__core_outside">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
@@ -403,20 +358,19 @@
 					<span class="modal-close__text">Закрыть</span>
 				</div>
 				<div class="popup">
-					<span class="popup__title">Предложить стоимость доставки</span>
-					<div class="popup-price js-price">
-						<span class="popup-price__dummy js-price-dummy"></span>
-						<input type="text" class="popup-price__input js-price-input" value="700" maxlength="12">
-						<span class="popup-price__sign js-price-sign">₽</span>
+					<div class="popup-file">
+						<svg class="popup-file__icon">
+							<use xlink:href="./img/sprite.svg#image"></use>
+						</svg>
+						<span class="popup-file__text">Прикрепить фото доставленного букета</span>
 					</div>
-					<input type="text" class="popup__address" placeholder="Укажите правильный адрес">
 					<div class="popup-action">
-						<span class="btn btn_yellow popup-action__btn">Отправить</span>
+						<span class="btn btn_green popup-action__btn" data-open="upload-result">Прикрепить файл</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal" data-target="cancel-reason-2">
+		<div class="modal" data-target="upload-result">
 			<div class="modal__core modal__core_outside">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
@@ -425,26 +379,27 @@
 					<span class="modal-close__text">Закрыть</span>
 				</div>
 				<div class="popup">
-					<div class="popup__tip">
-						<div class="alert alert_red">
-							<svg class="alert__icon">
-								<use xlink:href="./img/sprite.svg#info"></use>
-							</svg>
-							<span class="alert__text">В случае увеличения цены заказ может уйти другому исполнителю!</span>
+					<div class="popup__uploaded">
+						<div class="uploaded">
+							<div class="uploaded__col">
+								<div class="uploaded__item">
+									<div class="uploaded__pic bg-cover" style="background-image: url('./pic/uploaded.jpg')"></div>
+									<span class="uploaded__remove">
+										<svg>
+											<use xlink:href="./img/sprite.svg#cross"></use>
+										</svg>
+									</span>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="popup-price js-price">
-						<span class="popup-price__dummy js-price-dummy"></span>
-						<input type="text" class="popup-price__input js-price-input" value="3700" maxlength="12">
-						<span class="popup-price__sign js-price-sign">₽</span>
-					</div>
 					<div class="popup-action">
-						<span class="btn btn_red popup-action__btn">Предложить цену</span>
+						<span class="btn btn_green popup-action__btn" data-open="success">Отправить</span>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="modal" data-target="cancel-reason-1">
+		<div class="modal" data-target="success">
 			<div class="modal__core modal__core_outside">
 				<div class="modal-close" data-modal-close>
 					<svg class="modal-close__icon">
@@ -453,11 +408,101 @@
 					<span class="modal-close__text">Закрыть</span>
 				</div>
 				<div class="popup">
-					<span class="popup__title">Нет состава</span>
-					<textarea rows="4" class="popup__area">Лизиантус на тритикум</textarea>
+					<div class="popup-message">
+						<svg class="popup-message__icon">
+							<use xlink:href="./img/sprite.svg#success"></use>
+						</svg>
+						<span class="popup-message__text">Спасибо! Заказ отмечен как&nbsp;выполненный, фото принято</span>
+					</div>
 					<div class="popup-action">
-						<span class="btn btn_yellow popup-action__btn">Предложить замену</span>
-						<span class="btn btn_red popup-action__btn">Заменить не на что</span>
+						<span class="btn btn_green popup-action__btn" data-modal-close>Закрыть</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-target="photo-required">
+			<div class="modal__core modal__core_outside">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+					<span class="modal-close__text">Закрыть</span>
+				</div>
+				<div class="popup">
+					<div class="popup-message">
+						<svg class="popup-message__icon">
+							<use xlink:href="./img/sprite.svg#warning"></use>
+						</svg>
+						<span class="popup-message__text">Вы не&nbsp;добавили фото доставленного букета</span>
+					</div>
+					<div class="popup-action">
+						<span class="btn btn_yellow popup-action__btn" data-open="photo-refuse">Отказ от фото</span>
+						<span class="btn btn_yellow popup-action__btn" data-open="photo-refuse">Букет вручен третьим лицам</span>
+						<span class="btn btn_yellow popup-action__btn" data-open="add-file">Забыл сделать</span>
+						<span class="btn btn_yellow popup-action__btn" data-open="photo-send-later">Отправлю фото позже</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-target="photo-refuse">
+			<div class="modal__core modal__core_outside">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+					<span class="modal-close__text">Закрыть</span>
+				</div>
+				<div class="popup">
+					<div class="popup-message">
+						<svg class="popup-message__icon">
+							<use xlink:href="./img/sprite.svg#warning"></use>
+						</svg>
+						<span class="popup-message__text">Необходимо приложить фото бланка в&nbsp;подтверждение отказа</span>
+					</div>
+					<div class="popup-action">
+						<span class="btn btn_green popup-action__btn" data-open="success-2">Прикрепить из галереи</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-target="success-2">
+			<div class="modal__core modal__core_outside">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+					<span class="modal-close__text">Закрыть</span>
+				</div>
+				<div class="popup">
+					<div class="popup-message">
+						<svg class="popup-message__icon">
+							<use xlink:href="./img/sprite.svg#success"></use>
+						</svg>
+						<span class="popup-message__text">Спасибо! Заказ доставлен, бланк заказа отправлен</span>
+					</div>
+					<div class="popup-action">
+						<span class="btn btn_green popup-action__btn" data-modal-close>Закрыть</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal" data-target="photo-send-later">
+			<div class="modal__core modal__core_outside">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+					<span class="modal-close__text">Закрыть</span>
+				</div>
+				<div class="popup">
+					<div class="popup-message">
+						<svg class="popup-message__icon">
+							<use xlink:href="./img/sprite.svg#warning"></use>
+						</svg>
+						<span class="popup-message__text">Спасибо! Заказ доставлен, необходимо приложить фото момента доставки</span>
+					</div>
+					<div class="popup-action">
+						<span class="btn btn_green popup-action__btn" data-open="success-2">Прикрепить из галереи</span>
 					</div>
 				</div>
 			</div>
