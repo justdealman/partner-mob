@@ -174,7 +174,7 @@
     $(document).on('click', '.js-order-rollup', function() {
         var order = $(this).parents('[data-order]');
         var id = order.attr('data-order');
-        $('[data-order="'+id+'"]').removeClass('is-opened');
+        $('[data-order-link="'+id+'"]').removeClass('is-opened');
     });
 
     $(document).on('change', '[data-activity]', function() {
@@ -261,5 +261,46 @@
         } else {
             btn.addClass('is-disabled');
         }
+    });
+
+    $(document).on('click', '.js-upload-remove', function() {
+         var t = $(this);
+         var $item = t.parents('.js-upload-item');
+         var $container = t.parents('.js-upload');
+         $item.remove();
+         if ( $container.find('.js-upload-item').length === 0 ) {
+             $container.hide();
+         }
+    });
+
+    function showOrder(id) {
+        var orders = $('[data-order-link]');
+        orders.filter('.is-opened').removeClass('is-opened');
+        orders.filter('[data-order-link="'+id+'"]').addClass('is-opened');
+    }
+
+    $(document).on('click', '[data-order-link]', function(e) {
+         var t = $(this);
+         if ( $(e.target).parents().attr('data-open') === undefined && !t.hasClass('is-opened') ) {
+             showOrder(t.attr('data-order-link'))
+         }
+    });
+
+    $(document).on('click', '.js-orders-prev', function() {
+         var t = $(this);
+         var item = t.parents('[data-order]');
+         var prev = item.prev().prev();
+         if ( prev.length ) {
+             showOrder(prev.attr('data-order'));
+         }
+    });
+
+    $(document).on('click', '.js-orders-next', function() {
+         var t = $(this);
+         var item = t.parents('[data-order]');
+         var next = item.next();
+         if ( next.length ) {
+             showOrder(next.attr('data-order-link'))
+         }
     });
 });

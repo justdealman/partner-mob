@@ -1628,11 +1628,15 @@ button {
 	-ms-flex-pack: center;
 	justify-content: center;
 	font-size: 0;
+	cursor: pointer;
 	padding: 12px 8px 14px;
 	border-bottom: 2px solid #f5f5f5;
 }
 .orders-preview:last-child {
 	border-bottom-width: 0;
+}
+.orders-preview.is-opened + .orders-item {
+	display: block;
 }
 .orders-preview__text {
 	display: inline-block;
@@ -1683,6 +1687,7 @@ button {
 	border-radius: 50%;
 }
 .orders-item {
+	display: none;
 	position: relative;
 	letter-spacing: 0.02em;
 	padding: 22px 16px 8px;
@@ -1720,9 +1725,9 @@ button {
 		width: 326px;
 		padding-bottom: 0;
 	}
-}
-.orders-item__lc_action {
-	padding-bottom: 49px;
+	.orders-item__lc_action {
+		padding-bottom: 49px;
+	}
 }
 .orders-item__rc {
 	-webkit-box-flex: 1;
@@ -1956,6 +1961,11 @@ button {
 	width: 24px;
 	height: 24px;
 	stroke: #000000;
+	cursor: pointer;
+}
+.orders-nav__arrow.is-disabled {
+	opacity: 0;
+	visibility: hidden;
 }
 .orders-nav__link {
 	display: -webkit-box;
@@ -1984,6 +1994,7 @@ button {
 }
 .orders-mark {
 	margin-top: 24px;
+	margin-bottom: 8px;
 }
 .orders-mark__btn {
 	width: 100%;
@@ -2049,12 +2060,6 @@ button {
 	height: 16px;
 	margin-top: -8px;
 	margin-left: -8px;
-}
-[data-order] {
-	display: none;
-}
-[data-order].is-opened {
-	display: block;
 }
 .bq {
 	margin: -2px 0 -8px;

@@ -45,7 +45,7 @@
 					</div>
 					<div class="orders orders_single">
 						<div class="orders-list">
-							<a href="./orders-item.html" class="orders-preview">
+							<div class="orders-preview is-opened" data-order-link="1">
 								<div class="orders-preview__text orders-preview__lc">
 									<span class="orders-preview__title">ID 12345678</span>
 								</div>
@@ -56,8 +56,8 @@
 										</svg>
 									</div>
 								</div>
-							</a>
-							<div class="orders-item is-opened" data-order="1">
+							</div>
+							<div class="orders-item" data-order="1">
 								<div class="orders-item__row">
 									<div class="orders-item__col orders-item__lc">
 										<div class="orders-item-photo" data-open="photo">
@@ -112,7 +112,7 @@
 									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
 								</div>
 								<div class="orders-nav">
-									<svg class="orders-nav__arrow">
+									<svg class="orders-nav__arrow is-disabled">
 										<use xlink:href="./img/sprite.svg#arrow-left"></use>
 									</svg>
 									<a href="#" class="orders-nav__link">
@@ -121,26 +121,478 @@
 										</svg>
 										<span class="orders-nav__text">Открыть бланк заказа</span>
 									</a>
-									<svg class="orders-nav__arrow">
+									<svg class="orders-nav__arrow js-orders-next">
 										<use xlink:href="./img/sprite.svg#arrow-right"></use>
 									</svg>
 								</div>
-							</div>
-						</div>
-						<div class="orders__uploaded uploaded is-opened" data-order="1">
-							<div class="uploaded__col">
-								<div class="uploaded__item">
-									<div class="uploaded__pic bg-cover" style="background-image: url('./pic/uploaded.jpg')"></div>
-									<span class="uploaded__remove">
-										<svg>
-											<use xlink:href="./img/sprite.svg#cross"></use>
-										</svg>
-									</span>
+								<div class="orders__uploaded uploaded js-upload">
+									<div class="uploaded__col">
+										<div class="uploaded__item js-upload-item">
+											<div class="uploaded__pic bg-cover" style="background-image: url('./pic/uploaded.jpg')"></div>
+											<span class="uploaded__remove js-upload-remove">
+												<svg>
+													<use xlink:href="./img/sprite.svg#cross"></use>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="orders-mark">
+									<span class="orders-mark__btn btn btn_green" data-open="add-file">Доставлено</span>
 								</div>
 							</div>
-						</div>
-						<div class="orders-mark">
-							<span class="orders-mark__btn btn btn_green" data-open="add-file">Доставлено</span>
+							<div class="orders-preview" data-order-link="2">
+								<div class="orders-preview__text orders-preview__lc">
+									<span class="orders-preview__title">ID 12345678</span>
+								</div>
+							</div>
+							<div class="orders-item" data-order="2">
+								<div class="orders-item__row">
+									<div class="orders-item__col orders-item__lc">
+										<div class="orders-item-photo" data-open="photo">
+											<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+											<span class="orders-item-photo__zoom">
+												<svg width="16" height="16">
+													<use xlink:href="./img/sprite.svg#lens"></use>
+												</svg>
+											</span>
+										</div>
+										<span class="orders-item__price desktop-hide">4 900 руб.</span>
+									</div>
+									<div class="orders-item__col orders-item__rc">
+										<div class="orders-item__header">
+											<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+												<use xlink:href="./img/sprite.svg#expand"></use>
+											</svg>
+											<span class="orders-item__title">Осень на Холсте</span>
+											<span class="orders-item__price mobile-hide">4 900 руб.</span>
+										</div>
+										<div class="orders-item-links">
+											<div class="orders-item-links__col">
+												<span class="orders-item-links__item" data-open="composition">Состав</span>
+											</div>
+											<div class="orders-item-links__col">
+												<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+											</div>
+										</div>
+										<ul class="orders-item__list">
+											<li>Корзина фрутов</li>
+											<li>Рафаэлло</li>
+											<li>Шары</li>
+											<li>Бесплатное фото</li>
+										</ul>
+										<label for="upload-photo" class="orders-camera">
+											<svg class="orders-camera__icon">
+												<use xlink:href="./img/sprite.svg#camera"></use>
+											</svg>
+											<span class="orders-camera__text">Сделать фото букета</span>
+										</label>
+										<input type="file" class="is-hidden" id="upload-photo" accept="image/*;capture=camera">
+										<div class="mobile-hide">
+											<span class="orders-item__text orders-item__text_inline"><span>Дата</span> 20.09.2020</span>
+											<span class="orders-item__text orders-item__text_inline"><span>Время</span> 11:00 - 13:00</span>
+											<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+										</div>
+									</div>
+								</div>
+								<div class="desktop-hide">
+									<span class="orders-item__text orders-item__text_inline"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text orders-item__text_inline"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+								<div class="orders-nav">
+									<svg class="orders-nav__arrow js-orders-prev">
+										<use xlink:href="./img/sprite.svg#arrow-left"></use>
+									</svg>
+									<a href="#" class="orders-nav__link">
+										<svg class="orders-nav__icon">
+											<use xlink:href="./img/sprite.svg#share"></use>
+										</svg>
+										<span class="orders-nav__text">Открыть бланк заказа</span>
+									</a>
+									<svg class="orders-nav__arrow js-orders-next">
+										<use xlink:href="./img/sprite.svg#arrow-right"></use>
+									</svg>
+								</div>
+								<div class="orders__uploaded uploaded js-upload">
+									<div class="uploaded__col">
+										<div class="uploaded__item js-upload-item">
+											<div class="uploaded__pic bg-cover" style="background-image: url('./pic/uploaded.jpg')"></div>
+											<span class="uploaded__remove js-upload-remove">
+												<svg>
+													<use xlink:href="./img/sprite.svg#cross"></use>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="orders-mark">
+									<span class="orders-mark__btn btn btn_green" data-open="add-file">Доставлено</span>
+								</div>
+							</div>
+							<div class="orders-preview" data-order-link="3">
+								<div class="orders-preview__text orders-preview__lc">
+									<span class="orders-preview__title">ID 12345678</span>
+								</div>
+							</div>
+							<div class="orders-item" data-order="3">
+								<div class="orders-item__row">
+									<div class="orders-item__col orders-item__lc">
+										<div class="orders-item-photo" data-open="photo">
+											<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+											<span class="orders-item-photo__zoom">
+												<svg width="16" height="16">
+													<use xlink:href="./img/sprite.svg#lens"></use>
+												</svg>
+											</span>
+										</div>
+										<span class="orders-item__price desktop-hide">4 900 руб.</span>
+									</div>
+									<div class="orders-item__col orders-item__rc">
+										<div class="orders-item__header">
+											<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+												<use xlink:href="./img/sprite.svg#expand"></use>
+											</svg>
+											<span class="orders-item__title">Осень на Холсте</span>
+											<span class="orders-item__price mobile-hide">4 900 руб.</span>
+										</div>
+										<div class="orders-item-links">
+											<div class="orders-item-links__col">
+												<span class="orders-item-links__item" data-open="composition">Состав</span>
+											</div>
+											<div class="orders-item-links__col">
+												<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+											</div>
+										</div>
+										<ul class="orders-item__list">
+											<li>Корзина фрутов</li>
+											<li>Рафаэлло</li>
+											<li>Шары</li>
+											<li>Бесплатное фото</li>
+										</ul>
+										<label for="upload-photo" class="orders-camera">
+											<svg class="orders-camera__icon">
+												<use xlink:href="./img/sprite.svg#camera"></use>
+											</svg>
+											<span class="orders-camera__text">Сделать фото букета</span>
+										</label>
+										<input type="file" class="is-hidden" id="upload-photo" accept="image/*;capture=camera">
+										<div class="mobile-hide">
+											<span class="orders-item__text orders-item__text_inline"><span>Дата</span> 20.09.2020</span>
+											<span class="orders-item__text orders-item__text_inline"><span>Время</span> 11:00 - 13:00</span>
+											<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+										</div>
+									</div>
+								</div>
+								<div class="desktop-hide">
+									<span class="orders-item__text orders-item__text_inline"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text orders-item__text_inline"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+								<div class="orders-nav">
+									<svg class="orders-nav__arrow js-orders-prev">
+										<use xlink:href="./img/sprite.svg#arrow-left"></use>
+									</svg>
+									<a href="#" class="orders-nav__link">
+										<svg class="orders-nav__icon">
+											<use xlink:href="./img/sprite.svg#share"></use>
+										</svg>
+										<span class="orders-nav__text">Открыть бланк заказа</span>
+									</a>
+									<svg class="orders-nav__arrow js-orders-next">
+										<use xlink:href="./img/sprite.svg#arrow-right"></use>
+									</svg>
+								</div>
+								<div class="orders__uploaded uploaded js-upload">
+									<div class="uploaded__col">
+										<div class="uploaded__item js-upload-item">
+											<div class="uploaded__pic bg-cover" style="background-image: url('./pic/uploaded.jpg')"></div>
+											<span class="uploaded__remove js-upload-remove">
+												<svg>
+													<use xlink:href="./img/sprite.svg#cross"></use>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="orders-mark">
+									<span class="orders-mark__btn btn btn_green" data-open="add-file">Доставлено</span>
+								</div>
+							</div>
+							<div class="orders-preview" data-order-link="4">
+								<div class="orders-preview__text orders-preview__lc">
+									<span class="orders-preview__title">ID 12345678</span>
+								</div>
+							</div>
+							<div class="orders-item" data-order="4">
+								<div class="orders-item__row">
+									<div class="orders-item__col orders-item__lc">
+										<div class="orders-item-photo" data-open="photo">
+											<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+											<span class="orders-item-photo__zoom">
+												<svg width="16" height="16">
+													<use xlink:href="./img/sprite.svg#lens"></use>
+												</svg>
+											</span>
+										</div>
+										<span class="orders-item__price desktop-hide">4 900 руб.</span>
+									</div>
+									<div class="orders-item__col orders-item__rc">
+										<div class="orders-item__header">
+											<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+												<use xlink:href="./img/sprite.svg#expand"></use>
+											</svg>
+											<span class="orders-item__title">Осень на Холсте</span>
+											<span class="orders-item__price mobile-hide">4 900 руб.</span>
+										</div>
+										<div class="orders-item-links">
+											<div class="orders-item-links__col">
+												<span class="orders-item-links__item" data-open="composition">Состав</span>
+											</div>
+											<div class="orders-item-links__col">
+												<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+											</div>
+										</div>
+										<ul class="orders-item__list">
+											<li>Корзина фрутов</li>
+											<li>Рафаэлло</li>
+											<li>Шары</li>
+											<li>Бесплатное фото</li>
+										</ul>
+										<label for="upload-photo" class="orders-camera">
+											<svg class="orders-camera__icon">
+												<use xlink:href="./img/sprite.svg#camera"></use>
+											</svg>
+											<span class="orders-camera__text">Сделать фото букета</span>
+										</label>
+										<input type="file" class="is-hidden" id="upload-photo" accept="image/*;capture=camera">
+										<div class="mobile-hide">
+											<span class="orders-item__text orders-item__text_inline"><span>Дата</span> 20.09.2020</span>
+											<span class="orders-item__text orders-item__text_inline"><span>Время</span> 11:00 - 13:00</span>
+											<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+										</div>
+									</div>
+								</div>
+								<div class="desktop-hide">
+									<span class="orders-item__text orders-item__text_inline"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text orders-item__text_inline"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+								<div class="orders-nav">
+									<svg class="orders-nav__arrow js-orders-prev">
+										<use xlink:href="./img/sprite.svg#arrow-left"></use>
+									</svg>
+									<a href="#" class="orders-nav__link">
+										<svg class="orders-nav__icon">
+											<use xlink:href="./img/sprite.svg#share"></use>
+										</svg>
+										<span class="orders-nav__text">Открыть бланк заказа</span>
+									</a>
+									<svg class="orders-nav__arrow js-orders-next">
+										<use xlink:href="./img/sprite.svg#arrow-right"></use>
+									</svg>
+								</div>
+								<div class="orders__uploaded uploaded js-upload">
+									<div class="uploaded__col">
+										<div class="uploaded__item js-upload-item">
+											<div class="uploaded__pic bg-cover" style="background-image: url('./pic/uploaded.jpg')"></div>
+											<span class="uploaded__remove js-upload-remove">
+												<svg>
+													<use xlink:href="./img/sprite.svg#cross"></use>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="orders-mark">
+									<span class="orders-mark__btn btn btn_green" data-open="add-file">Доставлено</span>
+								</div>
+							</div>
+							<div class="orders-preview" data-order-link="5">
+								<div class="orders-preview__text orders-preview__lc">
+									<span class="orders-preview__title">ID 12345678</span>
+								</div>
+								<div class="orders-preview__text orders-preview__rc">
+									<div class="orders-preview__letter has-new" data-open="message">
+										<svg>
+											<use xlink:href="./img/sprite.svg#letter"></use>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div class="orders-item" data-order="5">
+								<div class="orders-item__row">
+									<div class="orders-item__col orders-item__lc">
+										<div class="orders-item-photo" data-open="photo">
+											<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+											<span class="orders-item-photo__zoom">
+												<svg width="16" height="16">
+													<use xlink:href="./img/sprite.svg#lens"></use>
+												</svg>
+											</span>
+										</div>
+										<span class="orders-item__price desktop-hide">4 900 руб.</span>
+									</div>
+									<div class="orders-item__col orders-item__rc">
+										<div class="orders-item__header">
+											<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+												<use xlink:href="./img/sprite.svg#expand"></use>
+											</svg>
+											<span class="orders-item__title">Осень на Холсте</span>
+											<span class="orders-item__price mobile-hide">4 900 руб.</span>
+										</div>
+										<div class="orders-item-links">
+											<div class="orders-item-links__col">
+												<span class="orders-item-links__item" data-open="composition">Состав</span>
+											</div>
+											<div class="orders-item-links__col">
+												<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+											</div>
+										</div>
+										<ul class="orders-item__list">
+											<li>Корзина фрутов</li>
+											<li>Рафаэлло</li>
+											<li>Шары</li>
+											<li>Бесплатное фото</li>
+										</ul>
+										<label for="upload-photo" class="orders-camera">
+											<svg class="orders-camera__icon">
+												<use xlink:href="./img/sprite.svg#camera"></use>
+											</svg>
+											<span class="orders-camera__text">Сделать фото букета</span>
+										</label>
+										<input type="file" class="is-hidden" id="upload-photo" accept="image/*;capture=camera">
+										<div class="mobile-hide">
+											<span class="orders-item__text orders-item__text_inline"><span>Дата</span> 20.09.2020</span>
+											<span class="orders-item__text orders-item__text_inline"><span>Время</span> 11:00 - 13:00</span>
+											<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+										</div>
+									</div>
+								</div>
+								<div class="desktop-hide">
+									<span class="orders-item__text orders-item__text_inline"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text orders-item__text_inline"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+								<div class="orders-nav">
+									<svg class="orders-nav__arrow js-orders-prev">
+										<use xlink:href="./img/sprite.svg#arrow-left"></use>
+									</svg>
+									<a href="#" class="orders-nav__link">
+										<svg class="orders-nav__icon">
+											<use xlink:href="./img/sprite.svg#share"></use>
+										</svg>
+										<span class="orders-nav__text">Открыть бланк заказа</span>
+									</a>
+									<svg class="orders-nav__arrow js-orders-next">
+										<use xlink:href="./img/sprite.svg#arrow-right"></use>
+									</svg>
+								</div>
+								<div class="orders__uploaded uploaded js-upload">
+									<div class="uploaded__col">
+										<div class="uploaded__item js-upload-item">
+											<div class="uploaded__pic bg-cover" style="background-image: url('./pic/uploaded.jpg')"></div>
+											<span class="uploaded__remove js-upload-remove">
+												<svg>
+													<use xlink:href="./img/sprite.svg#cross"></use>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="orders-mark">
+									<span class="orders-mark__btn btn btn_green" data-open="add-file">Доставлено</span>
+								</div>
+							</div>
+							<div class="orders-preview" data-order-link="6">
+								<div class="orders-preview__text orders-preview__lc">
+									<span class="orders-preview__title">ID 12345678</span>
+								</div>
+							</div>
+							<div class="orders-item" data-order="6">
+								<div class="orders-item__row">
+									<div class="orders-item__col orders-item__lc">
+										<div class="orders-item-photo" data-open="photo">
+											<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+											<span class="orders-item-photo__zoom">
+												<svg width="16" height="16">
+													<use xlink:href="./img/sprite.svg#lens"></use>
+												</svg>
+											</span>
+										</div>
+										<span class="orders-item__price desktop-hide">4 900 руб.</span>
+									</div>
+									<div class="orders-item__col orders-item__rc">
+										<div class="orders-item__header">
+											<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+												<use xlink:href="./img/sprite.svg#expand"></use>
+											</svg>
+											<span class="orders-item__title">Осень на Холсте</span>
+											<span class="orders-item__price mobile-hide">4 900 руб.</span>
+										</div>
+										<div class="orders-item-links">
+											<div class="orders-item-links__col">
+												<span class="orders-item-links__item" data-open="composition">Состав</span>
+											</div>
+											<div class="orders-item-links__col">
+												<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+											</div>
+										</div>
+										<ul class="orders-item__list">
+											<li>Корзина фрутов</li>
+											<li>Рафаэлло</li>
+											<li>Шары</li>
+											<li>Бесплатное фото</li>
+										</ul>
+										<label for="upload-photo" class="orders-camera">
+											<svg class="orders-camera__icon">
+												<use xlink:href="./img/sprite.svg#camera"></use>
+											</svg>
+											<span class="orders-camera__text">Сделать фото букета</span>
+										</label>
+										<input type="file" class="is-hidden" id="upload-photo" accept="image/*;capture=camera">
+										<div class="mobile-hide">
+											<span class="orders-item__text orders-item__text_inline"><span>Дата</span> 20.09.2020</span>
+											<span class="orders-item__text orders-item__text_inline"><span>Время</span> 11:00 - 13:00</span>
+											<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+										</div>
+									</div>
+								</div>
+								<div class="desktop-hide">
+									<span class="orders-item__text orders-item__text_inline"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text orders-item__text_inline"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+								<div class="orders-nav">
+									<svg class="orders-nav__arrow js-orders-prev">
+										<use xlink:href="./img/sprite.svg#arrow-left"></use>
+									</svg>
+									<a href="#" class="orders-nav__link">
+										<svg class="orders-nav__icon">
+											<use xlink:href="./img/sprite.svg#share"></use>
+										</svg>
+										<span class="orders-nav__text">Открыть бланк заказа</span>
+									</a>
+									<svg class="orders-nav__arrow is-disabled">
+										<use xlink:href="./img/sprite.svg#arrow-right"></use>
+									</svg>
+								</div>
+								<div class="orders__uploaded uploaded js-upload">
+									<div class="uploaded__col js-upload-item">
+										<div class="uploaded__item">
+											<div class="uploaded__pic bg-cover" style="background-image: url('./pic/uploaded.jpg')"></div>
+											<span class="uploaded__remove js-upload-remove">
+												<svg>
+													<use xlink:href="./img/sprite.svg#cross"></use>
+												</svg>
+											</span>
+										</div>
+									</div>
+								</div>
+								<div class="orders-mark">
+									<span class="orders-mark__btn btn btn_green" data-open="add-file">Доставлено</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
