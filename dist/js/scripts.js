@@ -303,4 +303,35 @@ $(function() {
              showOrder(next.attr('data-order-link'))
          }
     });
+
+    /* Test to remove */
+    $(document).on('click', '.js-login-btn', function() {
+        var t = $(this);
+        var form = t.parents('.form');
+        var inputs = form.find('.form-group__input');
+        var isEmpty = true;
+        inputs.each(function() {
+           if ( $(this).val() !== '' ) {
+               isEmpty = false;
+           }
+        });
+        if ( isEmpty ) {
+            window.location.pathname = 'start.html';
+        } else {
+            var alert = form.find('.alert');
+            if ( alert.length === 0 ) {
+                form.prepend('<div class="alert alert_red alert_block">\n' +
+                    '<svg class="alert__icon">\n' +
+                        '<use xlink:href="./img/sprite.svg#info"></use>\n' +
+                    '</svg>\n' +
+                    '<span class="alert__text">Логин или пароль введены неверно, повторите попытку</span>\n' +
+                '</div>');
+            } else {
+                alert.addClass('is-highlighted');
+                alert.on('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(){
+                    $(this).removeClass("is-highlighted");
+                });
+            }
+        }
+    });
 });

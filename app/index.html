@@ -46,10 +46,10 @@
 										</div>
 									</div>
 									<div class="form-details__col">
-										<span class="form-details__link">Забыли пароль?</span>
+										<span class="form-details__link" data-open="forget-password">Забыли пароль?</span>
 									</div>
 								</div>
-								<a href="./start.html" class="btn">Войти</a>
+								<span class="btn js-login-btn">Войти</span>
 							</div>
 						</div>
 						<div class="login-content" data-tab="2">
@@ -70,6 +70,32 @@
 				<span class="footer__text">© 1999—2019 <a href="https://www.florist.ru/" class="footer__link">Флорист.ру</a></span>
 			</div>
 		</div>
+
+		<div class="fade-bg"></div>
+
+		<div class="modal" data-target="forget-password">
+			<div class="modal__core modal__core_outside">
+				<div class="modal-close" data-modal-close>
+					<svg class="modal-close__icon">
+						<use xlink:href="./img/sprite.svg#close"></use>
+					</svg>
+					<span class="modal-close__text">Закрыть</span>
+				</div>
+				<div class="popup">
+					<span class="popup__title">Забыли пароль?</span>
+					<div class="popup-message">
+						<svg class="popup-message__icon">
+							<use xlink:href="./img/sprite.svg#warning"></use>
+						</svg>
+						<span class="popup-message__text">Пожалуйста, обратитесь в&nbsp;партнерский отдел Флорист.ру</span>
+					</div>
+					<div class="popup-action">
+						<span class="btn btn_green popup-action__btn" data-modal-close>Закрыть</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<script src="./js/libs.js"></script>
 		<script src="./js/scripts.js"></script>
 	</body>

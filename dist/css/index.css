@@ -1488,12 +1488,36 @@ button {
 .modal-nav .nav-item__rc {
 	margin-right: -16px;
 }
+@-webkit-keyframes pulse {
+	75% {
+		-webkit-transform: scale(1.05);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+@keyframes pulse {
+	75% {
+		-webkit-transform: scale(1.05);
+	}
+	100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
 .alert {
 	position: relative;
 	min-height: 66px;
 	padding: 16px 16px 18px 56px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
+	-webkit-transition: transform 0.2s ease;
+	-webkit-transition: -webkit-transform 0.2s ease;
+	transition: -webkit-transform 0.2s ease;
+	-o-transition: transform 0.2s ease;
+	transition: transform 0.2s ease;
+	transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
 .alert_top {
 	-webkit-border-radius: 4px 4px 0 0;
@@ -1504,6 +1528,13 @@ button {
 }
 .alert_green {
 	background-color: #5B8D31;
+}
+.alert_block {
+	margin-bottom: 16px;
+}
+.alert.is-highlighted {
+	-webkit-animation: pulse 0.5s;
+	animation: pulse 0.5s;
 }
 .alert__icon {
 	position: absolute;
