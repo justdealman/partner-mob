@@ -627,6 +627,11 @@
 		}
 
 		&.is-opened {
+			.orders-preview__letter {
+				opacity: 1;
+				visibility: visible;
+			}
+
 			+ .orders-item {
 				display: block;
 			}
@@ -663,6 +668,8 @@
 			height: 24px;
 			cursor: pointer;
 			margin: -2px -3px;
+			opacity: 0;
+			visibility: hidden;
 
 			svg {
 				width: 24px;

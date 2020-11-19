@@ -50,7 +50,7 @@
 					</div>
 				</div>
 				<div class="orders-list">
-					<div class="orders-preview is-opened">
+					<div class="orders-preview is-opened" data-order-link="1">
 						<div class="orders-preview__text orders-preview__lc">
 							<span class="orders-preview__title">ID 12345678</span>
 						</div>
@@ -58,7 +58,7 @@
 							<span class="orders-preview__date">06.10</span>
 						</div>
 					</div>
-					<div class="orders-item" data-order>
+					<div class="orders-item" data-order="1">
 						<div class="orders-item__row">
 							<div class="orders-item__col orders-item__lc orders-item__lc_action">
 								<div class="orders-item-photo" data-open="photo">
@@ -112,7 +112,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="orders-preview">
+
+					<div class="orders-preview" data-order-link="2">
 						<div class="orders-preview__text orders-preview__lc">
 							<span class="orders-preview__title">ID 12345678</span>
 						</div>
@@ -120,7 +121,62 @@
 							<span class="orders-preview__date">06.10</span>
 						</div>
 					</div>
-					<div class="orders-preview">
+					<div class="orders-item" data-order="2">
+						<div class="orders-item__row">
+							<div class="orders-item__col orders-item__lc orders-item__lc_action">
+								<div class="orders-item-photo" data-open="photo">
+									<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+									<span class="orders-item-photo__zoom">
+								<svg width="16" height="16">
+									<use xlink:href="./img/sprite.svg#lens"></use>
+								</svg>
+							</span>
+								</div>
+								<span class="orders-item__price desktop-hide">4 900 руб.</span>
+								<span class="orders-item__text desktop-hide"><span>Дата</span> 20.09.2020</span>
+								<span class="orders-item__text desktop-hide"><span>Время</span> 11:00 - 13:00</span>
+							</div>
+							<div class="orders-item__col orders-item__rc">
+								<div class="orders-item__header">
+									<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+										<use xlink:href="./img/sprite.svg#expand"></use>
+									</svg>
+									<span class="orders-item__title">Осень на Холсте</span>
+									<span class="orders-item__price mobile-hide">4 900 руб.</span>
+								</div>
+								<div class="orders-item-links">
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="composition">Состав</span>
+									</div>
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+									</div>
+								</div>
+								<ul class="orders-item__list">
+									<li>Корзина фрутов</li>
+									<li>Рафаэлло</li>
+									<li>Шары</li>
+									<li>Бесплатное фото</li>
+								</ul>
+								<div class="mobile-hide">
+									<span class="orders-item__text"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+							</div>
+						</div>
+						<span class="orders-item__text desktop-hide"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+						<div class="orders-item-action">
+							<div class="orders-item-action__col">
+								<a href="#" class="btn btn_green">Принять</a>
+							</div>
+							<div class="orders-item-action__col">
+								<span class="btn btn_red" data-open="cancel">Отклонить</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="orders-preview" data-order-link="3">
 						<div class="orders-preview__text orders-preview__lc">
 							<span class="orders-preview__title">ID 87654321</span>
 						</div>
@@ -128,7 +184,62 @@
 							<span class="orders-preview__date">05.10</span>
 						</div>
 					</div>
-					<div class="orders-preview">
+					<div class="orders-item" data-order="3">
+						<div class="orders-item__row">
+							<div class="orders-item__col orders-item__lc orders-item__lc_action">
+								<div class="orders-item-photo" data-open="photo">
+									<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+									<span class="orders-item-photo__zoom">
+								<svg width="16" height="16">
+									<use xlink:href="./img/sprite.svg#lens"></use>
+								</svg>
+							</span>
+								</div>
+								<span class="orders-item__price desktop-hide">4 900 руб.</span>
+								<span class="orders-item__text desktop-hide"><span>Дата</span> 20.09.2020</span>
+								<span class="orders-item__text desktop-hide"><span>Время</span> 11:00 - 13:00</span>
+							</div>
+							<div class="orders-item__col orders-item__rc">
+								<div class="orders-item__header">
+									<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+										<use xlink:href="./img/sprite.svg#expand"></use>
+									</svg>
+									<span class="orders-item__title">Осень на Холсте</span>
+									<span class="orders-item__price mobile-hide">4 900 руб.</span>
+								</div>
+								<div class="orders-item-links">
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="composition">Состав</span>
+									</div>
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+									</div>
+								</div>
+								<ul class="orders-item__list">
+									<li>Корзина фрутов</li>
+									<li>Рафаэлло</li>
+									<li>Шары</li>
+									<li>Бесплатное фото</li>
+								</ul>
+								<div class="mobile-hide">
+									<span class="orders-item__text"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+							</div>
+						</div>
+						<span class="orders-item__text desktop-hide"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+						<div class="orders-item-action">
+							<div class="orders-item-action__col">
+								<a href="#" class="btn btn_green">Принять</a>
+							</div>
+							<div class="orders-item-action__col">
+								<span class="btn btn_red" data-open="cancel">Отклонить</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="orders-preview" data-order-link="4">
 						<div class="orders-preview__text orders-preview__lc">
 							<span class="orders-preview__title">ID 87654321</span>
 						</div>
@@ -136,7 +247,62 @@
 							<span class="orders-preview__date">04.10</span>
 						</div>
 					</div>
-					<div class="orders-preview">
+					<div class="orders-item" data-order="4">
+						<div class="orders-item__row">
+							<div class="orders-item__col orders-item__lc orders-item__lc_action">
+								<div class="orders-item-photo" data-open="photo">
+									<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+									<span class="orders-item-photo__zoom">
+								<svg width="16" height="16">
+									<use xlink:href="./img/sprite.svg#lens"></use>
+								</svg>
+							</span>
+								</div>
+								<span class="orders-item__price desktop-hide">4 900 руб.</span>
+								<span class="orders-item__text desktop-hide"><span>Дата</span> 20.09.2020</span>
+								<span class="orders-item__text desktop-hide"><span>Время</span> 11:00 - 13:00</span>
+							</div>
+							<div class="orders-item__col orders-item__rc">
+								<div class="orders-item__header">
+									<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+										<use xlink:href="./img/sprite.svg#expand"></use>
+									</svg>
+									<span class="orders-item__title">Осень на Холсте</span>
+									<span class="orders-item__price mobile-hide">4 900 руб.</span>
+								</div>
+								<div class="orders-item-links">
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="composition">Состав</span>
+									</div>
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+									</div>
+								</div>
+								<ul class="orders-item__list">
+									<li>Корзина фрутов</li>
+									<li>Рафаэлло</li>
+									<li>Шары</li>
+									<li>Бесплатное фото</li>
+								</ul>
+								<div class="mobile-hide">
+									<span class="orders-item__text"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+							</div>
+						</div>
+						<span class="orders-item__text desktop-hide"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+						<div class="orders-item-action">
+							<div class="orders-item-action__col">
+								<a href="#" class="btn btn_green">Принять</a>
+							</div>
+							<div class="orders-item-action__col">
+								<span class="btn btn_red" data-open="cancel">Отклонить</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="orders-preview" data-order-link="5">
 						<div class="orders-preview__text orders-preview__lc">
 							<span class="orders-preview__title">ID 87654321</span>
 						</div>
@@ -144,7 +310,62 @@
 							<span class="orders-preview__date">03.10</span>
 						</div>
 					</div>
-					<div class="orders-preview">
+					<div class="orders-item" data-order="5">
+						<div class="orders-item__row">
+							<div class="orders-item__col orders-item__lc orders-item__lc_action">
+								<div class="orders-item-photo" data-open="photo">
+									<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+									<span class="orders-item-photo__zoom">
+								<svg width="16" height="16">
+									<use xlink:href="./img/sprite.svg#lens"></use>
+								</svg>
+							</span>
+								</div>
+								<span class="orders-item__price desktop-hide">4 900 руб.</span>
+								<span class="orders-item__text desktop-hide"><span>Дата</span> 20.09.2020</span>
+								<span class="orders-item__text desktop-hide"><span>Время</span> 11:00 - 13:00</span>
+							</div>
+							<div class="orders-item__col orders-item__rc">
+								<div class="orders-item__header">
+									<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+										<use xlink:href="./img/sprite.svg#expand"></use>
+									</svg>
+									<span class="orders-item__title">Осень на Холсте</span>
+									<span class="orders-item__price mobile-hide">4 900 руб.</span>
+								</div>
+								<div class="orders-item-links">
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="composition">Состав</span>
+									</div>
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+									</div>
+								</div>
+								<ul class="orders-item__list">
+									<li>Корзина фрутов</li>
+									<li>Рафаэлло</li>
+									<li>Шары</li>
+									<li>Бесплатное фото</li>
+								</ul>
+								<div class="mobile-hide">
+									<span class="orders-item__text"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+							</div>
+						</div>
+						<span class="orders-item__text desktop-hide"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+						<div class="orders-item-action">
+							<div class="orders-item-action__col">
+								<a href="#" class="btn btn_green">Принять</a>
+							</div>
+							<div class="orders-item-action__col">
+								<span class="btn btn_red" data-open="cancel">Отклонить</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="orders-preview" data-order-link="6">
 						<div class="orders-preview__text orders-preview__lc">
 							<span class="orders-preview__title">ID 87654321</span>
 						</div>
@@ -152,7 +373,62 @@
 							<span class="orders-preview__date">03.10</span>
 						</div>
 					</div>
-					<div class="orders-preview">
+					<div class="orders-item" data-order="6">
+						<div class="orders-item__row">
+							<div class="orders-item__col orders-item__lc orders-item__lc_action">
+								<div class="orders-item-photo" data-open="photo">
+									<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+									<span class="orders-item-photo__zoom">
+								<svg width="16" height="16">
+									<use xlink:href="./img/sprite.svg#lens"></use>
+								</svg>
+							</span>
+								</div>
+								<span class="orders-item__price desktop-hide">4 900 руб.</span>
+								<span class="orders-item__text desktop-hide"><span>Дата</span> 20.09.2020</span>
+								<span class="orders-item__text desktop-hide"><span>Время</span> 11:00 - 13:00</span>
+							</div>
+							<div class="orders-item__col orders-item__rc">
+								<div class="orders-item__header">
+									<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+										<use xlink:href="./img/sprite.svg#expand"></use>
+									</svg>
+									<span class="orders-item__title">Осень на Холсте</span>
+									<span class="orders-item__price mobile-hide">4 900 руб.</span>
+								</div>
+								<div class="orders-item-links">
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="composition">Состав</span>
+									</div>
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+									</div>
+								</div>
+								<ul class="orders-item__list">
+									<li>Корзина фрутов</li>
+									<li>Рафаэлло</li>
+									<li>Шары</li>
+									<li>Бесплатное фото</li>
+								</ul>
+								<div class="mobile-hide">
+									<span class="orders-item__text"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+							</div>
+						</div>
+						<span class="orders-item__text desktop-hide"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+						<div class="orders-item-action">
+							<div class="orders-item-action__col">
+								<a href="#" class="btn btn_green">Принять</a>
+							</div>
+							<div class="orders-item-action__col">
+								<span class="btn btn_red" data-open="cancel">Отклонить</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="orders-preview" data-order-link="7">
 						<div class="orders-preview__text orders-preview__lc">
 							<span class="orders-preview__title">ID 87654321</span>
 						</div>
@@ -160,7 +436,62 @@
 							<span class="orders-preview__date">03.10</span>
 						</div>
 					</div>
-					<div class="orders-preview">
+					<div class="orders-item" data-order="7">
+						<div class="orders-item__row">
+							<div class="orders-item__col orders-item__lc orders-item__lc_action">
+								<div class="orders-item-photo" data-open="photo">
+									<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+									<span class="orders-item-photo__zoom">
+								<svg width="16" height="16">
+									<use xlink:href="./img/sprite.svg#lens"></use>
+								</svg>
+							</span>
+								</div>
+								<span class="orders-item__price desktop-hide">4 900 руб.</span>
+								<span class="orders-item__text desktop-hide"><span>Дата</span> 20.09.2020</span>
+								<span class="orders-item__text desktop-hide"><span>Время</span> 11:00 - 13:00</span>
+							</div>
+							<div class="orders-item__col orders-item__rc">
+								<div class="orders-item__header">
+									<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+										<use xlink:href="./img/sprite.svg#expand"></use>
+									</svg>
+									<span class="orders-item__title">Осень на Холсте</span>
+									<span class="orders-item__price mobile-hide">4 900 руб.</span>
+								</div>
+								<div class="orders-item-links">
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="composition">Состав</span>
+									</div>
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+									</div>
+								</div>
+								<ul class="orders-item__list">
+									<li>Корзина фрутов</li>
+									<li>Рафаэлло</li>
+									<li>Шары</li>
+									<li>Бесплатное фото</li>
+								</ul>
+								<div class="mobile-hide">
+									<span class="orders-item__text"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+							</div>
+						</div>
+						<span class="orders-item__text desktop-hide"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+						<div class="orders-item-action">
+							<div class="orders-item-action__col">
+								<a href="#" class="btn btn_green">Принять</a>
+							</div>
+							<div class="orders-item-action__col">
+								<span class="btn btn_red" data-open="cancel">Отклонить</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="orders-preview" data-order-link="8">
 						<div class="orders-preview__text orders-preview__lc">
 							<span class="orders-preview__title">ID 87654321</span>
 						</div>
@@ -168,7 +499,62 @@
 							<span class="orders-preview__date">03.10</span>
 						</div>
 					</div>
-					<div class="orders-preview">
+					<div class="orders-item" data-order="8">
+						<div class="orders-item__row">
+							<div class="orders-item__col orders-item__lc orders-item__lc_action">
+								<div class="orders-item-photo" data-open="photo">
+									<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+									<span class="orders-item-photo__zoom">
+								<svg width="16" height="16">
+									<use xlink:href="./img/sprite.svg#lens"></use>
+								</svg>
+							</span>
+								</div>
+								<span class="orders-item__price desktop-hide">4 900 руб.</span>
+								<span class="orders-item__text desktop-hide"><span>Дата</span> 20.09.2020</span>
+								<span class="orders-item__text desktop-hide"><span>Время</span> 11:00 - 13:00</span>
+							</div>
+							<div class="orders-item__col orders-item__rc">
+								<div class="orders-item__header">
+									<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+										<use xlink:href="./img/sprite.svg#expand"></use>
+									</svg>
+									<span class="orders-item__title">Осень на Холсте</span>
+									<span class="orders-item__price mobile-hide">4 900 руб.</span>
+								</div>
+								<div class="orders-item-links">
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="composition">Состав</span>
+									</div>
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+									</div>
+								</div>
+								<ul class="orders-item__list">
+									<li>Корзина фрутов</li>
+									<li>Рафаэлло</li>
+									<li>Шары</li>
+									<li>Бесплатное фото</li>
+								</ul>
+								<div class="mobile-hide">
+									<span class="orders-item__text"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+							</div>
+						</div>
+						<span class="orders-item__text desktop-hide"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+						<div class="orders-item-action">
+							<div class="orders-item-action__col">
+								<a href="#" class="btn btn_green">Принять</a>
+							</div>
+							<div class="orders-item-action__col">
+								<span class="btn btn_red" data-open="cancel">Отклонить</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="orders-preview" data-order-link="9">
 						<div class="orders-preview__text orders-preview__lc">
 							<span class="orders-preview__title">ID 87654321</span>
 						</div>
@@ -176,7 +562,62 @@
 							<span class="orders-preview__date">03.10</span>
 						</div>
 					</div>
-					<div class="orders-preview">
+					<div class="orders-item" data-order="9">
+						<div class="orders-item__row">
+							<div class="orders-item__col orders-item__lc orders-item__lc_action">
+								<div class="orders-item-photo" data-open="photo">
+									<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+									<span class="orders-item-photo__zoom">
+								<svg width="16" height="16">
+									<use xlink:href="./img/sprite.svg#lens"></use>
+								</svg>
+							</span>
+								</div>
+								<span class="orders-item__price desktop-hide">4 900 руб.</span>
+								<span class="orders-item__text desktop-hide"><span>Дата</span> 20.09.2020</span>
+								<span class="orders-item__text desktop-hide"><span>Время</span> 11:00 - 13:00</span>
+							</div>
+							<div class="orders-item__col orders-item__rc">
+								<div class="orders-item__header">
+									<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+										<use xlink:href="./img/sprite.svg#expand"></use>
+									</svg>
+									<span class="orders-item__title">Осень на Холсте</span>
+									<span class="orders-item__price mobile-hide">4 900 руб.</span>
+								</div>
+								<div class="orders-item-links">
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="composition">Состав</span>
+									</div>
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+									</div>
+								</div>
+								<ul class="orders-item__list">
+									<li>Корзина фрутов</li>
+									<li>Рафаэлло</li>
+									<li>Шары</li>
+									<li>Бесплатное фото</li>
+								</ul>
+								<div class="mobile-hide">
+									<span class="orders-item__text"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+							</div>
+						</div>
+						<span class="orders-item__text desktop-hide"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+						<div class="orders-item-action">
+							<div class="orders-item-action__col">
+								<a href="#" class="btn btn_green">Принять</a>
+							</div>
+							<div class="orders-item-action__col">
+								<span class="btn btn_red" data-open="cancel">Отклонить</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="orders-preview" data-order-link="10">
 						<div class="orders-preview__text orders-preview__lc">
 							<span class="orders-preview__title">ID 87654321</span>
 						</div>
@@ -184,6 +625,61 @@
 							<span class="orders-preview__date">03.10</span>
 						</div>
 					</div>
+					<div class="orders-item" data-order="10">
+						<div class="orders-item__row">
+							<div class="orders-item__col orders-item__lc orders-item__lc_action">
+								<div class="orders-item-photo" data-open="photo">
+									<img src="./pic/orders-item.jpg" width="63" height="63" alt="" class="orders-item-photo__img">
+									<span class="orders-item-photo__zoom">
+								<svg width="16" height="16">
+									<use xlink:href="./img/sprite.svg#lens"></use>
+								</svg>
+							</span>
+								</div>
+								<span class="orders-item__price desktop-hide">4 900 руб.</span>
+								<span class="orders-item__text desktop-hide"><span>Дата</span> 20.09.2020</span>
+								<span class="orders-item__text desktop-hide"><span>Время</span> 11:00 - 13:00</span>
+							</div>
+							<div class="orders-item__col orders-item__rc">
+								<div class="orders-item__header">
+									<svg width="24" height="24" class="orders-item__expand js-order-rollup">
+										<use xlink:href="./img/sprite.svg#expand"></use>
+									</svg>
+									<span class="orders-item__title">Осень на Холсте</span>
+									<span class="orders-item__price mobile-hide">4 900 руб.</span>
+								</div>
+								<div class="orders-item-links">
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="composition">Состав</span>
+									</div>
+									<div class="orders-item-links__col">
+										<span class="orders-item-links__item" data-open="postcard">Открытка</span>
+									</div>
+								</div>
+								<ul class="orders-item__list">
+									<li>Корзина фрутов</li>
+									<li>Рафаэлло</li>
+									<li>Шары</li>
+									<li>Бесплатное фото</li>
+								</ul>
+								<div class="mobile-hide">
+									<span class="orders-item__text"><span>Дата</span> 20.09.2020</span>
+									<span class="orders-item__text"><span>Время</span> 11:00 - 13:00</span>
+									<span class="orders-item__text"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+								</div>
+							</div>
+						</div>
+						<span class="orders-item__text desktop-hide"><span>Адрес:</span> Россия, Сверловская область, Екатеринбург, Улица: Громова, дом: 30, кв: 230, п.2, этаж 11</span>
+						<div class="orders-item-action">
+							<div class="orders-item-action__col">
+								<a href="#" class="btn btn_green">Принять</a>
+							</div>
+							<div class="orders-item-action__col">
+								<span class="btn btn_red" data-open="cancel">Отклонить</span>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>

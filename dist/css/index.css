@@ -1666,6 +1666,10 @@ button {
 .orders-preview:last-child {
 	border-bottom-width: 0;
 }
+.orders-preview.is-opened .orders-preview__letter {
+	opacity: 1;
+	visibility: visible;
+}
 .orders-preview.is-opened + .orders-item {
 	display: block;
 }
@@ -1697,6 +1701,8 @@ button {
 	height: 24px;
 	cursor: pointer;
 	margin: -2px -3px;
+	opacity: 0;
+	visibility: hidden;
 }
 .orders-preview__letter svg {
 	width: 24px;
