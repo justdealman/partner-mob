@@ -1744,6 +1744,9 @@ button {
 .orders-item:last-child {
 	border-bottom-width: 0;
 }
+.orders-item__bq {
+	margin-bottom: 20px;
+}
 .orders-item__row {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1932,14 +1935,10 @@ button {
 	display: -ms-flexbox;
 	display: flex;
 	font-size: 0;
-	margin: 16px -8px 0;
+	margin: 0 -8px;
 }
 @media (min-width: 992px) {
 	.orders-item-action {
-		position: absolute;
-		left: 16px;
-		bottom: 7px;
-		z-index: 10;
 		width: 318px;
 	}
 }
