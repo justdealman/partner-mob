@@ -25,7 +25,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('less', function() {
-	return gulp.src('app/less/index.less')
+	return gulp.src(['app/less/index.less', 'app/less/gift-page.less'])
 		.pipe(less())
 		.pipe(autoprefixer({
 			browsers: ['last 10 versions'],

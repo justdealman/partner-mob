@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	<link href="./css/gift-page.css" rel="stylesheet">
+	<body>
+		<div class="gift">
+			<div class="gift__container">
+				<div class="gift-head">
+					<h1 class="gift-head__title">Для вас заказан приятный&nbsp;подарок</h1>
+					<span class="gift-head__subtitle">Пожалуйста введите время&nbsp;и&nbsp;адрес, по&nbsp;которому вы&nbsp;готовы принять&nbsp;его</span>
+				</div>
+				<form class="gift-form">
+					<div class="gift-form__grid">
+						<div class="gift-form__col">
+							<label for="form_address" class="gift-form__label">Адрес доставки *</label>
+							<input type="text" class="gift-form__input has-error" id="form_address" placeholder="Ул. Ленина, д.12, кв.5">
+							<span class="gift-form__message is-error">Укажите адрес доставки</span>
+						</div>
+						<div class="gift-form__col gift-form__col_2">
+							<label for="form_date" class="gift-form__label">Дата доставки *</label>
+							<select class="gift-form__select" id="form_date">
+								<option disabled selected></option>
+								<option value="">20.12.2020</option>
+								<option value="">21.12.2020</option>
+							</select>
+							<span class="gift-form__message is-success">Указаны верно</span>
+						</div>
+						<div class="gift-form__col gift-form__col_2">
+							<label for="form_time" class="gift-form__label">Время доставки *</label>
+							<select class="gift-form__select" id="form_time">
+								<option disabled selected></option>
+								<option value="">10:00 - 18:00</option>
+								<option value="">18:00 - 24:00</option>
+							</select>
+							<span class="gift-form__message is-success">Указаны верно</span>
+						</div>
+						<div class="gift-form__col">
+							<!--<label for="form_comment" class="gift-form__label">Комментарий курьеру</label>-->
+							<textarea class="gift-form__textarea" id="form_comment" rows="3" placeholder="Комментарий курьеру"></textarea>
+						</div>
+					</div>
+					<input type="submit" class="gift-form__btn" value="Отправить">
+					<div class="gift-form__foot">
+						<a href="#" class="gift-link">
+							<span class="gift-link__text">Вопросы и ответы</span>
+							<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="gift-link__icon">
+								<path d="M15.0502 14.9497L13.9895 13.889L17.8786 9.99996L13.9895 6.11087L15.0502 5.05021L20 9.99996L15.0502 14.9497Z"/>
+							</svg>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<script src="./js/libs.js"></script>
+		<script src="./js/scripts.js"></script>
+	</body>
+</html>
