@@ -11,37 +11,33 @@
 					<h1 class="gift-head__title">Для вас заказан приятный&nbsp;подарок</h1>
 					<span class="gift-head__subtitle">Пожалуйста введите время&nbsp;и&nbsp;адрес, по&nbsp;которому вы&nbsp;готовы принять&nbsp;его</span>
 				</div>
-				<form class="gift-form">
+				<form class="gift-form js-form" action="">
 					<div class="gift-form__grid">
 						<div class="gift-form__col">
 							<label for="form_address" class="gift-form__label">Адрес доставки *</label>
-							<input type="text" class="gift-form__input has-error" id="form_address" placeholder="Ул. Ленина, д.12, кв.5">
-							<span class="gift-form__message is-error">Укажите адрес доставки</span>
+							<input type="text" class="gift-form__input is-required" id="form_address" placeholder="Ул. Ленина, д.12, кв.5" data-error="Укажите адрес доставки" data-success="Указан верно">
 						</div>
 						<div class="gift-form__col gift-form__col_2">
 							<label for="form_date" class="gift-form__label">Дата доставки *</label>
-							<select class="gift-form__select" id="form_date">
+							<select class="gift-form__select is-required" id="form_date" data-error="Укажите дату доставки" data-success="Указана верно">
 								<option disabled selected></option>
-								<option value="">20.12.2020</option>
-								<option value="">21.12.2020</option>
+								<option value="1">20.12.2020</option>
+								<option value="2">21.12.2020</option>
 							</select>
-							<span class="gift-form__message is-success">Указаны верно</span>
 						</div>
 						<div class="gift-form__col gift-form__col_2">
 							<label for="form_time" class="gift-form__label">Время доставки *</label>
-							<select class="gift-form__select" id="form_time">
+							<select class="gift-form__select is-required" id="form_time" data-error="Укажите время доставки" data-success="Указана верно">
 								<option disabled selected></option>
-								<option value="">10:00 - 18:00</option>
-								<option value="">18:00 - 24:00</option>
+								<option value="1">10:00 - 18:00</option>
+								<option value="2">18:00 - 24:00</option>
 							</select>
-							<span class="gift-form__message is-success">Указаны верно</span>
 						</div>
 						<div class="gift-form__col">
-							<!--<label for="form_comment" class="gift-form__label">Комментарий курьеру</label>-->
 							<textarea class="gift-form__textarea" id="form_comment" rows="3" placeholder="Комментарий курьеру"></textarea>
 						</div>
 					</div>
-					<input type="submit" class="gift-form__btn" value="Отправить">
+					<input type="submit" class="gift-form__btn js-submit-btn" value="Отправить" disabled>
 					<div class="gift-form__foot">
 						<a href="#" class="gift-link">
 							<span class="gift-link__text">Вопросы и ответы</span>
@@ -54,6 +50,62 @@
 			</div>
 		</div>
 		<script src="./js/libs.js"></script>
-		<script src="./js/scripts.js"></script>
+		<script>
+			$(function()
+			{
+				$submitBtn = $('.js-submit-btn');
+				$submitBtn.attr('disabled', false);
+				$form = $('.js-form');
+				$form.on('submit', function(e)
+				{
+					var errorCounter = 0;
+					$form.find('.is-required').each(function()
+					{
+						var t = $(this);
+						if (!validate(t))
+						{
+							if (errorCounter == 0)
+							{
+								t.focus();
+							}
+							errorCounter++;
+						}
+					});
+					if (errorCounter > 0)
+					{
+						e.preventDefault();
+					}
+					else
+					{
+						alert('Form validated successfully');
+					}
+				});
+				$('.is-required').on('blur change', function()
+				{
+					validate($(this));
+				});
+
+				function validate(el)
+				{
+					var val = el.val();
+					el.removeClass('has-error');
+					el.next('.js-message').remove();
+					var message = '';
+					if (val == null || val == '')
+					{
+						el.addClass('has-error');
+						message = '<span class="gift-form__message js-message is-error">' + el.attr('data-error') + '</span>';
+						el.after(message);
+						return false;
+					}
+					else
+					{
+						message = '<span class="gift-form__message js-message is-success">' + el.attr('data-success') + '</span>';
+						el.after(message);
+						return true;
+					}
+				}
+			});
+		</script>
 	</body>
 </html>
